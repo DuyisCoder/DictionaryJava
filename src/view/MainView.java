@@ -42,6 +42,8 @@ public final class MainView extends javax.swing.JFrame {
     private int pos = 0;
     private int posDislike = 0;
     private int posRecent = 0;
+    
+    private  String test ="test";
 
     private String fileENtoVN = "anhviet2.txt";
     private String fileVNtoEN = "vietanh.txt";

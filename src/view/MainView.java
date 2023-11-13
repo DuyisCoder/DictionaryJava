@@ -21,6 +21,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
+import java.util.TimerTask;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
@@ -42,9 +43,7 @@ public final class MainView extends javax.swing.JFrame {
     private int pos = 0;
     private int posDislike = 0;
     private int posRecent = 0;
-    
-    private  String test ="test";
-
+    private static boolean  check=false;
     private String fileENtoVN = "anhviet2.txt";
     private String fileVNtoEN = "vietanh.txt";
     private String fileRecent = "recent.txt";
@@ -65,7 +64,8 @@ public final class MainView extends javax.swing.JFrame {
         dictF = new DictionaryFavorite();
         dictV = new DictionaryVNtoEN();
         dictRecent = new DictionaryRecent();
-
+        
+        
         file.readFile(fileENtoVN, dictionary);
         file.readFile(fileFavorite, dictF);
         file.readFile(fileVNtoEN, dictV);
@@ -133,11 +133,10 @@ public final class MainView extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
+        jMenuOpen = new javax.swing.JMenuItem();
         jMenuSave = new javax.swing.JMenu();
         jMenuFileFavorite = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu6 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuExit = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
@@ -240,7 +239,7 @@ public final class MainView extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(txtWord);
 
-        comboLanguages.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ANH - VIET", "VIET - ANH" }));
+        comboLanguages.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ANH", "VIET" }));
         comboLanguages.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboLanguagesActionPerformed(evt);
@@ -324,7 +323,12 @@ public final class MainView extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(153, 0, 51));
         jLabel3.setText("Meaning");
 
-        ComboLangueges2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "VIET - ANH", "ANH - VIET" }));
+        ComboLangueges2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "VIET", "ANH" }));
+        ComboLangueges2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboLangueges2ActionPerformed(evt);
+            }
+        });
 
         tableRecent.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -392,6 +396,14 @@ public final class MainView extends javax.swing.JFrame {
         jMenu2.setText("New");
         jMenu1.add(jMenu2);
 
+        jMenuOpen.setText("Open");
+        jMenuOpen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuOpenActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuOpen);
+
         jMenuSave.setText("Save");
         jMenuSave.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -416,17 +428,6 @@ public final class MainView extends javax.swing.JFrame {
         jMenuSave.add(jMenuItem2);
 
         jMenu1.add(jMenuSave);
-
-        jMenu6.setText("File");
-        jMenu1.add(jMenu6);
-
-        jMenuItem1.setText("Save As");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem1);
         jMenu1.add(jSeparator1);
 
         jMenuExit.setText("Exit");
@@ -519,6 +520,7 @@ public final class MainView extends javax.swing.JFrame {
                     if (dictF.timTheoKey(word) == true) {
                         JOptionPane.showMessageDialog(this, "Tu khoa da ton tai");
                     } else {
+                       
                         dictF.addWord(word, list);
                         viewTableFavorite();
                         JOptionPane.showMessageDialog(this, "Them thanh cong");
@@ -576,46 +578,153 @@ public final class MainView extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_comboLanguagesActionPerformed
+    private String findSimilarWord(String searchText) {
+        String suggestion = null;
+        int minDistance = Integer.MAX_VALUE;
 
+        for (String word : dictionary.getDict().keySet()) {
+            int distance = calculateLevenshteinDistance(searchText, word);
+            if (distance < minDistance) {
+                minDistance = distance;
+                suggestion = word;
+            }
+        }
+
+        return suggestion;
+    }
+
+    private String findSimilarWordVN(String searchText) {
+        String suggestion = null;
+        int minDistance = Integer.MAX_VALUE;
+
+        for (String word : dictV.getDict().keySet()) {
+            int distance = calculateLevenshteinDistance(searchText, word);
+            if (distance < minDistance) {
+                minDistance = distance;
+                suggestion = word;
+            }
+        }
+
+        return suggestion;
+    }
+
+    private int calculateLevenshteinDistance(String s1, String s2) {
+        int m = s1.length();
+        int n = s2.length();
+
+        int[][] dp = new int[m + 1][n + 1];
+
+        for (int i = 0; i <= m; i++) {
+            for (int j = 0; j <= n; j++) {
+                if (i == 0) {
+                    dp[i][j] = j;
+                } else if (j == 0) {
+                    dp[i][j] = i;
+                } else {
+                    dp[i][j] = min(
+                            dp[i - 1][j - 1] + (s1.charAt(i - 1) == s2.charAt(j - 1) ? 0 : 1),
+                            dp[i][j - 1] + 1,
+                            dp[i - 1][j] + 1
+                    );
+                }
+            }
+        }
+
+        return dp[m][n];
+    }
+
+    private int min(int a, int b, int c) {
+        return Math.min(Math.min(a, b), c);
+    }
     private void txtWordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtWordKeyPressed
 
         String searchText = txtWord.getText();
-        String meaning = txtNghia.getText();
-        List<String> list = new ArrayList<>();
-        list.add(meaning);
+//        String meaning = txtNghia.getText();
+//        List<String> list = new ArrayList<>();
+//        list.add(meaning);
         int index = comboLanguages.getSelectedIndex();
         int index2 = ComboLangueges2.getSelectedIndex();
         if (index == 0 && index2 == 0) {
-            ComboLangueges2.setSelectedIndex(0);
-            if (searchText != null && !searchText.isEmpty() && dictionary.translateWord(searchText) != null) {
+            if (searchText != null && !searchText.isEmpty()) {
                 word = dictionary.translateWord(searchText);
                 if (word != null) {
-                    txtNghia.setText(word + "");
+                    String[] p = word.toString().split(", ");
+                    StringBuilder resultBuilder = new StringBuilder();
+                    for (String part : p) {
+                        resultBuilder.append(part).append("\n");
+                    }
+                    List<String> list = new ArrayList<>();
+                    list.add(resultBuilder+"");
+                    txtNghia.setText(resultBuilder.toString());
                     if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
                         dictRecent.addWord(searchText, list);
                         file.readFile(fileRecent, dictRecent);
                         viewTableRecent();
                     }
+                } else{
+                    txtNghia.setText("Từ bạn tìm không có trong từ điển chương trình!");
+                    if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+                        String suggestion = findSimilarWord(searchText);
+                        if (suggestion != null) {
+                            int yes = JOptionPane.showConfirmDialog(this, "Ý bạn là từ : " + "\"" + suggestion + "\"", "Gợi ý từ điển", JOptionPane.YES_NO_OPTION);
+                            if (JOptionPane.YES_OPTION == yes) {
+                                word = dictionary.translateWord(suggestion);
+                                txtWord.setText(word.getEng());
+                                txtNghia.setText(word + "");
+                                List<String> listRecent = new ArrayList<>();
+                                listRecent.add(word+"");
+                                dictRecent.addWord(word.getEng(), listRecent);
+                                file.readFile(fileRecent, dictRecent);
+                                viewTableRecent();
+                            } else {
+                                txtWord.setText("");
+                                txtNghia.setText("");
+                            }
+                        }
+                    }
                 }
-            } else {
-                txtNghia.setText("Từ bạn tìm không có trong từ điển chương trình!");
             }
         } else {
-            ComboLangueges2.setSelectedIndex(1);
-
-            if (searchText != null && !searchText.isEmpty() && dictV.translateWord(searchText) != null) {
+            if (searchText != null && !searchText.isEmpty()) {
                 wordVN = dictV.translateWord(searchText);
                 if (wordVN != null) {
-                    txtNghia.setText(wordVN + "");
+                    String[] p = wordVN.toString().split(",");
+                    StringBuilder kq = new StringBuilder();
+                    for (String string : p) {
+                        kq.append(string).append("\n");
+                    }
+                    List<String> list = new ArrayList();
+                    list.add(kq+"");
+                    txtNghia.setText(kq.toString());
                     if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
                         dictRecent.addWord(searchText, list);
                         file.readFile(fileRecent, dictRecent);
                         viewTableRecent();
                     }
-                }
-            } else {
-                txtNghia.setText("Từ bạn tìm không có trong từ điển chương trình!");
+                } else{
+                    txtNghia.setText("Từ bạn tìm không có trong từ điển chương trình!");
 
+                    if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+                        String suggestion = findSimilarWordVN(searchText);
+                        if (suggestion != null) {
+                            int yes = JOptionPane.showConfirmDialog(this, "Ý bạn là từ : " + "\"" + suggestion + "\"", "Gợi ý từ điển", JOptionPane.YES_NO_OPTION);
+
+                            if (JOptionPane.YES_OPTION == yes) {
+                                wordVN = dictV.translateWord(suggestion);
+                                txtWord.setText(wordVN.getViet());
+                                txtNghia.setText(wordVN + "");
+                                List<String> listRecent = new ArrayList<>();
+                                listRecent.add(wordVN+"");
+                                dictRecent.addWord(wordVN.getViet(), listRecent);
+                                file.readFile(fileRecent, dictRecent);
+                                viewTableRecent();
+                            } else {
+                                txtWord.setText("");
+                                txtNghia.setText("");
+                            }
+                        }
+                    }
+                }
             }
         }
     }//GEN-LAST:event_txtWordKeyPressed
@@ -645,7 +754,7 @@ public final class MainView extends javax.swing.JFrame {
     }//GEN-LAST:event_tableRecentMouseClicked
 
     private void txtWordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtWordKeyReleased
-
+//
 //        String searchText = txtWord.getText();
 //        String meaning = txtNghia.getText();
 //        List<String> list = new ArrayList<>();
@@ -654,7 +763,7 @@ public final class MainView extends javax.swing.JFrame {
 //        int index1 = ComboLangueges2.getSelectedIndex();
 //        if (index == 0) {
 //            ComboLangueges2.setSelectedIndex(0);
-//            if (searchText != null && !searchText.isEmpty() && word != null) {
+//            if (searchText != null && !searchText.isEmpty() ) {
 //                word = dictionary.translateWord(searchText);
 //                if (word != null) {
 //                    txtNghia.setText(word + "");
@@ -666,8 +775,6 @@ public final class MainView extends javax.swing.JFrame {
 //                }
 //            } else {
 //                JOptionPane.showConfirmDialog(this, "Khong tim thay");
-////                word=dictionary.translateWord(searchText);
-////                System.out.println("word"+word);
 //            }
 //        } else {
 //            ComboLangueges2.setSelectedIndex(1);
@@ -719,8 +826,11 @@ public final class MainView extends javax.swing.JFrame {
         try {
             IOFile file = new IOFile();
             file.ghiFile(f, dictRecent);
+            JOptionPane.showMessageDialog(this, "Save is completed!");
 
         } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Save not completed!");
+
         }
 
 
@@ -731,21 +841,28 @@ public final class MainView extends javax.swing.JFrame {
         view.setVisible(true);
     }//GEN-LAST:event_jMenuOntapActionPerformed
 
+    public boolean getCheck(){
+        return check;
+    }
+    public boolean  setCheck(boolean  c){
+        return MainView.check=c;
+    }
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        int delay = 5000;
+       int delay = 10000; // 10 seconds
+                   QuestionView view = new QuestionView();
+
         if (jToggleButton1.isSelected()) {
-            dictRecent.setBat(true);
             Timer timer = new Timer(delay, new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    QuestionView view = new QuestionView();
                     view.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     view.setVisible(true);
                 }
 
             });
-            timer.setRepeats(false);
             timer.start();
+            timer.setRepeats(false);
+
         }
 
     }//GEN-LAST:event_jToggleButton1ActionPerformed
@@ -772,19 +889,6 @@ public final class MainView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnPhatAmActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        JFileChooser fileChooser = new JFileChooser(new File("c:\\"));
-        fileChooser.setDialogTitle("Save File !");
-        fileChooser.showSaveDialog(null);
-        File f = fileChooser.getSelectedFile();
-        try {
-            IOFile file = new IOFile();
-            file.ghiFile(f, dictRecent);
-
-        } catch (Exception e) {
-        }
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         JFileChooser fileChooser = new JFileChooser(new File("c:\\"));
         fileChooser.setDialogTitle("Save File !");
@@ -793,11 +897,38 @@ public final class MainView extends javax.swing.JFrame {
         try {
             IOFile file = new IOFile();
             file.ghiFile(f, dictF);
-            
+            JOptionPane.showMessageDialog(this, "Save is completed!");
         } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Save not completed!");
+
         }
-            
+
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void ComboLangueges2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboLangueges2ActionPerformed
+        int index = ComboLangueges2.getSelectedIndex();
+        if (index == 0) {
+            comboLanguages.setSelectedIndex(0);
+        } else {
+            comboLanguages.setSelectedIndex(1);
+        }
+    }//GEN-LAST:event_ComboLangueges2ActionPerformed
+
+    private void jMenuOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuOpenActionPerformed
+        JFileChooser fileChooser = new JFileChooser(new File("c:\\"));
+        fileChooser.setDialogTitle("Open File!");
+        fileChooser.showOpenDialog(null);
+        File f = fileChooser.getSelectedFile();
+        try {
+            IOFile file = new IOFile();
+            file.readFile(f, dictRecent);
+            viewTableRecent();
+            JOptionPane.showMessageDialog(this, "Open is completed!");
+           
+        } catch (Exception e) {
+               JOptionPane.showMessageDialog(this, "Open is not completed!");
+        }
+    }//GEN-LAST:event_jMenuOpenActionPerformed
 
     private void tableFavoriteMouseClicked(java.awt.event.MouseEvent evt) {
         posDislike = tableFavorite.getSelectedRow();
@@ -867,14 +998,13 @@ public final class MainView extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuItem jMenuAnhViet;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuExit;
     private javax.swing.JMenuItem jMenuFileFavorite;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuOntap;
+    private javax.swing.JMenuItem jMenuOpen;
     private javax.swing.JMenu jMenuSave;
     private javax.swing.JMenuItem jMenuVietAnh;
     private javax.swing.JPanel jPanel1;

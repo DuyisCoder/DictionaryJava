@@ -446,8 +446,10 @@ public class IOFile {
     public static void main(String[] args) {
         Dictionary dict = new Dictionary();
         IOFile file = new IOFile();
+        file.readFile("anhviet2.txt", dict);
+//                System.out.println("Dict truoc khi sort :"+dict);
 //        file.readFile("anhviet2.txt", dict);
-//        System.out.println("Dict truoc khi sort :"+dict);
+
 //        dict.sortDictionary();
 //
 //        System.out.println("===================Dict truoc khi sort :"+dict);

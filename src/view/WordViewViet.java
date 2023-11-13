@@ -416,10 +416,14 @@ public class WordViewViet extends javax.swing.JFrame {
         pos = tableWord.getSelectedRow();
         String selectedWord = (String) tableWord.getValueAt(pos, 0);
         word = dict.translateWord(selectedWord);
-        System.out.println("WORD: " + word);
         if (word != null) {
+            String[] parts =word.toString().split(",");
+            StringBuilder bd = new StringBuilder();
+            for (String part : parts) {
+                bd.append(part).append("\n");
+            }
             txtWord.setText(word.getViet());
-            txtMeaning.setText(word + "");
+            txtMeaning.setText(bd + "");
         }
     }//GEN-LAST:event_tableWordMouseClicked
 

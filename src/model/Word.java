@@ -7,12 +7,14 @@ package model;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  *
  * @author minhduy
  */
 public class Word implements Comparable<Word> {
+
     private String eng;
     private List<String> viet;
     private String gioiTu;
@@ -21,8 +23,7 @@ public class Word implements Comparable<Word> {
     public Word() {
         viet = new ArrayList<>();
     }
-    
-   
+
     public Word(String eng, List<String> viet, String gioiTu, String phienAm) {
         this.eng = eng;
         this.viet = viet;
@@ -30,9 +31,9 @@ public class Word implements Comparable<Word> {
         this.phienAm = phienAm;
     }
 
-    public Word(String eng,List<String> viet){
-        this.eng=eng;
-        this.viet=viet;
+    public Word(String eng, List<String> viet) {
+        this.eng = eng;
+        this.viet = viet;
     }
 
     public String getEng() {
@@ -55,7 +56,6 @@ public class Word implements Comparable<Word> {
         this.eng = eng;
     }
 
-
     public void setViet(List<String> viet) {
         this.viet = viet;
     }
@@ -75,17 +75,22 @@ public class Word implements Comparable<Word> {
             vietStringBuilder.append(item);
             vietStringBuilder.append(", ");
         }
-
         // Loại bỏ dấu phẩy cuối cùng nếu có
         if (vietStringBuilder.length() > 0) {
             vietStringBuilder.setLength(vietStringBuilder.length() - 2);
         }
-
-        return  vietStringBuilder.toString() +
-                (gioiTu != null && !gioiTu.isEmpty() ? "\n- Giới từ: " + gioiTu : "") +
-                (phienAm != null && !phienAm.isEmpty() ? "\n- Phiên Âm: " + phienAm : "");
+//        String vietString = vietStringBuilder.toString();
+//
+//        String[] vietArray = vietStringBuilder.toString().split(", ");
+//
+//// Duyệt qua từng từ và xuất mỗi từ ra một dòng
+//        for (String word : vietArray) {
+//            System.out.println(word);
+//        }
+        return vietStringBuilder.toString()
+                + (gioiTu != null && !gioiTu.isEmpty() ? "\n- Giới từ: " + gioiTu : "")
+                + (phienAm != null && !phienAm.isEmpty() ? "\n- Phiên Âm: " + phienAm : "");
     }
-
 
     @Override
     public int compareTo(Word o) {

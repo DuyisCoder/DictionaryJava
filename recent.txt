@@ -1,112 +1,49 @@
+@hi
+- [(từ Mỹ,nghĩa Mỹ) này!
+ê! (gọi
+chào)
+*  thán từ
+hai
+]
+@student
+- [học sinh đại học]
+@milk
+- [sữa]
 @duy
-- [to push briskly; to walk, * verb]
-@quýt
-- [Mandarin, mandarine, Vỏ quýt khô+Dry mandarine peel, Đến mùa quýt+When the moon is made of green cheese; never, Vỏ quýt dày, móng tay nhọn+Diamond cuts diamond., (từ cũ) Thằng quýt, Young servant, Thằng quýt con sen+Young servant and maid]
-@buộc
-- [To bind, to tie, * verb, buộc vết thương+to bind a wound, * verb, To force, to compel, * verb, chiến thắng của ta buộc địch phải từ bỏ âm mưu xâm lược+our victory forced the enemy to give up their aggressive design, * verb, bị buộc phải thôi việc+to be forced to resign, * verb, chúng ta buộc phải cầm vũ khí để tự vệ+we were forced to take up arms in self defence, * verb, To lay, * verb, đừng buộc cho anh ta cái tội ấy+don't lay that offence on him, * verb, chỉ buộc một điều kiện+to lay down only one condition, * verb, buộc chỉ chân voi, * verb]
-@view
-- [dạng; phép chiếu, in v. of theo, chú ý..., auxiliary v. (hình học) pháp chiếu phụ, front v. nhìn từ trước, hình chiếu từ trước, principal v. (hình học) phép chiếu chính, rear v. nhìn từ sau, side v. (hình học) nhìn từ một bên, nhìn ngang]
-@đẹp trai
-- [beautiful; handsome; fair; pretty, * adj, một người đàn bà đẹp+A beautiful woman, * adj]
-@duck
-- [Từ bạn tìm không có trong từ điển chương trình!]
-@banh
-- [Prison cell, * noun, Ball, * noun, đá banh+to play football, * noun, To open wide; to force open, * verb, banh mắt ra nhìn+to look with wide-opened eyes, * verb, banh ngực+to bare one's chest, * verb]
-@chào
-- [To greet, to salute, * verb, chào cờ+to salute the flag, * verb, chào từ biệt+to say good-bye, * verb, ngả mũ chào thầy giáo+to take off one's hat and greet one's teacher, * verb, chào chị, tôi về+good-bye madam (miss, sister...), I am going back, * verb, To solicit, * verb, nhà hàng chào khách+the shopkeeper solicits customers, the shopkeeper solicits people for their custom, * verb, chào hàng+to solicit customers to buy one's goods, to solicit custom for one's goods, to cry one's wares, * verb]
-@bàn phím
-- [Keyboard, * noun, nhấn một phím trên bàn phím+to press a key on the keyboard, * noun, người thao tác trên một bàn phím+a keyboarder, * noun, bàn phím nhỏ trên máy điện thoại (thay cho dĩa quay số)+key-pad, * noun]
-@female
-- [cái, mái, *  tính từ, 'fi:meil, a female dog+ con chó cái, *  tính từ, 'fi:meil, (thuộc) đàn bà con gái, nữ, *  tính từ, 'fi:meil, female candidate+ thí sinh nữ, *  tính từ, 'fi:meil, female weakness+ sự mến yêu của đàn bà, *  tính từ, 'fi:meil, yếu, nhạt, mờ, *  tính từ, 'fi:meil, female sapphire+ xafia mờ, *  tính từ, 'fi:meil, (kỹ thuật) có lỗ để lắp, có lỗ để tra, *  tính từ, 'fi:meil, (động vật học) con cái, con mái, *  danh từ, 'fi:meil, (thực vật học) gốc cái; cây cái, *  danh từ, 'fi:meil, (từ hiếm,nghĩa hiếm) người đàn bà, người phụ nữ, *  danh từ, 'fi:meil, (thông tục) con mụ, con mẹ, *  danh từ, 'fi:meil]
-@cha
-- [cha]
-@duydeptrai
-- [duydeptrai]
-@active
-- [(Tech) chủ động; hoạt tính; hoạt động, hiệu lực, đang dùng; tích cực]
-@birth
-- [sự sinh đẻ, *  danh từ, bə:θ, sự ra đời; ngày thành lập, *  danh từ, bə:θ, the birth of the emocratic Republic of Vietnam+ ngày thành lập nước Việt nam dân chủ cộng hoà, *  danh từ, bə:θ, dòng dõi, *  danh từ, bə:θ, Chinese by birth+ dòng dõi người Trung quốc, *  danh từ, bə:θ, sinh ra, *  danh từ, bə:θ]
-@it
-- [cái đó, điều đó, con vật đó, *  đại từ, it, trời, thời tiết; ngày; đường..., *  đại từ, it, it is raining+ trời đang mưa, *  đại từ, it, it is cold+ thời tiết lạnh, *  đại từ, it, it is holiday today+ hôm nay là ngày nghỉ, *  đại từ, it, (không dịch), *  đại từ, it, it is very pleasant here+ ở đây rất thú, *  đại từ, it, it is easy to talk like that+ nói như vậy rất dễ, *  đại từ, it, em bé, được chỉ định (làm gì trong trò chơi trẻ con), *  danh từ, it, tình hình chung, hoàn cảnh, cuộc sống nói chung, *  danh từ, it, how is it with you+ anh làm ăn thế nào?, anh sinh sống thế nào?, *  danh từ, it, (thông tục),  (viết tắt) của Italian vermouth, *  danh từ, it, gin and it+ rượu gin và vecmut Y, *  danh từ, it]
+- [Từ bạn tìm không có trong từ điển chương trình!, dep trai vo loi]
 @zymotic
-- [(y học) (thuộc) sự lên men, *  tính từ, zai'mɔtik]
-@agree
-- [Không tìm thấy!]
-@tay
-- [hand, * noun, arm, * noun, person, chap, bloke, * noun, person engaged in some trade, * noun, party, side, * noun]
-@ông
-- [grandfather, * noun, ông nội+paternal grandfather. gentleman, * noun, mời ông ấy vào+Ask the gentleman to come in. you mister; you sir, * noun]
-@chó
-- [To give, * verb, anh ta cho tôi chiếc đồng hồ+he gave me a watch, * verb, cho quà+to give presents, * verb, cho không, không bán+to give (something) free of charge, not to sell it, * verb, thầy thuốc cho đơn+doctors give prescriptions, * verb, bài này đáng cho năm điểm+this task deserves to be given mark 5, * verb, cho anh ta một tuần lễ để chuẩn bị+he was given a week to prepare, * verb, kinh nghiệm lịch sử cho ta nhiều bài học quý+history has given us many valuable lessons, * verb]
-@zymurgy
-- [khoa nghiên cứu sự lên men, * danh từ]
-@math
-- [toán]
-@word
-- [từ, coded w. từ mã, commutator w. từ hoán tử, empty w. (logic học) từ rỗng, ideal w. (máy tính) từ lý tưởng, n-digit w. từ n- chữ, từ n-dấu]
-@dog
-- []
-@chủ động
-- [To take the initiative, to have the sense of initiative, * verb & adj, phát huy tính chủ động+to raise the sense of initiative, * verb & adj, dạng chủ động+the active voice, * verb & adj]
-@male
-- [trai, đực, trống, *  tính từ, meil, male friend+ bạn trai, *  tính từ, meil, male dog+ chó đực, *  tính từ, meil, male pigeon+ chim bồ câu trống, *  tính từ, meil, male chauvinist+ người đàn ông chống bình quyền nam nữ, *  tính từ, meil, mạnh mẽ, trai tráng, *  tính từ, meil, con trai, đàn ông; con đực, con trống, *  danh từ, meil]
-@relative
-- [tương đối]
-@be
-- [Không tìm thấy!]
-@dưa hấu
-- [watermelon, * noun, quả dưa hấu, * noun]
-@cam
-- [cam]
-@we
-- [chúng tôi, chúng ta, *  danh từ, wi:]
-@teacher
-- [giáo viên, cán bộ giảng dạy, *  danh từ, 'ti:tʃə]
-@car
-- [xe ô tô; xe, *  danh từ, kɑ:, to go by car+ đi bằng ô tô, *  danh từ, kɑ:, armoured car+ (quân sự) xe bọc thép, *  danh từ, kɑ:, amphibious car+ (quân sự) xe lội nước, *  danh từ, kɑ:, (từ Mỹ,nghĩa Mỹ) toa (xe lửa, xe điện), *  danh từ, kɑ:, goods car+ toa chở hàng, *  danh từ, kɑ:, giỏ khí cầu, *  danh từ, kɑ:, (từ Mỹ,nghĩa Mỹ) buồng thang máy, *  danh từ, kɑ:, (thơ ca) xe, xa, *  danh từ, kɑ:, car of the sun+ xe mặt trời, *  danh từ, kɑ:]
-@cat
-- [con mèo, *  danh từ, kæt, (động vật học) thú thuộc giống mèo (sư tử, hổ, báo...), *  danh từ, kæt, mụ đàn bà nanh ác; đứa bé hay cào cấu, *  danh từ, kæt, (hàng hải) đòn kéo neo ((cũng) cat head), *  danh từ, kæt, roi chín dài (để tra tấn) ((cũng) cat o-nine-tails), *  danh từ, kæt, con khăng (để chơi đanh khăng), *  danh từ, kæt, (tục ngữ) tắt đèn nhà ngói cũng như nhà tranh, *  danh từ, kæt, kẻ trở mặt, kẻ phản bội, *  danh từ, kæt, điều bí mật đã bị tiết lộ rồi, *  danh từ, kæt, (từ Mỹ,nghĩa Mỹ),  (từ lóng) tư bản kếch xù, tài phiệt, *  danh từ, kæt, giết hại lẫn nhau, *  danh từ, kæt, (xem) let, *  danh từ, kæt, (xem) rain, *  danh từ, kæt, đợi gió xoay chiều, đợi gió chiều nào thì theo chiều ấy, *  danh từ, kæt, (xem) room, *  danh từ, kæt, trở mặt; thay đổi ý kiến (lúc lâm nguy); phản hồi, *  danh từ, kæt, (hàng hải) kéo (neo) lên đòn kéo neo, *  ngoại động từ, kæt, đánh bằng roi chín dài, *  ngoại động từ, kæt, (thông tục) nôn mửa, *  nội động từ, kæt]
-@nurse
-- [(động vật học) cá nhám, *  danh từ, nə:s, vú em, người bảo mẫu, người giữ trẻ, *  danh từ, nə:s, sự nuôi, sự cho bú, sự trông nom; sự được nuôi, sự được cho bú, *  danh từ, nə:s, a child at nurse+ trẻ nhỏ đang tuổi phải cho bú, *  danh từ, nə:s, nơi nuôi dưỡng, xứ sở, vườn ương ((nghĩa bóng)), cái nôi ((nghĩa bóng)), *  danh từ, nə:s, the nurse of liberty+ xứ sở của tự do, *  danh từ, nə:s, y tá, nữ y tá, *  danh từ, nə:s, (nông nghiệp) cây che bóng, *  danh từ, nə:s, (động vật học) ong thợ; kiến thợ, *  danh từ, nə:s, cho bú, nuôi, trông nom (trẻ nhỏ), *  ngoại động từ, nə:s, bồng, ãm; nựng, *  ngoại động từ, nə:s, săn sóc (người bệnh); chữa (bệnh), *  ngoại động từ, nə:s, he stays at home mursing his cold+ nó ở nhà để chữa cho hết cảm, *  ngoại động từ, nə:s, chăm chút (cây con, mảnh vườn...); nâng niu (một việc gì...)), *  ngoại động từ, nə:s, nuôi, nuôi dưỡng, ấp ủ (hy vọng, hận thù; phong trào văn nghệ...), *  ngoại động từ, nə:s, ngồi ôm lấy, ngồi thu mình bên (lồng ấp, đống lửa...), *  ngoại động từ, nə:s]
-@man
-- [người, con người, *  danh từ,  số nhiều men  /men/, mæn, đàn ông, nam nhi, *  danh từ,  số nhiều men  /men/, mæn, to behave like a man+ xử sự như một trang nam nhi, *  danh từ,  số nhiều men  /men/, mæn, to be only half a man+ yếu đuối, nhút nhát, không xứng đáng là nam nhi, *  danh từ,  số nhiều men  /men/, mæn, chồng, *  danh từ,  số nhiều men  /men/, mæn, man and wife+ chồng và vợ, *  danh từ,  số nhiều men  /men/, mæn, ((thường) số nhiều) người (chỉ quân lính trong một đơn vị quân đội, công nhân trong một xí nghiệp, công xưởng...), *  danh từ,  số nhiều men  /men/, mæn, an army of 10,000 men+ một đạo quân một vạn người, *  danh từ,  số nhiều men  /men/, mæn, người hầu, đầy tớ (trai), *  danh từ,  số nhiều men  /men/, mæn, cậu, cậu cả (tiếng xưng hô thân mật khi bực dọc), *  danh từ,  số nhiều men  /men/, mæn, hurry up man, we are late!+ nhanh lên cậu cả, muộn rồi!, *  danh từ,  số nhiều men  /men/, mæn, quân cờ, *  danh từ,  số nhiều men  /men/, mæn, (từ Mỹ,nghĩa Mỹ) ông trùm trong chính giới, *  danh từ,  số nhiều men  /men/, mæn, người hiếm có, người hàng nghìn người mới có một, *  danh từ,  số nhiều men  /men/, mæn, từ bé đến lớn, từ lúc còn thơ ấu đến lúc trưởng thành, *  danh từ,  số nhiều men  /men/, mæn, người dân thường, quần chúng, *  danh từ,  số nhiều men  /men/, mæn, (xem) world, *  danh từ,  số nhiều men  /men/, mæn, (xem) about, *  danh từ,  số nhiều men  /men/, mæn, (xem) letter, *  danh từ,  số nhiều men  /men/, mæn, (xem) straw, *  danh từ,  số nhiều men  /men/, mæn, người làm đủ mọi nghề, *  danh từ,  số nhiều men  /men/, mæn, (xem) word, *  danh từ,  số nhiều men  /men/, mæn, người quân tử, *  danh từ,  số nhiều men  /men/, mæn, (từ Mỹ,nghĩa Mỹ) trùm tư bản tham dự chính quyền chỉ lĩnh mỗi năm một đô la (lương tượng trưng), *  danh từ,  số nhiều men  /men/, mæn, tự mình làm chủ, không bị lệ thuộc vào ai; sáng suốt, hoàn toàn tự giác, *  danh từ,  số nhiều men  /men/, mæn, lấy lại được bình tĩnh, *  danh từ,  số nhiều men  /men/, mæn, tỉnh lại, *  danh từ,  số nhiều men  /men/, mæn, bình phục lại, lấy lại được sức khoẻ (sau một trận ốm), *  danh từ,  số nhiều men  /men/, mæn, lại được tự do, *  danh từ,  số nhiều men  /men/, mæn, tất cả mọi người, cho đến người cuối cùng, *  danh từ,  số nhiều men  /men/, mæn, (từ Mỹ,nghĩa Mỹ),  (từ lóng) bọn mật thám, bọn chỉ điểm, *  danh từ,  số nhiều men  /men/, mæn, cung cấp người, *  ngoại động từ, mæn, to man a ship+ cung cấp thuỷ thủ cho một con tàu, *  ngoại động từ, mæn, giữ vị trí ở, đứng vào vị trí ở (ổ súng đại bác), *  ngoại động từ, mæn, làm cho mạnh mẽ, làm cho cường tráng; làm cho can đảm lên, *  ngoại động từ, mæn, to man oneself+ tự làm cho mình can đảm lên, *  ngoại động từ, mæn]
-@table
-- [bảng // lập bảng, t. of contents mục lục, t. of difference bảng sai phân, t. of integrals bảng tích phân, t. of logarithms bảng lôga, checking t. bảng kiểm tra, contingency t. bảng tiếp liên, conversion t. bảng dịch, difference t. bảng sai phân, fourfold t. (thống kê) bảng bội bốn, integral t. bảng tích phân, life t. (thống kê) bảng tuổi thọ, mortality t. (thống kê) bảng tử vong, truth t. (logic học) bảng chân trị]
-@chân
-- [Foot, leg, * noun, bước chân vào nhà+to set foot in the house, * noun, con bò bị què một chân+a cow with a lame leg, * noun, chân giừơng+the legs of a bed, the feet of a beg, * noun, chân núi+the foot of a mountain, * noun, kiềng ba chân+a three-legged support, a tripod, * noun, Position as a member, * noun, làm chân phụ việc+to have a position as an assistant, to be an assistant, * noun]
-@gg
-- [good game]
-@ss
-- [S, *  danh từ,  số nhiều Ss,  S's, es, đường cong hình S; vật hình S, *  danh từ,  số nhiều Ss,  S's, es]
-@máy tính
-- [calculator, arithmoneter, * noun]
-@soccer
-- [(thông tục) môn bóng đá, *  danh từ, 'sɔkə]
-@think
-- [mỏng]
-@d
-- [Đ,  đ 2 500 (chữ số La-mã), *  danh từ,  số nhiều Ds,  D's, di:, (âm nhạc) rê, *  danh từ,  số nhiều Ds,  D's, di:, vật hình D (bu-lông, van...), *  danh từ,  số nhiều Ds,  D's, di:]
-@xe đạp
-- [bicycle, * noun]
-@sex
-- [giống, giới]
-@h
-- [h, vật hình H, *  danh từ,  số nhiều Hs,  H's  /'eitʃiz/, eitʃ]
-@k
-- [k, *  danh từ,  số nhiều Ks,  K's, kei]
-@GiaBao
-- [Từ bạn tìm không có trong từ điển chương trình!]
+- [(y học) (thuộc) sự lên men]
+@ăn
+- [To eat]
+@halo
+- [quầng (mặt trăng, mặt trời...), *  danh từ,  số nhiều halos,  haloes, 'heilo, vầng hào quang (quanh đầu các vị thánh), *  danh từ,  số nhiều halos,  haloes, 'heilo, vòng sáng, *  danh từ,  số nhiều halos,  haloes, 'heilo, (nghĩa bóng) quang vinh ngời sáng; tiếng thơm (của những người được tôn kính, quý trọng), *  danh từ,  số nhiều halos,  haloes, 'heilo, bao quanh bằng vầng hào quang, vẽ vầng hào quang xung quanh, *  ngoại động từ, 'heilo]
 @nice
-- [(thông tục) thú vị, dễ chịu; tốt, hấp dẫn, *  tính từ, nais, a nice day+ một ngày đẹp, *  tính từ, nais, nice weather+ tiết trời đẹp, *  tính từ, nais, a nice walk+ một cuộc đi chơi thú vị, *  tính từ, nais, the room was nice and warm+ căn phòng ấm áp dễ chịu, *  tính từ, nais, xinh đẹp, *  tính từ, nais, ngoan; tốt, tử tế, chu đáo, *  tính từ, nais, how... of you to help me in my work!+ anh giúp đỡ tôi trong công việc, thật là tử tế quá, *  tính từ, nais, tỉ mỉ, câu nệ; khó tính, khảnh, cầu kỳ, *  tính từ, nais, don't be too nice about it+ không nên quá câu nệ về cái đó, *  tính từ, nais, to be too nice about one's food+ khảnh ăn, *  tính từ, nais, sành sỏi, tế nhị, tinh vi, kỹ, *  tính từ, nais, a nice audience+ những người xem sành sõi, *  tính từ, nais, to have a nice ear for music+ sành nhạc, *  tính từ, nais, a nice question+ một vấn đề tế nhị, *  tính từ, nais, a nice shade of meaning+ một ý tế nhị, *  tính từ, nais, a nice investigation+ một cuộc điều tra kỹ lưỡng, *  tính từ, nais, a nice observer+ người quan sát tinh tế, *  tính từ, nais, (mỉa mai) hay ho, *  tính từ, nais, you've got us into a nice mess!+ thật anh đã đẩy chúng tôi vào một hoàn cảnh hay ho gớm!, *  tính từ, nais, chính xác (cân), *  tính từ, nais, weighed in the nicest scales+ được cân ở cái cân chính xác nhất, *  tính từ, nais, (dùng như phó từ), *  tính từ, nais, nice and+ rất, lắm, tốt, *  tính từ, nais, socialist construction is going nice and fast+ xây dựng xã hội chủ nghĩa tiến rất nhanh, *  tính từ, nais, the way is a nice long one+ con đường dài lắm, con đường dài dằng dặc, *  tính từ, nais]
-@s
-- [S, *  danh từ,  số nhiều Ss,  S's, es, đường cong hình S; vật hình S, *  danh từ,  số nhiều Ss,  S's, es]
-@quần
-- [small ball; tenis ball. pants; trousers, * noun, to tire out; to exhaust, *verb]
-@shit
-- [rác rưởi, *  danh từ, qủng cứt, ʃit, suộc khuộng đi ỉa, *  nội động từ, ʃit]
-@absolute
-- [tuyệt đối // hình tuyệt đối]
-@river
-- [dòng sông, *  danh từ, 'rivə, to sail up the river+ đi thuyền ngược dòng sông, *  danh từ, 'rivə, to sail down the river+ đi thuyền xuôi dòng sông, *  danh từ, 'rivə, dòng chảy tràn ngập, dòng chảy lai láng, *  danh từ, 'rivə, a river of blood+ máu chảy lai láng, *  danh từ, 'rivə, (nghĩa bóng) (the river) ranh giới giữa sự sống với sự chết, *  danh từ, 'rivə, to cross the river+ qua sông; (nghĩa bóng) chết, *  danh từ, 'rivə, (định ngữ) (thuộc) sông, *  danh từ, 'rivə, river port+ cảng sông, *  danh từ, 'rivə, (xem) sell, *  danh từ, 'rivə]
-@chao
-- [Father, dad, * noun, Đức Cha+Right Reverend Father, * noun, Damn, curse, * noun, Cha đời cái áo rách này Mất chúng mất bạn vì mày áo ơi+Damn this ragged jacket which has cost me friends and acquaintances, * noun, cha nào con nấy+like father like son, * noun, cha căng chú kiết+of unknown origin; not to be trusted, * noun, cha chung không ai khóc+everybody's business is nobody's business, * noun]
+- [Từ bạn tìm không có trong từ điển chương trình!, (thông tục) thú vị, dễ chịu; tốt, hấp dẫn, *  tính từ, nais, a nice day+ một ngày đẹp, *  tính từ, nais, nice weather+ tiết trời đẹp, *  tính từ, nais, a nice walk+ một cuộc đi chơi thú vị, *  tính từ, nais, the room was nice and warm+ căn phòng ấm áp dễ chịu, *  tính từ, nais, xinh đẹp, *  tính từ, nais, ngoan; tốt, tử tế, chu đáo, *  tính từ, nais, how... of you to help me in my work!+ anh giúp đỡ tôi trong công việc, thật là tử tế quá, *  tính từ, nais, tỉ mỉ, câu nệ; khó tính, khảnh, cầu kỳ, *  tính từ, nais, don't be too nice about it+ không nên quá câu nệ về cái đó, *  tính từ, nais, to be too nice about one's food+ khảnh ăn, *  tính từ, nais, sành sỏi, tế nhị, tinh vi, kỹ, *  tính từ, nais, a nice audience+ những người xem sành sõi, *  tính từ, nais, to have a nice ear for music+ sành nhạc, *  tính từ, nais, a nice question+ một vấn đề tế nhị, *  tính từ, nais, a nice shade of meaning+ một ý tế nhị, *  tính từ, nais, a nice investigation+ một cuộc điều tra kỹ lưỡng, *  tính từ, nais, a nice observer+ người quan sát tinh tế, *  tính từ, nais, (mỉa mai) hay ho, *  tính từ, nais, you've got us into a nice mess!+ thật anh đã đẩy chúng tôi vào một hoàn cảnh hay ho gớm!, *  tính từ, nais, chính xác (cân), *  tính từ, nais, weighed in the nicest scales+ được cân ở cái cân chính xác nhất, *  tính từ, nais, (dùng như phó từ), *  tính từ, nais, nice and+ rất, lắm, tốt, *  tính từ, nais, socialist construction is going nice and fast+ xây dựng xã hội chủ nghĩa tiến rất nhanh, *  tính từ, nais, the way is a nice long one+ con đường dài lắm, con đường dài dằng dặc, *  tính từ, nais]
+@ngủ
+- [to sleep; to be asleep]
+@doctor
+- [bác sĩ y khoa, *  danh từ, 'dɔktə, tiến sĩ, *  danh từ, 'dɔktə, Doctor of Mathematics+ tiến sĩ toán học, *  danh từ, 'dɔktə, (hàng hải),  (từ lóng) người đầu bếp, anh nuôi (trên tàu), *  danh từ, 'dɔktə, bộ phận điều chỉnh (ở máy), *  danh từ, 'dɔktə, ruồi già (để câu cá), *  danh từ, 'dɔktə, (từ cổ,nghĩa cổ) nhà học giả, nhà thông thái, *  danh từ, 'dɔktə, chữa bệnh cho (ai); cho uống thuốc, tống thuốc vào, *  ngoại động từ, 'dɔktə, he is always doctoring himself+ hắn ta cứ (uống) thuốc suốt, *  ngoại động từ, 'dɔktə, cấp bằng bác sĩ y khoa cho, *  ngoại động từ, 'dɔktə, thiến, hoạn, *  ngoại động từ, 'dɔktə, sửa chữa, chấp vá (máy...), *  ngoại động từ, 'dɔktə, làm giả, giả mạo, *  ngoại động từ, 'dɔktə, ((thường) + up) pha, pha trộn (rượu, thức ăn...) (để làm kém phẩm chất), *  ngoại động từ, 'dɔktə, làm bác sĩ y khoa, *  nội động từ, 'dɔktə]
+@ních
+- [to cram, to stuff. to line. to pack, * verb]
+@teacher
+- [giáo viên]
+@- [h
+- []
+@zymurgy
+- [khoa nghiên cứu sự lên men]
+@đi ngủ
+- [to go to bed, * verb]
+@đi chơi
+- [to go out]
+@- [(từ Mỹ,nghĩa Mỹ) này!
+- []
+@bài tập
+- [Exercise]
+@can chi
+- [The signs of the Heavenly Stems and of the Earthly Branches (of ancient cosmology), Have something to do with, No need tọ]
+@fort
+- [pháo đài, công sự, *  danh từ,  (quân sự), fɔ:t, vị trí phòng thủ, *  danh từ,  (quân sự), fɔ:t, phòng ngự, cố thủ, *  danh từ,  (quân sự), fɔ:t, duy trì tình trạng sãn c, *  danh từ,  (quân sự), fɔ:t]
+@table
+- [bảng // lập bảng]
+@- [Ban chua nhap !, (từ Mỹ,nghĩa Mỹ) này!
+- []

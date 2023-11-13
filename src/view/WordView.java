@@ -105,6 +105,9 @@ public class WordView extends javax.swing.JFrame {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtFindKeyPressed(evt);
             }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtFindKeyReleased(evt);
+            }
         });
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
@@ -285,6 +288,7 @@ public class WordView extends javax.swing.JFrame {
         model.setRowCount(0);
         tableWord.setShowVerticalLines(true);
         tableWord.setGridColor(Color.gray);
+        
         List<Map.Entry<String, Word>> list = new ArrayList<>(dictionary.getDict().entrySet());
         Collections.sort(list, new Comparator<Map.Entry<String, Word>>() {
             public int compare(Map.Entry<String, Word> entry1, Map.Entry<String, Word> entry2) {
@@ -295,10 +299,6 @@ public class WordView extends javax.swing.JFrame {
         for (Map.Entry<String, Word> entry : list) {
             model.addRow(new Object[]{entry.getKey(), entry.getValue()});
         }
-//        for (Map.Entry<String, Word> entry : dictionary.getDict().entrySet()) {
-//            model.addRow(new Object[]{entry.getKey(), entry.getValue()});
-//        }
-
     }
 
 
@@ -330,18 +330,18 @@ public class WordView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void txtFindKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFindKeyPressed
-        String find = txtFind.getText();
-        Word word = dictionary.translateWord(find);
-        if (word != null) {
-            for (int row = 0; row < tableWord.getRowCount(); row++) {
-                String wordTable = (String) tableWord.getValueAt(row, 0);
-                if (find.equals(wordTable)) {
-                    tableWord.setRowSelectionInterval(row, row);
-                    tableWord.scrollRectToVisible(tableWord.getCellRect(row, 0, true));
-                    break;
-                }
-            }
-        }
+//        String find = txtFind.getText();
+//        Word word = dictionary.translateWord(find);
+//        if (word != null) {
+//            for (int row = 0; row < tableWord.getRowCount(); row++) {
+//                String wordTable = (String) tableWord.getValueAt(row, 0);
+//                if (find.equals(wordTable)) {
+//                    tableWord.setRowSelectionInterval(row, row);
+//                    tableWord.scrollRectToVisible(tableWord.getCellRect(row, 0, true));
+//                    break;
+//                }
+//            }
+//        }
     }//GEN-LAST:event_txtFindKeyPressed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
@@ -413,12 +413,31 @@ public class WordView extends javax.swing.JFrame {
         pos = tableWord.getSelectedRow();
         String selectedWord = (String) tableWord.getValueAt(pos, 0);
         word = dictionary.translateWord(selectedWord);
-        System.out.println("WORD: " + word);
         if (word != null) {
+            String[] parts =word.toString().split(", ");
+            StringBuilder bd = new StringBuilder();
+            for (String part : parts) {
+                bd.append(part).append("\n");
+            }
             txtWord.setText(word.getEng());
-            txtMeaning.setText(word + "");
+            txtMeaning.setText(bd.toString());
         }
     }//GEN-LAST:event_tableWordMouseClicked
+
+    private void txtFindKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFindKeyReleased
+         String find = txtFind.getText();
+        Word word = dictionary.translateWord(find);
+        if (word != null) {
+            for (int row = 0; row < tableWord.getRowCount(); row++) {
+                String wordTable = (String) tableWord.getValueAt(row, 0);
+                if (find.equals(wordTable)) {
+                    tableWord.setRowSelectionInterval(row, row);
+                    tableWord.scrollRectToVisible(tableWord.getCellRect(row, 0, true));
+                    break;
+                }
+            }
+        }
+    }//GEN-LAST:event_txtFindKeyReleased
 
     /**
      * @param args the command line arguments

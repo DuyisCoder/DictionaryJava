@@ -6,12 +6,15 @@ package view;
 
 import model.*;
 import java.awt.CardLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import javax.swing.JOptionPane;
+import javax.swing.Timer;
 
 /**
  *
@@ -23,18 +26,20 @@ public class QuestionView extends javax.swing.JFrame {
     private DictionaryRecent dict;
     private Word randomValue;
     private String randomKey;
-
+    MainView view ;
     public QuestionView() {
         initComponents();
         file = new IOFile();
         dict = new DictionaryRecent();
         file.readFile("recent.txt", dict);
-        dict.isBat();
+        view = new MainView();
         this.setLocationRelativeTo(null);
+        view.getCheck();
         random();
+//        hienThiForm();
 
     }
-
+   
     public void random() {
         List<Map.Entry<String, Word>> list = new ArrayList<>(dict.getDict().entrySet());
         Random rd = new Random();
@@ -49,6 +54,16 @@ public class QuestionView extends javax.swing.JFrame {
         }
 
     }
+//    public void hienThiForm(){
+//        if(view.getCheck()==true){
+//            Timer timer = new Timer(2000, new ActionListener() {
+//                @Override
+//                public void actionPerformed(ActionEvent e) {
+//                    JOptionPane.showMessageDialog(rootPane, "ok");
+//                }
+//            });
+//        }
+//    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -151,6 +166,7 @@ public class QuestionView extends javax.swing.JFrame {
         if (kq.equalsIgnoreCase(randomKey)) {
             JOptionPane.showMessageDialog(this, "Kết quả chính xác.");
             this.setVisible(false);
+
         } else {
             JOptionPane.showMessageDialog(this, "Kết quả không chính xác.");
         }

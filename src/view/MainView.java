@@ -871,10 +871,6 @@ public final class MainView extends javax.swing.JFrame {
         System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
 //        System.setProperty("freetts.voices ",   "com.sun.speech.freetts.en.us.cmu_time_awb.AlanVoiceDirectory");
         Voice voice = VoiceManager.getInstance().getVoice("kevin16");
-//        Voice[] voiceList = VoiceManager.getInstance().getVoices();
-//        for (int i = 0; i < voiceList.length; i++) {
-//            System.out.println("# Voice :" + voiceList[i].getName());
-//        }
         String txt = txtWord.getText();
         if (voice != null) {
             voice.allocate();
@@ -883,7 +879,6 @@ public final class MainView extends javax.swing.JFrame {
 
             System.out.println("Voice Volumn :" + voice.getVolume());
             boolean status = voice.speak(txt);
-//            System.out.println("Status :"+txt);
             voice.deallocate();
 
         }

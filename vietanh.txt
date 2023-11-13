@@ -1931,7 +1931,7 @@
 @ngôi trời
 - [như ngôi báu]
 @duy
-- [la SV STU nam 3 nganh CNTT]
+- [save that; except that, * adv]
 @sóng sánh
 - [to shake, * verb]
 @nước tiểu
@@ -2072,6 +2072,8 @@
 - [Draft]
 @cóc nhảy
 - [Skippingly, đọc cóc nhảy+to read skippingly, to skim through]
+@ngứa tiết
+- [(khẩu ngữ) Have one's blood up, be fiare by one's anger to action, flare up, Nghe nói xấu bạn, ngứa tiết lên+To flare up at hearing one's friend being spoken ill of]
 @đàn tràng
 - [(cũ) Makeshift platfrom (for worsshipping buđha)]
 @bão táp
@@ -2292,8 +2294,6 @@
 - [Pithecanthrope]
 @đậu phụ
 - [soya curd, * noun]
-@ lửa binh
-- [(từ cũ; nghĩa cũ) Fine and sword, war, warfare]
 @chẳng nề
 - [Not to mind]
 @phơi thây
@@ -2596,8 +2596,6 @@
 - [Simple, uncomplicated, Vấn đề không phải giản đơn như thế+The question is not so simple]
 @xao xuyến
 - [to upset, * verb]
-@@a
-- [O; oh (exclamation of surprise, regret, ect.), * excl, a, đồ chơi đẹp quá!+ Oh! What a nice toy!, * excl, a, tội nghiệp quá+Oh!What a pity!, * excl, By the way, * excl, a, còn một vấn đề này nữa +By the way, there's this one other question, * excl, Acre (100 square meters), * noun]
 @chạy tang
 - [Mourning-avoiding, cưới chạy tang+wedding (hurriedly held while a member of either party's family was dying or his death had not been announced)]
 @ngọn ngành
@@ -3854,8 +3852,6 @@
 - [to abstain from, to forbear, * verb, kiêng rượu+to forbear wine, * verb]
 @khí trời
 - [Air, atmosphere]
-@ ngang điểm
-- [Be equal in score]
 @lạc đà
 - [camel, * noun]
 @nghèo khổ
@@ -5650,6 +5646,8 @@
 - [cursory paltry, indifferent not intinate, distant, * adj]
 @ngao du
 - [Stroll about, wander about for pleasure, Đi ngao du sơn thủy+To wander about enjoying beautiful sceneries]
+@ngai
+- [throne, * noun]
 @thiên định
 - [predestined, fated, * adj]
 @cười tình
@@ -11920,8 +11918,6 @@
 - [anvil, * noun]
 @sụt sịt
 - [xem sịt]
-@ ngứa tiết
-- [(khẩu ngữ) Have one's blood up, be fiare by one's anger to action, flare up, Nghe nói xấu bạn, ngứa tiết lên+To flare up at hearing one's friend being spoken ill of]
 @sinh lý
 - [physiology, physiological, * noun]
 @đi
@@ -12960,6 +12956,8 @@
 - [(cũ) Land office]
 @giềng mối
 - [như mối giềng]
+@lui
+- [to move back; to fall back, * verb, lui lại một bước+to fall back a paco. to abate, * verb, cơn sốt rét đã lui+the fit of malaria has abated. to retire, * verb, lui về phòng+to retired to one's room, * verb]
 @cán bộ
 - [Cadre, * noun]
 @nhà vua
@@ -18066,8 +18064,6 @@
 - [watch tower, * noun]
 @dâm dật
 - [lascivious; lustful;, * adj]
-@ lui
-- [to move back; to fall back, * verb, lui lại một bước+to fall back a paco. to abate, * verb, cơn sốt rét đã lui+the fit of malaria has abated. to retire, * verb, lui về phòng+to retired to one's room, * verb]
 @bất hợp hiến
 - [Anti-constitutional]
 @cắt may
@@ -24987,7 +24983,7 @@
 @phúng
 - [(từ cũ) Bring offerings to a deceased person]
 @xe đạp
-- [bicycle]
+- [bicycle, * noun]
 @cao phân tử
 - [(hóa) Macromolecular]
 @sàm sỡ
@@ -28038,14 +28034,14 @@
 - [federation, * noun]
 @phập phồng
 - [Throb, heave, Ngực phập phồng hồi hộp+One's chest was throbbing with anxiety]
-@ ngôn ngữ học
-- [Linguistics, Ngôn ngữ học hiện đại+Modern linguistics]
 @sùng đạo
 - [devout, religious, * adj]
 @thúc bách
 - [pressing, urgent, * adj]
 @hứng tình
 - [aroused, * adj]
+@ngôn ngữ học
+- [Linguistics, Ngôn ngữ học hiện đại+Modern linguistics]
 @hủ lậu
 - [Fogyish]
 @lửa dục
@@ -28250,8 +28246,6 @@
 - [Blank, Tờ khống chỉ+A blank form]
 @củ vấn
 - [to question; to examine, * verb]
-@ tổn thất
-- [loss, * noun]
 @nhà táng
 - [catafalque, * noun]
 @ăn hại
@@ -29476,8 +29470,6 @@
 - [water, to irrigate, to sprinkle, * verb]
 @sót
 - [to remain to omit, to miss out, * verb]
-@ rốn lại
-- [Make another effort and stay on, sit on and wait]
 @tham
 - [greedy avaricious, * adj]
 @đùa dai
@@ -31758,6 +31750,8 @@
 - [Table-telling, tale-bearing, peaching]
 @như không
 - [As if nothing had happened, Nâng năm mươi cân như không+To lift fifty kilos as if nothing had happened]
+@nhịu mồm
+- [như nhịu]
 @ìn ịt
 - [xem ịt (láy)]
 @côn đồ
@@ -33462,6 +33456,8 @@
 - [Bead (of a rife-sight)]
 @sung sức
 - [in good form, fully fit, * adj]
+@ngang điểm
+- [Be equal in score]
 @bất kể
 - [Irrespective of, regardless of, bất kể già trẻ gái trai, ai cũng có nhiệm vụ bảo vệ tổ quốc+everyone, irrespective of age and sex, has the duty to defend the fatherland, bất kể ngày đêm+day or night, Regardless of everything, sợ hết hồn, chạy bất kể+to run for dear life, frightened out of one's wits]
 @nối
@@ -36408,6 +36404,8 @@
 - [all over]
 @ngông cuồng
 - [eccentric, * adj]
+@lửa binh
+- [(từ cũ; nghĩa cũ) Fine and sword, war, warfare]
 @bì phu
 - [(cũ) Skin]
 @giỗ đầu
@@ -37902,6 +37900,8 @@
 - [a little; moment; instant; a taste, một chút nữa+a little more]
 @nhóp nhép
 - [Munching noise, Nhai trầu nhóp nhép+To chew a quid of betel and areace-nut with a munching noise]
+@rốn lại
+- [Make another effort and stay on, sit on and wait]
 @mặt tiền
 - [front, * noun, mặt tiền của một căn nhà+the front of a building, * noun]
 @rượu
@@ -42172,6 +42172,8 @@
 - [Teach affectionnately, admonish affectionately (young people)]
 @lẩm cẩm
 - [doting, * adj, kẻ lẩm cẩm+a doting person, * adj]
+@tổn thất
+- [loss, * noun]
 @mái chèo
 - [dar, * noun]
 @gia giáo
@@ -45030,8 +45032,6 @@
 - [Companion (for life), wife or husband (sharing the same life for good and for bad), * noun]
 @phù hợp
 - [to agree; to tally; to accord, * verb]
-@ nhịu mồm
-- [như nhịu]
 @vữa
 - [mortar, * noun]
 @òm ọp
@@ -46270,8 +46270,6 @@
 - [trăm thứ bà giằn Odds and ends]
 @hiu quạnh
 - [deserted; lonely, * adj]
-@ ngai
-- [throne, * noun]
 @hải cảng
 - [port; harbour, * noun]
 @cảm nghĩ

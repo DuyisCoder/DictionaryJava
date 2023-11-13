@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.swing.JOptionPane;
@@ -72,6 +73,7 @@ public class WordViewViet extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tableWord = new javax.swing.JTable();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -209,7 +211,7 @@ public class WordViewViet extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnUpdate)
                     .addComponent(btnClear))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
 
         tableWord.setAutoCreateRowSorter(true);
@@ -232,19 +234,30 @@ public class WordViewViet extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tableWord);
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A-Z", "Z-A" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(119, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(37, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -394,7 +407,7 @@ public class WordViewViet extends javax.swing.JFrame {
             if (eng.isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Vui long chon tu can update", "Thong bao", JOptionPane.ERROR_MESSAGE);
             } else if (dict.timTheoKey(eng) == true) {
-                dict.updatee(eng, list.getList());
+                dict.update(eng, list.getList());
                 file.ghiFile(fileVNtoEN, dict);
                 JOptionPane.showMessageDialog(this, "Update thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
                 txtFind.setText("");
@@ -426,6 +439,35 @@ public class WordViewViet extends javax.swing.JFrame {
             txtMeaning.setText(bd + "");
         }
     }//GEN-LAST:event_tableWordMouseClicked
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        int index =jComboBox1.getSelectedIndex();
+        if(index ==0){
+            model.setRowCount(0);
+            List<Map.Entry<String,WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
+            Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>(){
+                @Override
+                public int compare(Map.Entry<String, WordVN> o1, Map.Entry<String, WordVN> o2) {
+                    return o1.getKey().compareTo(o2.getKey());
+                }
+            });
+            for (Map.Entry<String, WordVN> entry : list) {
+                model.addRow(new Object[]{entry.getKey(),entry.getValue()});
+            }
+        }else{
+             model.setRowCount(0);
+            List<Map.Entry<String,WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
+            Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>(){
+                @Override
+                public int compare(Map.Entry<String, WordVN> o1, Map.Entry<String, WordVN> o2) {
+                    return o2.getKey().compareTo(o1.getKey());
+                }
+            });
+            for (Map.Entry<String, WordVN> entry : list) {
+                model.addRow(new Object[]{entry.getKey(),entry.getValue()});
+            }
+        }
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -475,6 +517,7 @@ public class WordViewViet extends javax.swing.JFrame {
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnRemove;
     private javax.swing.JButton btnUpdate;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

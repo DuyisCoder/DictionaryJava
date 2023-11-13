@@ -175,28 +175,29 @@ public class IOFile {
                 File f = new File(tenFile);
                 FileReader fr = new FileReader(f);
                 BufferedReader br = new BufferedReader(fr);
-                br.readLine();
+             
                 WordVN word = new WordVN();
-                
-                word.setViet(br.readLine());
-//                System.out.println("br" + br.readLine());
+                word.setViet(br.readLine().trim());
+       
                 while (true) {
-                    String line = br.readLine();
+                       String line = br.readLine();
                     if (line == null) {
                         break;
                     } else if (line.startsWith("@")) {
                         word = new WordVN();
-                        String[] parts = line.split("/");
-                        if (parts.length == 2) {
-                            word.setViet(parts[0].substring(1).trim());
-                            word.setPhienAm(parts[1].trim());
-                            System.out.println("VIET :" + word.getViet());
-//                            System.out.println("PHIEN AM :" + word.getPhienAm());
-                        } else {
-                            word.setViet(line.trim().substring(1));
-//                            System.out.println("VIET :" + word.getViet());
-
-                        }
+//                        System.out.println("word"+line.substring(1));
+                        word.setViet(line.substring(1).trim());
+//                        String[] parts = line.split("/");
+//                        if (parts.length == 2) {
+//                            word.setViet(parts[0].substring(0).trim());
+//                            System.out.println("VIET :"+parts[0].trim());
+//                            word.setPhienAm(parts[1].trim());
+////                            System.out.println("PHIEN AM :" + word.getPhienAm());
+//                        } else {
+//                            word.setViet(line.trim().substring(1));
+////                            System.out.println("VIET :" + word.getViet());
+//
+//                        }
                     } else if (line.startsWith("*")) {
                         word.setGioiTu(line.trim());
 //                        System.out.println("GIOI TU :" + word.getGioiTu());
@@ -444,9 +445,9 @@ public class IOFile {
     }
     
     public static void main(String[] args) {
-        Dictionary dict = new Dictionary();
+        DictionaryVNtoEN dict = new DictionaryVNtoEN();
         IOFile file = new IOFile();
-        file.readFile("anhviet2.txt", dict);
+        file.readFile("vietanh.txt", dict);
 //                System.out.println("Dict truoc khi sort :"+dict);
 //        file.readFile("anhviet2.txt", dict);
 

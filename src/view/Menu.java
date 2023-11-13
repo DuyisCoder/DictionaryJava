@@ -11,7 +11,7 @@ package view;
 public class Menu {
     public void Menu(String[] args){
 
-     MainView view = new  MainView();
-     view.setVisible(true);
+//     MainView view = new  MainView();
+//     view.setVisible(true);
     }
 }

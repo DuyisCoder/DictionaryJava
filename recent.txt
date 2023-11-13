@@ -1,3 +1,5 @@
+@@chào
+- [- To greet, to salute, * verb, =chào cờ+to salute the flag, * verb, =chào từ biệt+to say good-bye, * verb, =ngả mũ chào thầy giáo+to take off one's hat and greet one's teacher, * verb, =chào chị, tôi về+good-bye madam (miss, sister...), I am going back, * verb, -To solicit, * verb, =nhà hàng chào khách+the shopkeeper solicits customers, the shopkeeper solicits people for their custom, * verb, =chào hàng+to solicit customers to buy one's goods, to solicit custom for one's goods, to cry one's wares, * verb]
 @hi
 - [(từ Mỹ,nghĩa Mỹ) này!
 ê! (gọi
@@ -5,45 +7,48 @@ chào)
 *  thán từ
 hai
 ]
-@student
-- [học sinh đại học]
-@milk
-- [sữa]
-@duy
-- [Từ bạn tìm không có trong từ điển chương trình!, dep trai vo loi]
-@zymotic
-- [(y học) (thuộc) sự lên men]
-@ăn
-- [To eat]
-@halo
-- [quầng (mặt trăng, mặt trời...), *  danh từ,  số nhiều halos,  haloes, 'heilo, vầng hào quang (quanh đầu các vị thánh), *  danh từ,  số nhiều halos,  haloes, 'heilo, vòng sáng, *  danh từ,  số nhiều halos,  haloes, 'heilo, (nghĩa bóng) quang vinh ngời sáng; tiếng thơm (của những người được tôn kính, quý trọng), *  danh từ,  số nhiều halos,  haloes, 'heilo, bao quanh bằng vầng hào quang, vẽ vầng hào quang xung quanh, *  ngoại động từ, 'heilo]
+@bảo
+- [an cut]
+@right
+- [đúng]
+@bo
+- [suỵt!, *  thán từ, bou, nhát như cáy, *  thán từ, bou, (từ Mỹ,nghĩa Mỹ) bạn, bạn già, *  danh từ, bou]
 @nice
-- [Từ bạn tìm không có trong từ điển chương trình!, (thông tục) thú vị, dễ chịu; tốt, hấp dẫn, *  tính từ, nais, a nice day+ một ngày đẹp, *  tính từ, nais, nice weather+ tiết trời đẹp, *  tính từ, nais, a nice walk+ một cuộc đi chơi thú vị, *  tính từ, nais, the room was nice and warm+ căn phòng ấm áp dễ chịu, *  tính từ, nais, xinh đẹp, *  tính từ, nais, ngoan; tốt, tử tế, chu đáo, *  tính từ, nais, how... of you to help me in my work!+ anh giúp đỡ tôi trong công việc, thật là tử tế quá, *  tính từ, nais, tỉ mỉ, câu nệ; khó tính, khảnh, cầu kỳ, *  tính từ, nais, don't be too nice about it+ không nên quá câu nệ về cái đó, *  tính từ, nais, to be too nice about one's food+ khảnh ăn, *  tính từ, nais, sành sỏi, tế nhị, tinh vi, kỹ, *  tính từ, nais, a nice audience+ những người xem sành sõi, *  tính từ, nais, to have a nice ear for music+ sành nhạc, *  tính từ, nais, a nice question+ một vấn đề tế nhị, *  tính từ, nais, a nice shade of meaning+ một ý tế nhị, *  tính từ, nais, a nice investigation+ một cuộc điều tra kỹ lưỡng, *  tính từ, nais, a nice observer+ người quan sát tinh tế, *  tính từ, nais, (mỉa mai) hay ho, *  tính từ, nais, you've got us into a nice mess!+ thật anh đã đẩy chúng tôi vào một hoàn cảnh hay ho gớm!, *  tính từ, nais, chính xác (cân), *  tính từ, nais, weighed in the nicest scales+ được cân ở cái cân chính xác nhất, *  tính từ, nais, (dùng như phó từ), *  tính từ, nais, nice and+ rất, lắm, tốt, *  tính từ, nais, socialist construction is going nice and fast+ xây dựng xã hội chủ nghĩa tiến rất nhanh, *  tính từ, nais, the way is a nice long one+ con đường dài lắm, con đường dài dằng dặc, *  tính từ, nais]
-@ngủ
-- [to sleep; to be asleep]
-@doctor
-- [bác sĩ y khoa, *  danh từ, 'dɔktə, tiến sĩ, *  danh từ, 'dɔktə, Doctor of Mathematics+ tiến sĩ toán học, *  danh từ, 'dɔktə, (hàng hải),  (từ lóng) người đầu bếp, anh nuôi (trên tàu), *  danh từ, 'dɔktə, bộ phận điều chỉnh (ở máy), *  danh từ, 'dɔktə, ruồi già (để câu cá), *  danh từ, 'dɔktə, (từ cổ,nghĩa cổ) nhà học giả, nhà thông thái, *  danh từ, 'dɔktə, chữa bệnh cho (ai); cho uống thuốc, tống thuốc vào, *  ngoại động từ, 'dɔktə, he is always doctoring himself+ hắn ta cứ (uống) thuốc suốt, *  ngoại động từ, 'dɔktə, cấp bằng bác sĩ y khoa cho, *  ngoại động từ, 'dɔktə, thiến, hoạn, *  ngoại động từ, 'dɔktə, sửa chữa, chấp vá (máy...), *  ngoại động từ, 'dɔktə, làm giả, giả mạo, *  ngoại động từ, 'dɔktə, ((thường) + up) pha, pha trộn (rượu, thức ăn...) (để làm kém phẩm chất), *  ngoại động từ, 'dɔktə, làm bác sĩ y khoa, *  nội động từ, 'dɔktə]
-@ních
-- [to cram, to stuff. to line. to pack, * verb]
-@teacher
-- [giáo viên]
-@- [h
-- []
-@zymurgy
-- [khoa nghiên cứu sự lên men]
-@đi ngủ
-- [to go to bed, * verb]
-@đi chơi
-- [to go out]
+- [(thông tục) thú vị]
+@thầy tu
+- [priest, monk, * noun]
+@bố
+- [Father]
 @- [(từ Mỹ,nghĩa Mỹ) này!
 - []
-@bài tập
-- [Exercise]
-@can chi
-- [The signs of the Heavenly Stems and of the Earthly Branches (of ancient cosmology), Have something to do with, No need tọ]
-@fort
-- [pháo đài, công sự, *  danh từ,  (quân sự), fɔ:t, vị trí phòng thủ, *  danh từ,  (quân sự), fɔ:t, phòng ngự, cố thủ, *  danh từ,  (quân sự), fɔ:t, duy trì tình trạng sãn c, *  danh từ,  (quân sự), fɔ:t]
+@river
+- [dòng sông]
+@thầy bói
+- [fortuneteller, soothsayer, * noun]
+@logic
+- [lôgic
+Aristotelian l. lôgic Arixtôt
+basic l. lôgic cơ sở
+classic l. lôgic cổ điển
+combinatory l. lôgic tổng hợp
+constructive l. lôgic kiến thiết
+dialectical l. lôgic biện chứng
+formal l. lôgic hình thức
+inductive l. lôgic quy nạp
+intensional l. lôgic nội hàm
+intuitionistic l. lôgic trực giác chủ nghĩa
+many-valued l. lôgic đa trị
+n-valued l. lôgic n-trị
+set-theoretic predicate l. lôgic thuyết tập về các vị từ
+symbolic l. lôgic ký hiệu
+traditional l. lôgic cổ truyền
+]
+@math
+- [toán
+]
+@cha
+- [Father]
 @table
 - [bảng // lập bảng]
-@- [Ban chua nhap !, (từ Mỹ,nghĩa Mỹ) này!
-- []
+@thầy
+- [teacher]

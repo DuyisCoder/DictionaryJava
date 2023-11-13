@@ -1,5 +1,4 @@
-@
-- []
+
 @hi
 - [xin chào]
 @ních
@@ -10,6 +9,15 @@
 - [đồ gia vị, *  danh từ, spais, cái làm thêm đậm đà (câu chuyện...), *  danh từ, spais, hơi hướng, vẻ; một chút, một ít, *  danh từ, spais, there is a spice of malice in him+ tính nó có hơi hiểm độc một chút, *  danh từ, spais, a spice of envy in her tone+ vẻ ghen tị trong giọng nói của cô ta, *  danh từ, spais, cho gia vị (vào thức ăn), *  ngoại động từ, spais, làm đậm đà, thêm mắm thêm muối (vào câu chuyện), *  ngoại động từ, spais]
 @zymotic
 - []
+@gần
+- [near; next to
+ * adj
+ việc làm gần xong+the job is near completion
+ * adj
+ Nearly; about
+ * adj
+ gần hai chục cuốn sách+nearly twenty books
+ * adj]
 @sugar
 - [đường, *  danh từ, 'ʃugə, granulated sugar+ đường kính, *  danh từ, 'ʃugə, lump sugar+ đường miếng, *  danh từ, 'ʃugə, lời đường mật, lời nịnh hót, *  danh từ, 'ʃugə, (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiền, xìn, *  danh từ, 'ʃugə, bỏ đường, rắc đường; bọc đường, *  ngoại động từ, 'ʃugə, (nghĩa bóng) ((thường) dạng bị động) làm cho ngọt ngào, phết đường, bọc đường, *  ngoại động từ, 'ʃugə, (từ lóng) làm việc chểnh mảng, không làm tròn bổn phận, *  nội động từ, 'ʃugə]
 @nice

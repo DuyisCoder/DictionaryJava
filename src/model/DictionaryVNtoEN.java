@@ -83,7 +83,7 @@ public class DictionaryVNtoEN {
             file.ghiFile("vietanh.txt", this);
         }
     }
-   public void updatee(String eng, List<String> vi) {
+   public void update(String eng, List<String> vi) {
         if (!dict.containsKey(eng)) {
             System.out.println("Khong ton tai");
         }else{
@@ -94,6 +94,7 @@ public class DictionaryVNtoEN {
             
         }
     }
+  
     
     
     

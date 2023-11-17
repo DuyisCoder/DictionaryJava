@@ -13,10 +13,10 @@ import java.util.Map;
  *
  * @author minhduy
  */
-public class DictionaryRecent{
+public class DictionaryRecent {
+
     private Map<String, Word> dict;
     private Word w;
-    private static boolean bat;
     IOFile file = new IOFile();
 
     public DictionaryRecent() {
@@ -38,33 +38,6 @@ public class DictionaryRecent{
         }
         return false;
     }
-   public List<String> timTheoNghia(String tuCanTim) {
-    List<String> ketQua = new ArrayList<>();
-
-    for (Map.Entry<String, Word> entry : dict.entrySet()) {
-        Word word = entry.getValue();
-        for (String nghia : word.getViet()) {
-            if (nghia.equalsIgnoreCase(tuCanTim)) {
-                ketQua.add(word.getEng());
-                break; // Bạn có thể chọn thoát khỏi vòng lặp sau khi tìm thấy kết quả đầu tiên (hoặc không tùy theo yêu cầu của bạn)
-            }
-        }
-    }
-
-    return ketQua;
-}
-
-    public static boolean isBat() {
-        return bat;
-    }
-
-    public static void setBat(boolean bat) {
-        DictionaryRecent.bat = bat;
-    }
-
-
-
-
 
     public void addWord(String eng, List<String> vi) {
         if (!dict.containsKey(eng)) {
@@ -91,10 +64,8 @@ public class DictionaryRecent{
 
     @Override
     public String toString() {
-        return "DictionaryRecent{" + "dict=" + dict ;
+        return "DictionaryRecent{" + "dict=" + dict;
     }
-
-    
 
     public void loadData(String eng, List<String> vi, String gioiTu, String phienAm) {
         Word word = new Word(eng, vi, gioiTu, phienAm);

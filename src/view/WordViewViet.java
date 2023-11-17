@@ -15,7 +15,6 @@ import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-
 /**
  *
  * @author minhduy
@@ -27,7 +26,7 @@ public class WordViewViet extends javax.swing.JFrame {
 
     DictionaryVNtoEN dict;
     DefaultTableModel model;
-    
+
     private int pos = 0;
     WordVN word;
     IOFile file;
@@ -74,6 +73,7 @@ public class WordViewViet extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tableWord = new javax.swing.JTable();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -241,6 +241,9 @@ public class WordViewViet extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jLabel5.setText("Sort");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -248,7 +251,10 @@ public class WordViewViet extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(18, 18, 18)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(119, Short.MAX_VALUE))
         );
@@ -256,7 +262,9 @@ public class WordViewViet extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -299,18 +307,18 @@ public class WordViewViet extends javax.swing.JFrame {
         model.setRowCount(0);
         tableWord.setShowVerticalLines(true);
         tableWord.setGridColor(Color.gray);
-        List<Map.Entry<String,WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
-        
-        Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>(){
+        List<Map.Entry<String, WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
+
+        Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>() {
 
             public int compare(Map.Entry<String, WordVN> o1, Map.Entry<String, WordVN> o2) {
-                
+
                 return o1.getKey().compareTo(o2.getKey());
             }
-            
+
         });
         for (Map.Entry<String, WordVN> entry : list) {
-            model.addRow(new Object[]{entry.getKey(),entry.getValue()});
+            model.addRow(new Object[]{entry.getKey(), entry.getValue()});
         }
 
     }
@@ -335,7 +343,7 @@ public class WordViewViet extends javax.swing.JFrame {
                 txtFind.setText("");
                 viewTable();
                 dict.setDict((Map<String, WordVN>) dict);
-                
+
             }
 
         } else {
@@ -374,7 +382,6 @@ public class WordViewViet extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Vui long chon tu can xoa", "Thong bao", JOptionPane.ERROR_MESSAGE);
             } else if (dict.timTheoKey(word) == true) {
                 int choose = JOptionPane.showConfirmDialog(this, "Bạn có muốn xóa từ \" " + word + " \"không ?", word, WIDTH);
-
                 if (choose == JOptionPane.YES_OPTION) {
                     dict.deleteWord(word);
                     JOptionPane.showMessageDialog(this, "Xoa thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
@@ -399,15 +406,16 @@ public class WordViewViet extends javax.swing.JFrame {
         String eng = txtWord.getText();
         String meaning = txtMeaning.getText();
         meaning = meaning.replaceAll("\\[|\\]", "");
-        System.out.println("LIST" + meaning.replaceAll("\\[]", ""));
-        list = new ListWord();
-        list.getList().add(meaning);
+//        list = new ListWord();
+//        list.getList().add(meaning);
+        List<String> list1 = new ArrayList<>();
+        list1.add(meaning);
 
         if (eng != null) {
             if (eng.isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Vui long chon tu can update", "Thong bao", JOptionPane.ERROR_MESSAGE);
             } else if (dict.timTheoKey(eng) == true) {
-                dict.update(eng, list.getList());
+                dict.update(eng, list1);
                 file.ghiFile(fileVNtoEN, dict);
                 JOptionPane.showMessageDialog(this, "Update thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
                 txtFind.setText("");
@@ -430,7 +438,7 @@ public class WordViewViet extends javax.swing.JFrame {
         String selectedWord = (String) tableWord.getValueAt(pos, 0);
         word = dict.translateWord(selectedWord);
         if (word != null) {
-            String[] parts =word.toString().split(",");
+            String[] parts = word.toString().split(",");
             StringBuilder bd = new StringBuilder();
             for (String part : parts) {
                 bd.append(part).append("\n");
@@ -441,30 +449,30 @@ public class WordViewViet extends javax.swing.JFrame {
     }//GEN-LAST:event_tableWordMouseClicked
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        int index =jComboBox1.getSelectedIndex();
-        if(index ==0){
+        int index = jComboBox1.getSelectedIndex();
+        if (index == 0) {
             model.setRowCount(0);
-            List<Map.Entry<String,WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
-            Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>(){
+            List<Map.Entry<String, WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
+            Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>() {
                 @Override
                 public int compare(Map.Entry<String, WordVN> o1, Map.Entry<String, WordVN> o2) {
                     return o1.getKey().compareTo(o2.getKey());
                 }
             });
             for (Map.Entry<String, WordVN> entry : list) {
-                model.addRow(new Object[]{entry.getKey(),entry.getValue()});
+                model.addRow(new Object[]{entry.getKey(), entry.getValue()});
             }
-        }else{
-             model.setRowCount(0);
-            List<Map.Entry<String,WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
-            Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>(){
+        } else {
+            model.setRowCount(0);
+            List<Map.Entry<String, WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
+            Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>() {
                 @Override
                 public int compare(Map.Entry<String, WordVN> o1, Map.Entry<String, WordVN> o2) {
                     return o2.getKey().compareTo(o1.getKey());
                 }
             });
             for (Map.Entry<String, WordVN> entry : list) {
-                model.addRow(new Object[]{entry.getKey(),entry.getValue()});
+                model.addRow(new Object[]{entry.getKey(), entry.getValue()});
             }
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
@@ -522,6 +530,7 @@ public class WordViewViet extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

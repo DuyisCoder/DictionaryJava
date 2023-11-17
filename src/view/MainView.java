@@ -16,11 +16,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.TimerTask;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -89,17 +93,24 @@ public final class MainView extends javax.swing.JFrame {
         tableFavorite.setShowVerticalLines(true);
         tableFavorite.setGridColor(Color.gray);
         model1.setRowCount(0);
-        for (Map.Entry<String, Word> entry : dictF.getDict().entrySet()) {
-            model1.addRow(new Object[]{entry.getKey(), entry.getValue()});
+        List<Entry<String,Word>> list = new ArrayList<>(dictF.getDict().entrySet());
+        Collections.sort(list,new Comparator<Entry<String, Word>>(){
+            @Override
+            public int compare(Entry<String, Word> o1, Entry<String, Word> o2) {
+              return o1.getKey().compareTo(o2.getKey());
+            }
+        });
+        for (Entry<String, Word> entry : list) {
+             model1.addRow(new Object[]{entry.getKey(), entry.getValue()});
         }
     }
 
-    public void viewTableVietoENG() {
-        model1.setRowCount(0);
-        for (Map.Entry<String, WordVN> entry : dictV.getDict().entrySet()) {
-            model1.addRow(new Object[]{entry.getKey(), entry.getValue()});
-        }
-    }
+//    public void viewTableVietoENG() {
+//        model1.setRowCount(0);
+//        for (Map.Entry<String, WordVN> entry : dictV.getDict().entrySet()) {
+//            model1.addRow(new Object[]{entry.getKey(), entry.getValue()});
+//        }
+//    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -515,7 +526,7 @@ public final class MainView extends javax.swing.JFrame {
         if (indexCombo == 0) {
             if (word != null) {
                 if (dictionary.translateWord(word) == null) {
-                    JOptionPane.showMessageDialog(this, "Them that bai vi tu ban nhap khong co trong tu dien!!");
+                    JOptionPane.showMessageDialog(this, "Them that bai vi tu ban nhap khong co trong tu dien Tieng Anh!!");
                 } else {
                     if (dictF.timTheoKey(word) == true) {
                         JOptionPane.showMessageDialog(this, "Tu khoa da ton tai");
@@ -532,7 +543,7 @@ public final class MainView extends javax.swing.JFrame {
         } else {
             if (word != null) {
                 if (dictV.translateWord(word) == null) {
-                    JOptionPane.showMessageDialog(this, "Them that bai vi tu ban nhap khong co trong tu dien!!");
+                    JOptionPane.showMessageDialog(this, "Them that bai vi tu ban nhap khong co trong tu dien Tieng Viet!!");
                 } else {
                     if (dictF.timTheoKey(word) == true) {
                         JOptionPane.showMessageDialog(this, "Tu khoa da ton tai");
@@ -565,16 +576,19 @@ public final class MainView extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(this, "Xóa thất bại !");
         }
-
     }//GEN-LAST:event_btnDisLikeActionPerformed
 
     private void comboLanguagesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboLanguagesActionPerformed
         // TODO add your handling code here:
         int combo1 = comboLanguages.getSelectedIndex();
         if (combo1 == 0) {
+            txtNghia.setText("");
+            txtWord.setText("");
             ComboLangueges2.setSelectedIndex(0);
         } else {
             ComboLangueges2.setSelectedIndex(1);
+            txtNghia.setText("");
+            txtWord.setText("");
         }
 
     }//GEN-LAST:event_comboLanguagesActionPerformed
@@ -848,28 +862,26 @@ public final class MainView extends javax.swing.JFrame {
         return MainView.check=c;
     }
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-       int delay = 10000; // 10 seconds
-                   QuestionView view = new QuestionView();
-
-        if (jToggleButton1.isSelected()) {
-            Timer timer = new Timer(delay, new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    view.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                    view.setVisible(true);
-                }
-
-            });
-            timer.start();
-            timer.setRepeats(false);
-
-        }
-
+//       int delay = 10000; // 10 seconds
+//       QuestionView view = new QuestionView();
+//
+//        if (jToggleButton1.isSelected()) {
+//            Timer timer = new Timer(delay, new ActionListener() {
+//                @Override
+//                public void actionPerformed(ActionEvent e) {
+//                    view.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+//                    view.setVisible(true);
+//                }
+//               
+//            });
+//            timer.start();
+//            timer.setRepeats(false);
+//     }
+        
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void btnPhatAmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPhatAmActionPerformed
         System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
-//        System.setProperty("freetts.voices ",   "com.sun.speech.freetts.en.us.cmu_time_awb.AlanVoiceDirectory");
         Voice voice = VoiceManager.getInstance().getVoice("kevin16");
         String txt = txtWord.getText();
         if (voice != null) {

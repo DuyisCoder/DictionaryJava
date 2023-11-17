@@ -74,6 +74,7 @@ public class WordView extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tableWord = new javax.swing.JTable();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -244,6 +245,9 @@ public class WordView extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jLabel5.setText("Sort");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -252,14 +256,19 @@ public class WordView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(119, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(18, Short.MAX_VALUE)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -397,15 +406,16 @@ public class WordView extends javax.swing.JFrame {
         String eng = txtWord.getText();
         String meaning = txtMeaning.getText();
         meaning = meaning.replaceAll("\\[|\\]", "");
-        System.out.println("LIST" + meaning.replaceAll("\\[]", ""));
-        list = new ListWord();
-        list.getList().add(meaning);
-
+//        list = new ListWord();
+//        list.getList().add(meaning);
+        
+        List<String> list= new ArrayList<>();
+        list.add(meaning);
         if (eng != null) {
             if (eng.isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Vui long chon tu can update", "Thong bao", JOptionPane.ERROR_MESSAGE);
             } else if (dictionary.timTheoKey(eng) == true) {
-                dictionary.updatee(eng, list.getList());
+                dictionary.updatee(eng, list);
                 file.ghiFile(fileENtoVN, dictionary);
                 JOptionPane.showMessageDialog(this, "Update thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
                 txtFind.setText("");
@@ -457,15 +467,14 @@ public class WordView extends javax.swing.JFrame {
         int index =jComboBox1.getSelectedIndex();
         model.setRowCount(0);
         if(index ==0){
-            
-            List<Map.Entry<String,Word>> list = new ArrayList<>(dictionary.getDict().entrySet());
-            Collections.sort(list, new Comparator<Map.Entry<String, Word>>(){
-                @Override
-                public int compare(Map.Entry<String, Word> o1, Map.Entry<String, Word> o2) {
-                   return o1.getKey().compareTo(o2.getKey());          
-                }
-                
-            });
+           List<Map.Entry<String,Word>> list = new ArrayList<>(dictionary.getDict().entrySet());
+           Collections.sort(list, new Comparator<Map.Entry<String, Word>>(){
+               @Override
+               public int compare(Map.Entry<String, Word> o1, Map.Entry<String, Word> o2) {
+                   return o1.getKey().compareTo(o2.getKey());
+               }
+               
+           });
             for (Map.Entry<String, Word> entry : list) {
                 model.addRow(new Object[]{entry.getKey(),entry.getValue()});
             }
@@ -534,6 +543,7 @@ public class WordView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

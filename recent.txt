@@ -1,54 +1,54 @@
-@@chào
-- [- To greet, to salute, * verb, =chào cờ+to salute the flag, * verb, =chào từ biệt+to say good-bye, * verb, =ngả mũ chào thầy giáo+to take off one's hat and greet one's teacher, * verb, =chào chị, tôi về+good-bye madam (miss, sister...), I am going back, * verb, -To solicit, * verb, =nhà hàng chào khách+the shopkeeper solicits customers, the shopkeeper solicits people for their custom, * verb, =chào hàng+to solicit customers to buy one's goods, to solicit custom for one's goods, to cry one's wares, * verb]
-@hi
-- [(từ Mỹ,nghĩa Mỹ) này!
-ê! (gọi
-chào)
-*  thán từ
-hai
+@one-handed
+- [một tay, *  tính từ, 'wʌn'hændid, làm bằng một tay, *  tính từ, 'wʌn'hændid]
+@sư tử
+- [lion]
+@bi
+- [Marble
+ * noun
+ trẻ con đánh bi+children played marbles
+ * noun
+ Ball
+ * noun
+ ổ bi+a ball-bearing
+ * noun
+ kẹo bi+sugar-plums
+ * noun
+ Tragic
+ * adj
+ nhìn đời bi lắm+to have a very tragic view of life
+ * adj
+ tình cảnh rất bi+the situation is very tragic
+ * adj
 ]
-@bảo
-- [an cut]
-@right
-- [đúng]
-@bo
-- [suỵt!, *  thán từ, bou, nhát như cáy, *  thán từ, bou, (từ Mỹ,nghĩa Mỹ) bạn, bạn già, *  danh từ, bou]
-@nice
-- [(thông tục) thú vị]
-@thầy tu
-- [priest, monk, * noun]
-@bố
-- [Father]
-@- [(từ Mỹ,nghĩa Mỹ) này!
-- []
-@river
-- [dòng sông]
-@thầy bói
-- [fortuneteller, soothsayer, * noun]
-@logic
-- [lôgic
-Aristotelian l. lôgic Arixtôt
-basic l. lôgic cơ sở
-classic l. lôgic cổ điển
-combinatory l. lôgic tổng hợp
-constructive l. lôgic kiến thiết
-dialectical l. lôgic biện chứng
-formal l. lôgic hình thức
-inductive l. lôgic quy nạp
-intensional l. lôgic nội hàm
-intuitionistic l. lôgic trực giác chủ nghĩa
-many-valued l. lôgic đa trị
-n-valued l. lôgic n-trị
-set-theoretic predicate l. lôgic thuyết tập về các vị từ
-symbolic l. lôgic ký hiệu
-traditional l. lôgic cổ truyền
-]
-@math
-- [toán
-]
+@sói
+- [wolf]
+@duy
+- [minh duy 123]
+@zymotic
+- [(y học) (thuộc) sự lên men]
+@girl
+- [con gái]
+@mẹ
+- [mother]
+@boy
+- [con trai]
+@con trai
+- [Son]
+@mít
+- [(Bot)jack-tree]
+@mèo
+- [cat]
+@xúc xích
+- [sausage]
+@ổi
+- [guava]
+@exact
+- [chính xác]
+@can chi
+- [The signs of the Heavenly Stems and of the Earthly Branches (of ancient cosmology), Have something to do with, No need tọ]
+@company
+- [(toán kinh tế) hãng]
+@position
+- [vị trí; tình hình; lập trường]
 @cha
 - [Father]
-@table
-- [bảng // lập bảng]
-@thầy
-- [teacher]

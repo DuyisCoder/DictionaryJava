@@ -1,11 +1,3 @@
-@bát quái
-- [Eight-sign figure, * noun, bùa bát quái+eight-sign charm, * noun, trận đồ bát quái+labyrinthine battle array laid on the eight-sign figure's pattern, * noun]
-@hiền nhân
-- [Saage, wise person]
-@chẳng vừa
-- [No less terrible, Cậu ta cũng chẳng vừa đâu+He is no less terrible, he is as terrible as anybody]
-@con đỏ
-- [Newly-born baby, Helpless member of the people]
 @quây quần
 - [to gather around; to cluster, * verb, quây quần chung quanh người nào+to cluster round someone, * verb]
 @chửi mắng
@@ -1931,7 +1923,7 @@
 @ngôi trời
 - [như ngôi báu]
 @duy
-- [save that; except that, * adv]
+- [sv năm 3 js,html,css,java,c#,c++,python,sql,mongodb,cloudinary,reactjs,express,axios,dotenv,sequelize,ejs,body-parser,bcryptJs,cors]
 @sóng sánh
 - [to shake, * verb]
 @nước tiểu
@@ -4591,7 +4583,7 @@
 @đá đít
 - [(thông tục) Kick out]
 @me
-- [A child's word for mother (like mom) tamarind, cây me+tamarind-tree]
+- [cay me]
 @nhóm họp
 - [Gather, convene, meet]
 @thôn quê
@@ -8538,6 +8530,8 @@
 - [more beautiful chromogenous, chromogenic, * adj]
 @tự giác
 - [voluntary self-conscious, * adj]
+@@con đỏ
+- [Newly-born baby, Helpless member of the people]
 @hư từ
 - [Formal word (as opposite to notional word)]
 @núc ních
@@ -22304,6 +22298,8 @@
 - [Asthma]
 @ô hợp
 - [motley; heterogenous, * adj]
+@@hiền nhân
+- [Saage, wise person]
 @ngẫm
 - [to ponder, to reflect upon, to think over, * verb]
 @phong cảnh
@@ -30764,6 +30760,8 @@
 - ["Open arms" policy]
 @lối
 - [style; way; manner, * noun, tôi không thích lối sống của cô ta+I don't like her way of living. about; approximately, * noun, cô ta lối hai mươi tuổi+she is about twenty, * noun, path; way, * noun]
+@@bát quái
+- [Eight-sign figure, * noun, bùa bát quái+eight-sign charm, * noun, trận đồ bát quái+labyrinthine battle array laid on the eight-sign figure's pattern, * noun]
 @quằn quại
 - [to wirthe; to squirm, * verb, đau bụng quằn quại+to writhe in one's bed because of a belly-ache, * verb]
 @áp chế
@@ -35476,6 +35474,8 @@
 - [know]
 @giăm bông
 - [Ham, Bánh mì kẹp giăm bông+Ham sandwiches]
+@@chẳng vừa
+- [No less terrible, Cậu ta cũng chẳng vừa đâu+He is no less terrible, he is as terrible as anybody]
 @không gian
 - [space, * noun]
 @rỗi rãi

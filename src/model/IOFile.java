@@ -415,7 +415,6 @@ public class IOFile {
                 bw.newLine();
                 
             }
-            
             bw.close();
             fw.close();
         } catch (Exception e) {
@@ -445,15 +444,6 @@ public class IOFile {
     }
     
     public static void main(String[] args) {
-        DictionaryVNtoEN dict = new DictionaryVNtoEN();
-        IOFile file = new IOFile();
-        file.readFile("vietanh.txt", dict);
-//                System.out.println("Dict truoc khi sort :"+dict);
-//        file.readFile("anhviet2.txt", dict);
-
-//        dict.sortDictionary();
-//
-//        System.out.println("===================Dict truoc khi sort :"+dict);
 
     }
 }

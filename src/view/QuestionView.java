@@ -8,7 +8,10 @@ import model.*;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +39,7 @@ public class QuestionView extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         view.getCheck();
         random();
-//        hienThiForm();
+
 
     }
    
@@ -54,16 +57,33 @@ public class QuestionView extends javax.swing.JFrame {
         }
 
     }
-//    public void hienThiForm(){
-//        if(view.getCheck()==true){
-//            Timer timer = new Timer(2000, new ActionListener() {
-//                @Override
-//                public void actionPerformed(ActionEvent e) {
-//                    JOptionPane.showMessageDialog(rootPane, "ok");
-//                }
-//            });
-//        }
-//    }
+    public void hienThi(){
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(1);
+            }
+        });
+        setVisible(true);
+          try {
+            while (true) {
+                Calendar calendar = Calendar.getInstance();
+                String hour = (calendar.getTime().getHours() > 9) ? 
+                        "" + calendar.getTime().getHours() + ""
+                        : "0" + calendar.getTime().getHours();
+                String minute = (calendar.getTime().getMinutes() > 9) ? 
+                        "" + calendar.getTime().getMinutes() + ""
+                        : "0" + calendar.getTime().getMinutes();
+                String second = (calendar.getTime().getSeconds() > 9) ? 
+                        "" + calendar.getTime().getSeconds() + ""
+                        : "0" + calendar.getTime().getSeconds();
+                System.out.println(""+hour+":"+minute+":"+second);
+                Thread.sleep(5000);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.

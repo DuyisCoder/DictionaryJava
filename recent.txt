@@ -1,41 +1,118 @@
-@one-handed
-- [một tay, *  tính từ, 'wʌn'hændid, làm bằng một tay, *  tính từ, 'wʌn'hændid]
+@hi
+- [(từ Mỹ,nghĩa Mỹ) này!
+ê! (gọi
+chào)
+*  thán từ
+hai
+]
 @sư tử
 - [lion]
+@trias
+- [(địa lý,địa chất) kỳ triat, *  danh từ, 'traiæs]
 @bi
-- [Marble
- * noun
- trẻ con đánh bi+children played marbles
- * noun
- Ball
- * noun
- ổ bi+a ball-bearing
- * noun
- kẹo bi+sugar-plums
- * noun
- Tragic
- * adj
- nhìn đời bi lắm+to have a very tragic view of life
- * adj
- tình cảnh rất bi+the situation is very tragic
- * adj
-]
+- [Marble]
 @sói
 - [wolf]
 @duy
 - [minh duy 123]
+@boy
+- [con trai]
+@con trai
+- [Son]
+@cầu
+- [Ball
+ * noun
+ tung hứng cầu+to juggle with balls
+ * noun
+ Shuttlecock (sent forth and back by kicks)
+ * noun
+ Demand
+ * noun
+ sự cân đối giữa cung và cầu+a balance between demand and supply
+ * noun
+ Bridge
+ * noun
+ cầu bắc qua sông+a bridge built across a river
+ * noun
+ Enlightening experience
+ * noun
+ Đoạn trường ai có qua cầu mới hay+such a heart-cutting pain is an enlightening experience one should go through to know
+ * noun
+]
+@mít
+- [(Bot)jack-tree]
+@banh
+- [Prison cell
+ * noun
+ Ball
+ * noun
+ đá banh+to play football
+ * noun
+ To open wide; to force open
+ * verb
+ banh mắt ra nhìn+to look with wide-opened eyes
+ * verb
+ banh ngực+to bare one's chest
+ * verb
+]
+@- [(từ Mỹ,nghĩa Mỹ) này!
+- []
+@company
+- [(toán kinh tế) hãng]
+@chào
+- [To greet
+ to salute
+ * verb
+ chào cờ+to salute the flag
+ * verb
+ chào từ biệt+to say good-bye
+ * verb
+ ngả mũ chào thầy giáo+to take off one's hat and greet one's teacher
+ * verb
+ chào chị
+ tôi về+good-bye madam (miss
+ sister...)
+ I am going back
+ * verb
+ To solicit
+ * verb
+ nhà hàng chào khách+the shopkeeper solicits customers
+ the shopkeeper solicits people for their custom
+ * verb
+ chào hàng+to solicit customers to buy one's goods
+ to solicit custom for one's goods
+ to cry one's wares
+ * verb
+]
+@nam
+- [south]
+@cha
+- [Father]
 @zymotic
 - [(y học) (thuộc) sự lên men]
 @girl
 - [con gái]
 @mẹ
 - [mother]
-@boy
-- [con trai]
-@con trai
-- [Son]
-@mít
-- [(Bot)jack-tree]
+@delicious
+- [thơm tho
+ngon ngọt
+ngọt ngào
+*  tính từ
+di'liʃəs
+delicious smell+ mùi thơm ngon
+mùi thơm phưng phức
+*  tính từ
+di'liʃəs
+vui thích
+khoái
+*  tính từ
+di'liʃəs
+]
+@zymurgy
+- [khoa nghiên cứu sự lên men
+* danh từ
+]
 @mèo
 - [cat]
 @xúc xích
@@ -46,9 +123,5 @@
 - [chính xác]
 @can chi
 - [The signs of the Heavenly Stems and of the Earthly Branches (of ancient cosmology), Have something to do with, No need tọ]
-@company
-- [(toán kinh tế) hãng]
 @position
 - [vị trí; tình hình; lập trường]
-@cha
-- [Father]

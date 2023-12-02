@@ -9,22 +9,7 @@
 @locking
 - [sự khoá, chốt, * danh từ, sự điều khiển cửa âu, * danh từ]
 @bi
-- [Marble
- * noun
- trẻ con đánh bi+children played marbles
- * noun
- Ball
- * noun
- ổ bi+a ball-bearing
- * noun
- kẹo bi+sugar-plums
- * noun
- Tragic
- * adj
- nhìn đời bi lắm+to have a very tragic view of life
- * adj
- tình cảnh rất bi+the situation is very tragic
- * adj]
+- [Marble]
 @em
 - [younger brother; younger sister]
 @duy
@@ -37,6 +22,20 @@
 - [nhìn]
 @boy
 - [con trai]
+@delicious
+- [thơm tho
+ngon ngọt
+ngọt ngào
+*  tính từ
+di'liʃəs
+delicious smell+ mùi thơm ngon
+mùi thơm phưng phức
+*  tính từ
+di'liʃəs
+vui thích
+khoái
+*  tính từ
+di'liʃəs]
 @nice
 - [(thông tục) thú vị, dễ chịu; tốt, hấp dẫn, *  tính từ, nais, a nice day+ một ngày đẹp, *  tính từ, nais, nice weather+ tiết trời đẹp, *  tính từ, nais, a nice walk+ một cuộc đi chơi thú vị, *  tính từ, nais, the room was nice and warm+ căn phòng ấm áp dễ chịu, *  tính từ, nais, xinh đẹp, *  tính từ, nais, ngoan; tốt, tử tế, chu đáo, *  tính từ, nais, how... of you to help me in my work!+ anh giúp đỡ tôi trong công việc, thật là tử tế quá, *  tính từ, nais, tỉ mỉ, câu nệ; khó tính, khảnh, cầu kỳ, *  tính từ, nais, don't be too nice about it+ không nên quá câu nệ về cái đó, *  tính từ, nais, to be too nice about one's food+ khảnh ăn, *  tính từ, nais, sành sỏi, tế nhị, tinh vi, kỹ, *  tính từ, nais, a nice audience+ những người xem sành sõi, *  tính từ, nais, to have a nice ear for music+ sành nhạc, *  tính từ, nais, a nice question+ một vấn đề tế nhị, *  tính từ, nais, a nice shade of meaning+ một ý tế nhị, *  tính từ, nais, a nice investigation+ một cuộc điều tra kỹ lưỡng, *  tính từ, nais, a nice observer+ người quan sát tinh tế, *  tính từ, nais, (mỉa mai) hay ho, *  tính từ, nais, you've got us into a nice mess!+ thật anh đã đẩy chúng tôi vào một hoàn cảnh hay ho gớm!, *  tính từ, nais, chính xác (cân), *  tính từ, nais, weighed in the nicest scales+ được cân ở cái cân chính xác nhất, *  tính từ, nais, (dùng như phó từ), *  tính từ, nais, nice and+ rất, lắm, tốt, *  tính từ, nais, socialist construction is going nice and fast+ xây dựng xã hội chủ nghĩa tiến rất nhanh, *  tính từ, nais, the way is a nice long one+ con đường dài lắm, con đường dài dằng dặc, *  tính từ, nais]
 @chó

@@ -16,6 +16,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -117,10 +118,11 @@ public final class MainView extends javax.swing.JFrame {
     private void initComponents() {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -149,12 +151,18 @@ public final class MainView extends javax.swing.JFrame {
         jMenuFileFavorite = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuExit = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenuAnhViet = new javax.swing.JMenuItem();
         jMenuVietAnh = new javax.swing.JMenuItem();
         jMenuOntap = new javax.swing.JMenuItem();
+
+        jMenuItem1.setText("jMenuItem1");
+
+        jMenuItem3.setText("jMenuItem3");
+
+        jMenu5.setText("jMenu5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -162,25 +170,10 @@ public final class MainView extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(153, 0, 51));
         jLabel1.setText("DICTIONARY ANH VIET");
 
-        jToggleButton1.setText("On");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
-            }
-        });
-
-        jLabel6.setText("Chế độ Kiểm Tra");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel6)
-                .addGap(18, 18, 18)
-                .addComponent(jToggleButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -189,11 +182,7 @@ public final class MainView extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jToggleButton1))
-                .addGap(28, 28, 28)
+                .addContainerGap(57, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(41, 41, 41))
         );
@@ -441,13 +430,13 @@ public final class MainView extends javax.swing.JFrame {
         jMenu1.add(jMenuSave);
         jMenu1.add(jSeparator1);
 
-        jMenuExit.setText("Exit");
-        jMenuExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenuExitMouseClicked(evt);
+        jMenuItem4.setText("Exit");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuExit);
+        jMenu1.add(jMenuItem4);
 
         jMenuBar1.add(jMenu1);
 
@@ -824,10 +813,6 @@ public final class MainView extends javax.swing.JFrame {
         view.setVisible(true);
     }//GEN-LAST:event_jMenuVietAnhActionPerformed
 
-    private void jMenuExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuExitMouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_jMenuExitMouseClicked
-
     private void jMenuSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuSaveMouseClicked
 
     }//GEN-LAST:event_jMenuSaveMouseClicked
@@ -851,34 +836,11 @@ public final class MainView extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuFileFavoriteActionPerformed
 
     private void jMenuOntapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuOntapActionPerformed
-        QuestionView view = new QuestionView();
-        view.setVisible(true);
+
+    RandomQuestionView view = new RandomQuestionView();
+    view.setVisible(true);
     }//GEN-LAST:event_jMenuOntapActionPerformed
 
-    public boolean getCheck(){
-        return check;
-    }
-    public boolean  setCheck(boolean  c){
-        return MainView.check=c;
-    }
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-//       int delay = 10000; // 10 seconds
-//       QuestionView view = new QuestionView();
-//
-//        if (jToggleButton1.isSelected()) {
-//            Timer timer = new Timer(delay, new ActionListener() {
-//                @Override
-//                public void actionPerformed(ActionEvent e) {
-//                    view.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-//                    view.setVisible(true);
-//                }
-//               
-//            });
-//            timer.start();
-//            timer.setRepeats(false);
-//     }
-        
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void btnPhatAmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPhatAmActionPerformed
         System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
@@ -936,6 +898,14 @@ public final class MainView extends javax.swing.JFrame {
                JOptionPane.showMessageDialog(this, "Open is not completed!");
         }
     }//GEN-LAST:event_jMenuOpenActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+       int luachon= JOptionPane.showConfirmDialog(this, "Ban co chac muon thoat khong", "Thong bao",JOptionPane.YES_OPTION );
+       if(JOptionPane.YES_OPTION==luachon){
+        System.exit(0);    
+       }
+       
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void tableFavoriteMouseClicked(java.awt.event.MouseEvent evt) {
         posDislike = tableFavorite.getSelectedRow();
@@ -1000,16 +970,18 @@ public final class MainView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuItem jMenuAnhViet;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenu jMenuExit;
     private javax.swing.JMenuItem jMenuFileFavorite;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuOntap;
     private javax.swing.JMenuItem jMenuOpen;
     private javax.swing.JMenu jMenuSave;
@@ -1023,7 +995,6 @@ public final class MainView extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JTable tableFavorite;
     private javax.swing.JTable tableRecent;
     private javax.swing.JTextArea txtNghia;

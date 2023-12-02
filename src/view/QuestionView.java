@@ -5,19 +5,16 @@
 package view;
 
 import model.*;
-import java.awt.CardLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashMap;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import javax.swing.JOptionPane;
-import javax.swing.Timer;
 
 /**
  *
@@ -37,7 +34,6 @@ public class QuestionView extends javax.swing.JFrame {
         file.readFile("recent.txt", dict);
         view = new MainView();
         this.setLocationRelativeTo(null);
-        view.getCheck();
         random();
 
 

@@ -22,7 +22,6 @@ import javax.swing.table.DefaultTableModel;
 public class WordViewViet extends javax.swing.JFrame {
 
     MainView main;
-    ListWord list;
 
     DictionaryVNtoEN dict;
     DefaultTableModel model;
@@ -37,7 +36,6 @@ public class WordViewViet extends javax.swing.JFrame {
         file = new IOFile();
         dict = new DictionaryVNtoEN();
         word = new WordVN();
-        list = new ListWord();
         main = new MainView();
         model = (DefaultTableModel) tableWord.getModel();
         file.readFile(fileVNtoEN, dict);
@@ -338,7 +336,8 @@ public class WordViewViet extends javax.swing.JFrame {
                 txtMeaning.setText("");
                 txtFind.setText("");
                 viewTable();
-                dict.setDict((Map<String, WordVN>) dict);
+//                dict.setDict((Map<String, WordVN>) dict);
+                 file.ghiFile(fileVNtoEN, dict);
 
             }
 
@@ -385,7 +384,9 @@ public class WordViewViet extends javax.swing.JFrame {
                     txtMeaning.setText("");
                     txtWord.setText("");
                     viewTable();
-                    dict.setDict((Map<String, WordVN>) dict);
+//                    dict.setDict((Map<String, WordVN>) dict);
+                 file.ghiFile(fileVNtoEN, dict);
+
 
                 }
 
@@ -402,23 +403,22 @@ public class WordViewViet extends javax.swing.JFrame {
         String eng = txtWord.getText();
         String meaning = txtMeaning.getText();
         meaning = meaning.replaceAll("\\[|\\]", "");
-//        list = new ListWord();
-//        list.getList().add(meaning);
         List<String> list1 = new ArrayList<>();
         list1.add(meaning);
-
         if (eng != null) {
             if (eng.isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Vui long chon tu can update", "Thong bao", JOptionPane.ERROR_MESSAGE);
             } else if (dict.timTheoKey(eng) == true) {
                 dict.update(eng, list1);
-                file.ghiFile(fileVNtoEN, dict);
+//                file.ghiFile(fileVNtoEN, dict);
                 JOptionPane.showMessageDialog(this, "Update thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
                 txtFind.setText("");
                 txtMeaning.setText("");
                 txtWord.setText("");
                 viewTable();
-                dict.setDict((Map<String, WordVN>) dict);
+//                dict.setDict((Map<String, WordVN>) dict);
+                 file.ghiFile(fileVNtoEN, dict);
+
 
             } else {
                 JOptionPane.showMessageDialog(this, "Tu ban can update khong co trong tu dien", "Thong bao", JOptionPane.ERROR_MESSAGE);

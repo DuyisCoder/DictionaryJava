@@ -1,127 +1,70 @@
-@hi
-- [(từ Mỹ,nghĩa Mỹ) này!
-ê! (gọi
-chào)
-*  thán từ
-hai
-]
-@sư tử
-- [lion]
-@trias
-- [(địa lý,địa chất) kỳ triat, *  danh từ, 'traiæs]
-@bi
-- [Marble]
-@sói
-- [wolf]
-@duy
-- [minh duy 123]
-@boy
-- [con trai]
-@con trai
-- [Son]
-@cầu
-- [Ball
- * noun
- tung hứng cầu+to juggle with balls
- * noun
- Shuttlecock (sent forth and back by kicks)
- * noun
- Demand
- * noun
- sự cân đối giữa cung và cầu+a balance between demand and supply
- * noun
- Bridge
- * noun
- cầu bắc qua sông+a bridge built across a river
- * noun
- Enlightening experience
- * noun
- Đoạn trường ai có qua cầu mới hay+such a heart-cutting pain is an enlightening experience one should go through to know
- * noun
-]
-@mít
-- [(Bot)jack-tree]
-@banh
-- [Prison cell
- * noun
- Ball
- * noun
- đá banh+to play football
- * noun
- To open wide; to force open
- * verb
- banh mắt ra nhìn+to look with wide-opened eyes
- * verb
- banh ngực+to bare one's chest
- * verb
-]
-@- [(từ Mỹ,nghĩa Mỹ) này!
-- []
-@company
-- [(toán kinh tế) hãng]
+@h1
+- [h1111]
+@best
+- [tốt nhất]
+@leg
+- [chân]
+@ôi chao
+- [Alas!]
+@taken
+- [sự cầm, sự nắm, sự lấy, *  danh từ, teik, chầu, mẻ (số lượng săn được, câu được, bắt được), *  danh từ, teik, a great take of fish+ mẻ cá lớn, *  danh từ, teik, tiền thu (trong buổi hoà nhạc, diễn kịch), *  danh từ, teik, (điện ảnh) cảnh quay (vào phim), *  danh từ, teik, cầm, nắm, giữ, *  ngoại động từ took; taken, teik, to take something in one's hand+ cầm vật gì trong tay, *  ngoại động từ took; taken, teik, to take someone by the throat+ nắm cổ ai, *  ngoại động từ took; taken, teik, bắt, chiếm, *  ngoại động từ took; taken, teik, to be taken in the act+ bị bắt quả tang, *  ngoại động từ took; taken, teik, to take a fortress+ chiếm một pháo đài, *  ngoại động từ took; taken, teik, lấy, lấy đi, lấy ra, rút ra, trích ra, *  ngoại động từ took; taken, teik, if you take 5 from 12 you have 7 left+ lấy 12 trừ 5, anh sẽ còn lại 7, *  ngoại động từ took; taken, teik, mang, mang theo, đem, đem theo, *  ngoại động từ took; taken, teik, you must take your raincoat+ anh phải mang theo áo mưa, *  ngoại động từ took; taken, teik, take this letter to the post+ hãy mang bức thư này ra nhà bưu điện, *  ngoại động từ took; taken, teik, đưa, dẫn, dắt, *  ngoại động từ took; taken, teik, I'll take the children for a walk+ tôi sẽ dẫn bọn trẻ con đi chơi, *  ngoại động từ took; taken, teik, the tram will take you there in ten minutes+ xe điện sẽ đưa anh đến đó trong mười phút, *  ngoại động từ took; taken, teik, đi, theo, *  ngoại động từ took; taken, teik, to take a bus+ đi xe buýt, *  ngoại động từ took; taken, teik, we must have taken the wrong road+ hẳn là chúng tôi đi lầm đường, *  ngoại động từ took; taken, teik, thuê, mướn, mua, *  ngoại động từ took; taken, teik, to take a ticket+ mua vé, *  ngoại động từ took; taken, teik, to take a house+ thuê một căn nhà, *  ngoại động từ took; taken, teik, ăn, uống, dùng, *  ngoại động từ took; taken, teik, will you take tea or coffee?+ anh uống (dùng) trà hay cà phê?, *  ngoại động từ took; taken, teik, to take breakfast+ ăn sáng, ăn điểm tâm, *  ngoại động từ took; taken, teik, to take 39 in boot+ đi giày số 39, *  ngoại động từ took; taken, teik, ghi, chép, chụp, *  ngoại động từ took; taken, teik, to take notes+ ghi chép, *  ngoại động từ took; taken, teik, to have one's photograph taken+ để cho ai chụp ảnh, *  ngoại động từ took; taken, teik, làm, thực hiện, thi hành, *  ngoại động từ took; taken, teik, to take a journey+ làm một cuộc du lịch, *  ngoại động từ took; taken, teik, to take a bath+ đi tắm, *  ngoại động từ took; taken, teik, lợi dụng, nắm, *  ngoại động từ took; taken, teik, to take the opportunity+ lợi dụng cơ hội, nắm lấy cơ hội, *  ngoại động từ took; taken, teik, to take advantage of+ lợi dụng, *  ngoại động từ took; taken, teik, bị, mắc, nhiễm, *  ngoại động từ took; taken, teik, to take cold+ bị cảm lạnh, bị nhiễm lạnh, *  ngoại động từ took; taken, teik, to be taken ill+ bị ốm, *  ngoại động từ took; taken, teik, coi như, cho là, xem như, lấy làm, hiểu là, cảm thấy, *  ngoại động từ took; taken, teik, to take a joke in earnest+ coi đùa làm thật, *  ngoại động từ took; taken, teik, do you take my meaning?+ anh có hiểu ý tôi không?, *  ngoại động từ took; taken, teik, đòi hỏi, cần có, yêu cầu, phải, *  ngoại động từ took; taken, teik, it would take a strong man to move it+ phải có một người khoẻ mới chuyển nổi cái này đi, *  ngoại động từ took; taken, teik, it does not take more than two minutes to do it+ làm cái đó không (đòi hỏi) mất quá hai phút, *  ngoại động từ took; taken, teik, chịu, chịu đựng, tiếp, nhận, *  ngoại động từ took; taken, teik, to take a beating+ chịu một trận đòn, *  ngoại động từ took; taken, teik, enemy troops took many casualties+ quân địch bị tiêu diệt nhiều, *  ngoại động từ took; taken, teik, to take all the responsibility+ chịu (nhận) hết trách nhiệm, *  ngoại động từ took; taken, teik, được, đoạt; thu được, *  ngoại động từ took; taken, teik, to take a first prize in...+ được giải nhất về..., *  ngoại động từ took; taken, teik, to take a degree at the university+ tốt nghiệp đại học, *  ngoại động từ took; taken, teik, chứa được, đựng, *  ngoại động từ took; taken, teik, the car can't take more than six+ chiếc xe không chứa được quá sáu người, *  ngoại động từ took; taken, teik, mua thường xuyên, mua dài hạn (báo, tạp chí...), *  ngoại động từ took; taken, teik, the "Times" is the only paper he takes+ tờ " Thời báo" là tờ báo độc nhất anh ấy mua dài hạn, *  ngoại động từ took; taken, teik, quyến rũ, hấp dẫn, lôi cuốn, *  ngoại động từ took; taken, teik, to be taken with+ bị lôi cuốn, bị quyến rũ, say mê, say đắm, *  ngoại động từ took; taken, teik, vượt qua, đi tới, nhảy vào; trốn tránh ở, *  ngoại động từ took; taken, teik, to take an obstacle+ vượt qua một điều trở ngại, vượt qua một vật chướng ngại, *  ngoại động từ took; taken, teik, the thoroughbred takes the hedge with greatest ease+ con ngựa nòi vượt qua hàng rào một cách hết sức dễ dàng, *  ngoại động từ took; taken, teik, to take the water+ nhảy xuống nước, *  ngoại động từ took; taken, teik, the bandits had taken the forest+ bọn cướp đã trốn vào rừng, *  ngoại động từ took; taken, teik, bắt, bén (lửa); ngấm, có hiệu lực (thuốc), *  nội động từ, teik, the medicine did not take+ thuốc không có hiệu lực, *  nội động từ, teik, ăn ảnh, *  nội động từ, teik, she does not take well+ cô ta không ăn ảnh lắm, *  nội động từ, teik, thành công, được ưa thích, *  nội động từ, teik, his second play took even more than the first+ vở kịch thứ hai của ông ta còn thành công hơn cả vở kịch thứ nhất, *  nội động từ, teik, giống, *  nội động từ, teik, he takes after his uncle+ nó giống ông chú nó, *  nội động từ, teik, mang theo, đem theo, *  nội động từ, teik, I'll take that book along with me+ tôi sẽ mang theo cuốn sách này với tôi, *  nội động từ, teik, kéo ra một chỗ, đưa ra một chỗ để nói riêng, *  nội động từ, teik, mang đi, lấy đi, đem đi, cất đi, *  nội động từ, teik, lấy lại, mang về, đem về, *  nội động từ, teik, to take back one's words+ nói lại, rút lui ý kiến, *  nội động từ, teik, tháo xuống, bỏ xuống, hạ xuống, *  nội động từ, teik, tháo ra, dỡ ra, *  nội động từ, teik, ghi chép, *  nội động từ, teik, làm nhục, sỉ nhục, *  nội động từ, teik, nuốt khó khăn, *  nội động từ, teik, giảm bớt, làm yếu, *  nội động từ, teik, mời vào, đưa vào, dẫn vào, đem vào (người đàn bà mình sẽ ngồi cạnh ở bàn tiệc), *  nội động từ, teik, tiếp đón; nhận cho ở trọ, *  nội động từ, teik, to take in lodgers+ nhận khách trọ, *  nội động từ, teik, thu nhận, nhận nuôi, *  nội động từ, teik, to take in an orphan+ nhận nuôi một trẻ mồ côi, *  nội động từ, teik, mua dài hạn (báo chí...), *  nội động từ, teik, nhận (công việc) về nhà làm, *  nội động từ, teik, to take in sewing+ nhận đồ khâu về nhà làm, *  nội động từ, teik, thu nhỏ, làm hẹp lại, *  nội động từ, teik, to take in a dress+ khâu hẹp cái áo, *  nội động từ, teik, gồm có, bao gồm, *  nội động từ, teik, hiểu, nắm được, đánh giá đúng, *  nội động từ, teik, to take in a situation+ nắm được tình hình, *  nội động từ, teik, vội tin, nhắm mắt mà tin, *  nội động từ, teik, to take in a statement+ nhắm mắt mà tin một bản tuyên bố, *  nội động từ, teik, lừa phỉnh, lừa gạt, cho vào tròng, cho vào bẫy, *  nội động từ, teik, đưa vào, để vào, đem vào, *  nội động từ, teik, to take someone into one's confidence+ thổ lộ chuyện riêng với ai, *  nội động từ, teik, to take it into one's head (mind)+ có ý nghĩ, có ý định, *  nội động từ, teik, bỏ (mũ), cởi (quần áo); giật ra, lấy đi, cuốn đi, *  nội động từ, teik, to take off one's hat to somebody+ thán phục ai, *  nội động từ, teik, dẫn đi, đưa đi, tiễn đưa (ai), *  nội động từ, teik, to take oneself off+ ra đi, bỏ đi, *  nội động từ, teik, nhổ đi, xoá bỏ, làm mất tích, *  nội động từ, teik, nuốt chửng, nốc, húp sạch, *  nội động từ, teik, bớt, giảm (giá...), *  nội động từ, teik, bắt chước; nhại, giễu, *  nội động từ, teik, (thể dục,thể thao) giậm nhảy, *  nội động từ, teik, (hàng không) cất cánh, *  nội động từ, teik, đảm nhiệm, nhận làm, gách vác, *  nội động từ, teik, to take on extra work+ nhận làm việc thêm (việc ngoài giờ), *  nội động từ, teik, to take on responsibilities+ đảm nhận trách nhiệm, *  nội động từ, teik, nhận đánh cuộc, nhận lời thách đố, *  nội động từ, teik, to take someone on at billiards+ nhận đấu bi a với ai, *  nội động từ, teik, to take on a bet+ nhận đánh cuộc, *  nội động từ, teik, nhận vào làm, thuê, mướn (người làm...), *  nội động từ, teik, dẫn đi tiếp, *  nội động từ, teik, (thông tục) choáng váng, xúc động mạnh, bị kích thích; làm hoảng lên, *  nội động từ, teik, đưa ra, dẫn ra ngoài, *  nội động từ, teik, lấy ra, rút ra; xoá sạch, tẩy sạch, làm mất đi, *  nội động từ, teik, to take out a stain+ xoá sạch một vết bẩn, *  nội động từ, teik, to take it out of+ rút hết sức lực (của ai), làm (ai) mệt lử; trả thù (ai), *  nội động từ, teik, nhận được, được cấp, được phát (bằng, giấy phép, giấy đăng ký...), *  nội động từ, teik, nhận (cái gì...) để bù vào; nhận số lượng tương đương để bù vào, *  nội động từ, teik, as he could not get paid he took it out in goods+ vì nó không lấy được tiền nên phải lấy hàng bù vào, *  nội động từ, teik, chuyển, chở, đưa, dẫn qua (đường, sông...), *  nội động từ, teik, tiếp quản, kế tục, nổi nghiệp, tiếp tục, *  nội động từ, teik, we take over Hanoi in 1954+ chúng ta tiếp quản Hà nội năm 1954, *  nội động từ, teik, to take over the watch+ thay (đổi) phiên gác, *  nội động từ, teik, dùng đến, nhờ cậy đến, cần đến, *  nội động từ, teik, the ship was sinking and they had to take to the boats+ tàu bị chìm và họ phải dùng đến thuyền, *  nội động từ, teik, chạy trốn, trốn tránh, *  nội động từ, teik, to take to flight+ bỏ chạy, rút chạy, *  nội động từ, teik, to take to the mountain+ trốn vào núi, *  nội động từ, teik, bắt đầu ham thích, bắt đầu say mê, tập, nhiễm, *  nội động từ, teik, to take to drinking+ bắt đầu nghiện rượu, *  nội động từ, teik, to take to bad habits+ nhiễm những thói xấu, *  nội động từ, teik, to take to chemistry+ ham thích hoá học, *  nội động từ, teik, có cảm tình, ưa, mến, *  nội động từ, teik, the baby takes to her murse at once+ đứa bé mến ngay người vú, *  nội động từ, teik, to take to the streets+ xuống đường (biểu tình, tuần hành...), *  nội động từ, teik, nhặt, cầm lên, lượm lên; đưa lên, dẫn lên, mang lên, *  nội động từ, teik, cho (hành khách) lên (ô tô, xe lửa), *  nội động từ, teik, the car stops to take up passengers+ xe đỗ lại cho hành khách lên, xe đỗ lại lấy khách, *  nội động từ, teik, tiếp tục (một công việc bỏ dở...), *  nội động từ, teik, chọn (một nghề); đảm nhiệm, gánh vác (một công việc), *  nội động từ, teik, thu hút, choán, chiếm (thời gian, tâm trí...), *  nội động từ, teik, hút, thấm, *  nội động từ, teik, sponges take up water+ bọt biển thấm (hút) nước, *  nội động từ, teik, bắt giữ, tóm, *  nội động từ, teik, he was taken up by the police+ nó bị công an bắt giữ, *  nội động từ, teik, (thông tục) la rầy, quở mắng, trách móc, *  nội động từ, teik, ngắt lời (ai...), *  nội động từ, teik, đề cập đến, xét đến, bàn đến (một vấn đề), *  nội động từ, teik, hiểu, *  nội động từ, teik, to take up someone's idea+ hiểu ý ai, *  nội động từ, teik, nhận, áp dụng, *  nội động từ, teik, to take up a bet+ nhận đánh cuộc, *  nội động từ, teik, to take up a challenge+ nhận lời thách, *  nội động từ, teik, to take up a method+ áp dụng một phương pháp, *  nội động từ, teik, móc lên (một mũi đan tuột...), *  nội động từ, teik, to take up a dropped stitch+ móc lên một mũi đan tuột, *  nội động từ, teik, vặn chặt (chỗ jơ); căng (dây cáp), *  nội động từ, teik, kết giao với, giao thiệp với, đi lại với, thân thiết với, chơi bời với, *  nội động từ, teik, (xem) aim, *  nội động từ, teik, (xem) chance, *  nội động từ, teik, chui xuống lỗ (đen & bóng), *  nội động từ, teik, liều mạng, *  nội động từ, teik]
+@cat
+- [con mèo]
 @chào
-- [To greet
- to salute
+- [To greet]
+@haar
+- [sương lạnh ngoài biển (trên biển miền đông của Anh), * danh từ]
+@bay
+- [(Tech) tủ]
+@day
+- [to turn, * verb, day lại thình lình+to turn short, * verb, To face; to front, * verb, nhà day mặt về phía Nam+the house faces south, * verb]
+@foot
+- [chân (đường thẳng góc); phút (đơn vị đo lường Anh)]
+@apart
+- [về một bên]
+@hay
+- [trong bốn hay năm ngày+in four or five day
+ * trạng ngữ or; whether
+ well; grad; interesting
+ * adj
+ quyển sách này rất hay+This book is very interesting
+ * adj
+ to lear; to hear of; to come to know of
  * verb
- chào cờ+to salute the flag
+ vừa mới hay tin vợ+to have just learned of news from wife frequently; constantly; often
  * verb
- chào từ biệt+to say good-bye
- * verb
- ngả mũ chào thầy giáo+to take off one's hat and greet one's teacher
- * verb
- chào chị
- tôi về+good-bye madam (miss
- sister...)
- I am going back
- * verb
- To solicit
- * verb
- nhà hàng chào khách+the shopkeeper solicits customers
- the shopkeeper solicits people for their custom
- * verb
- chào hàng+to solicit customers to buy one's goods
- to solicit custom for one's goods
- to cry one's wares
+ hay quên+to often forget
  * verb
 ]
-@nam
-- [south]
-@cha
-- [Father]
-@zymotic
-- [(y học) (thuộc) sự lên men]
-@girl
-- [con gái]
+@king
+- [vua]
+@kind
+- [loại]
+@was
+- [thì]
+@ai
+- [trí tuệ nhân tạo (artificial intelligence), * (viết tắt)]
+@pie chart
+- [biểu đồ tròn, * danh từ]
 @mẹ
 - [mother]
 @delicious
-- [thơm tho
-ngon ngọt
-ngọt ngào
-*  tính từ
-di'liʃəs
-delicious smell+ mùi thơm ngon
-mùi thơm phưng phức
-*  tính từ
-di'liʃəs
-vui thích
-khoái
-*  tính từ
-di'liʃəs
-]
-@zymurgy
-- [khoa nghiên cứu sự lên men
-* danh từ
-]
-@mèo
-- [cat]
-@xúc xích
-- [sausage]
-@ổi
-- [guava]
-@exact
-- [chính xác]
-@can chi
-- [The signs of the Heavenly Stems and of the Earthly Branches (of ancient cosmology), Have something to do with, No need tọ]
-@position
-- [vị trí; tình hình; lập trường]
+- [thơm tho]
+@ta
+- [khuẫn (thông tục) cám ơn!]
+@nice
+- [(thông tục) thú vị]
+@bố
+- [Father]
+@take
+- [lấy to t. an expresion into another biến đổi một biểu thức thành]
+@cây
+- [Tree]
+@river
+- [dòng sông]
+@sugar
+- [đường]
+@dog
+- [chó]
+@haka
+- [điệu vũ chiến đấu theo nghi thức của người Maori, * danh từ]

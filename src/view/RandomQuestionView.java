@@ -36,7 +36,7 @@ public class RandomQuestionView extends javax.swing.JFrame {
     public RandomQuestionView() {
         file=new IOFile();
         dictRecent=new DictionaryRecent();
-//        file.readFile("recent.txt", dictRecent);
+        file.readFile("recent.txt", dictRecent);
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -48,8 +48,9 @@ public class RandomQuestionView extends javax.swing.JFrame {
                Map.Entry<String,Word> randomW= list.get(rd.nextInt(list.size()));
                randomValue=randomW.getValue().toString();
                randomKey=randomW.getKey();
-               lblNghia.setText(randomValue);   
-               
+               txtCauHoi.setText(randomValue);   
+               txtCauHoi.setLineWrap(true);
+               txtCauHoi.setWrapStyleWord(true);
          }
     }
     @SuppressWarnings("unchecked")
@@ -62,7 +63,6 @@ public class RandomQuestionView extends javax.swing.JFrame {
         lblTime = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        lblNghia = new javax.swing.JLabel();
         txtTuKhoa = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -72,6 +72,8 @@ public class RandomQuestionView extends javax.swing.JFrame {
         lblDiem = new javax.swing.JLabel();
         btnStart = new javax.swing.JButton();
         btnStop = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtCauHoi = new javax.swing.JTextArea();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu4 = new javax.swing.JMenu();
         jMenuOpen = new javax.swing.JMenuItem();
@@ -87,29 +89,9 @@ public class RandomQuestionView extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(153, 0, 51));
         jLabel1.setText("Câu hỏi ôn tập");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(275, 275, 275)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel1)
-                .addContainerGap(54, Short.MAX_VALUE))
-        );
-
         jLabel2.setText("Điền nghĩa của các từ sau đây");
 
         jLabel3.setText("Câu hỏi :");
-
-        lblNghia.setFont(new java.awt.Font("Hiragino Maru Gothic ProN", 1, 13)); // NOI18N
-        lblNghia.setForeground(new java.awt.Color(255, 0, 51));
 
         txtTuKhoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +123,10 @@ public class RandomQuestionView extends javax.swing.JFrame {
             }
         });
 
+        txtCauHoi.setColumns(20);
+        txtCauHoi.setRows(5);
+        jScrollPane1.setViewportView(txtCauHoi);
+
         javax.swing.GroupLayout lblTimeLayout = new javax.swing.GroupLayout(lblTime);
         lblTime.setLayout(lblTimeLayout);
         lblTimeLayout.setHorizontalGroup(
@@ -151,35 +137,33 @@ public class RandomQuestionView extends javax.swing.JFrame {
                     .addComponent(lblDiem)
                     .addComponent(jLabel6))
                 .addGap(110, 110, 110))
-            .addGroup(lblTimeLayout.createSequentialGroup()
-                .addGap(66, 66, 66)
-                .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel5))
-                .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(lblTimeLayout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(lblNghia, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(lblTimeLayout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(lblTimeLayout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addComponent(btnStart)
-                                .addGap(89, 89, 89)
-                                .addComponent(btnStop))
-                            .addComponent(txtTuKhoa, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblTimeLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 278, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 313, Short.MAX_VALUE)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblGiay)
                 .addGap(50, 50, 50)
                 .addComponent(jLabel8)
                 .addGap(73, 73, 73))
+            .addGroup(lblTimeLayout.createSequentialGroup()
+                .addGap(66, 66, 66)
+                .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel3))
+                .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(lblTimeLayout.createSequentialGroup()
+                        .addGap(99, 99, 99)
+                        .addComponent(btnStart)
+                        .addGap(86, 86, 86)
+                        .addComponent(btnStop))
+                    .addGroup(lblTimeLayout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 375, Short.MAX_VALUE)
+                            .addComponent(txtTuKhoa))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         lblTimeLayout.setVerticalGroup(
             lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -187,26 +171,52 @@ public class RandomQuestionView extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addComponent(lblDiem)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel8)
-                        .addComponent(lblGiay)
-                        .addComponent(jLabel4)
-                        .addComponent(jLabel2)))
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(lblGiay)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel2))
                 .addGap(35, 35, 35)
                 .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblNghia, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(45, 45, 45)
-                .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtTuKhoa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(37, 37, 37)
-                .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnStart)
-                    .addComponent(btnStop))
-                .addContainerGap(56, Short.MAX_VALUE))
+                    .addGroup(lblTimeLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                        .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtTuKhoa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(lblTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnStart)
+                            .addComponent(btnStop))
+                        .addGap(25, 25, 25))
+                    .addGroup(lblTimeLayout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(275, 275, 275)
+                .addComponent(jLabel1)
+                .addContainerGap(341, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addComponent(lblTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jMenu4.setText("File");
@@ -249,36 +259,27 @@ public class RandomQuestionView extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(lblTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(0, 18, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
     public void randomTime(){
-
          timer = new Timer(1000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Giảm thời gian đếm ngược mỗi giây
                 countdownTime--;
                 lblGiay.setText(countdownTime+"");
                  if(countdownTime >= 60){
-                     
-                     timer.stop();
-                     int luaChon = JOptionPane.showConfirmDialog(jMenuOpen, "You Win you co muon choi lai khong ?", "Thong bao",JOptionPane.YES_OPTION);
+                    timer.stop();
+                    int luaChon = JOptionPane.showConfirmDialog(jMenuOpen, "You Win you co muon choi lai khong ?", "Thong bao",JOptionPane.YES_OPTION);
                     if(luaChon==JOptionPane.YES_OPTION){
                         resetForm();
                         randomQuestion();
@@ -295,13 +296,12 @@ public class RandomQuestionView extends javax.swing.JFrame {
                     }else{
                         setVisible(false);
                        JOptionPane.showMessageDialog(rootPane, "Ban la thang that bai");
-          
+                        timer.stop();
                     }
                 }
                
             }
         });
-
         timer.start();
     }
     public void resetForm(){
@@ -369,7 +369,9 @@ public class RandomQuestionView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnStopActionPerformed
 
     private void jMenuExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuExitActionPerformed
-    this.setVisible(false);        // TODO add your handling code here:
+        this.setVisible(false);    
+        timer.stop();// TODO add your handling code here:
+        
     }//GEN-LAST:event_jMenuExitActionPerformed
    
     /**
@@ -425,10 +427,11 @@ public class RandomQuestionView extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuLuatChoi;
     private javax.swing.JMenuItem jMenuOpen;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblDiem;
     private javax.swing.JLabel lblGiay;
-    private javax.swing.JLabel lblNghia;
     private javax.swing.JPanel lblTime;
+    private javax.swing.JTextArea txtCauHoi;
     private javax.swing.JTextField txtTuKhoa;
     // End of variables declaration//GEN-END:variables
 }

@@ -36,14 +36,12 @@ public class DictionaryFavorite {
         }
         return null;
     }
-
     public boolean timTheoKey(String eng) {
         if (dict.containsKey(eng)) {
             return true;
         }
         return false;
     }
-
     public void addWord(String eng, List<String> vi) {
         if (!dict.containsKey(eng)) {
             Word w = new Word();
@@ -55,16 +53,13 @@ public class DictionaryFavorite {
             file.ghiFile("favorite.txt", this);
 
         }
-
     }
-
     public void removeWord(String eng) {
         if (!dict.containsKey(eng)) {
         } else {
             dict.remove(eng);
         }
     }
-
     public Map<String, Word> getDict() {
         return dict;
     }
@@ -74,10 +69,10 @@ public class DictionaryFavorite {
         return "Tieng viet";
     }
 
-    public void loadData(String eng, List<String> vi, String gioiTu, String phienAm) {
-        Word word = new Word(eng, vi, gioiTu, phienAm);
-        dict.put(word.getEng(), word);
-    }
+//    public void loadData(String eng, List<String> vi, String gioiTu, String phienAm) {
+//        Word word = new Word(eng, vi, gioiTu, phienAm);
+//        dict.put(word.getEng(), word);
+//    }
 
     public void loadData(String eng, List<String> vi) {
         Word word = new Word(eng, vi);

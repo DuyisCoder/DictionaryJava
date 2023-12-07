@@ -21,8 +21,6 @@ import javax.swing.table.DefaultTableModel;
 public class WordView extends javax.swing.JFrame {
 
     MainView main;
-    ListWord list;
-
     Dictionary dictionary;
     DefaultTableModel model;
     DictionaryVNtoEN dictV;
@@ -36,12 +34,10 @@ public class WordView extends javax.swing.JFrame {
         file = new IOFile();
         dictionary = new Dictionary();
         word = new Word();
-        list = new ListWord();
         dictV = new DictionaryVNtoEN();
         main = new MainView();
         model = (DefaultTableModel) tableWord.getModel();
         file.readFile(fileENtoVN, dictionary);
-
         viewTable();
 
     }
@@ -339,7 +335,8 @@ public class WordView extends javax.swing.JFrame {
                 txtFind.setText("");
                 viewTable();
                 JOptionPane.showMessageDialog(this, "Them thanh cong!!", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
-                dictionary.setDict((Map<String, Word>) dictionary);
+//                dictionary.setDict((Map<String, Word>) dictionary);
+                   file.ghiFile(fileENtoVN, dictionary);
             }
 
         } else {
@@ -385,7 +382,9 @@ public class WordView extends javax.swing.JFrame {
                     txtMeaning.setText("");
                     txtWord.setText("");
                     viewTable();
-                    dictionary.setDict((Map<String, Word>) dictionary);
+//                    dictionary.setDict((Map<String, Word>) dictionary
+                   file.ghiFile(fileENtoVN, dictionary);
+
 
                 }
 
@@ -402,9 +401,6 @@ public class WordView extends javax.swing.JFrame {
         String eng = txtWord.getText();
         String meaning = txtMeaning.getText();
         meaning = meaning.replaceAll("\\[|\\]", "");
-//        list = new ListWord();
-//        list.getList().add(meaning);
-        
         List<String> list= new ArrayList<>();
         list.add(meaning);
         if (eng != null) {
@@ -412,13 +408,14 @@ public class WordView extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Vui long chon tu can update", "Thong bao", JOptionPane.ERROR_MESSAGE);
             } else if (dictionary.timTheoKey(eng) == true) {
                 dictionary.updatee(eng, list);
-                file.ghiFile(fileENtoVN, dictionary);
                 JOptionPane.showMessageDialog(this, "Update thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
                 txtFind.setText("");
                 txtMeaning.setText("");
                 txtWord.setText("");
                 viewTable();
-                dictionary.setDict((Map<String, Word>) dictionary);
+//                dictionary.setDict((Map<String, Word>) dictionary);
+                 file.ghiFile(fileENtoVN, dictionary);
+
 
             } else {
                 JOptionPane.showMessageDialog(this, "Tu ban can update khong co trong tu dien", "Thong bao", JOptionPane.ERROR_MESSAGE);

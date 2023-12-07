@@ -48,12 +48,10 @@ public final class MainView extends javax.swing.JFrame {
     private int pos = 0;
     private int posDislike = 0;
     private int posRecent = 0;
-    private static boolean  check=false;
     private String fileENtoVN = "anhviet2.txt";
     private String fileVNtoEN = "vietanh.txt";
     private String fileRecent = "recent.txt";
     private String fileFavorite = "favorite.txt";
-
     Word word;
     WordVN wordVN;
 
@@ -69,8 +67,6 @@ public final class MainView extends javax.swing.JFrame {
         dictF = new DictionaryFavorite();
         dictV = new DictionaryVNtoEN();
         dictRecent = new DictionaryRecent();
-        
-        
         file.readFile(fileENtoVN, dictionary);
         file.readFile(fileFavorite, dictF);
         file.readFile(fileVNtoEN, dictV);
@@ -483,7 +479,7 @@ public final class MainView extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -614,9 +610,7 @@ public final class MainView extends javax.swing.JFrame {
     private int calculateLevenshteinDistance(String s1, String s2) {
         int m = s1.length();
         int n = s2.length();
-
         int[][] dp = new int[m + 1][n + 1];
-
         for (int i = 0; i <= m; i++) {
             for (int j = 0; j <= n; j++) {
                 if (i == 0) {
@@ -635,16 +629,12 @@ public final class MainView extends javax.swing.JFrame {
 
         return dp[m][n];
     }
-
     private int min(int a, int b, int c) {
         return Math.min(Math.min(a, b), c);
     }
     private void txtWordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtWordKeyPressed
 
         String searchText = txtWord.getText();
-//        String meaning = txtNghia.getText();
-//        List<String> list = new ArrayList<>();
-//        list.add(meaning);
         int index = comboLanguages.getSelectedIndex();
         int index2 = ComboLangueges2.getSelectedIndex();
         if (index == 0 && index2 == 0) {
@@ -673,7 +663,14 @@ public final class MainView extends javax.swing.JFrame {
                             if (JOptionPane.YES_OPTION == yes) {
                                 word = dictionary.translateWord(suggestion);
                                 txtWord.setText(word.getEng());
-                                txtNghia.setText(word + "");
+                                String[] p = word.toString().split(", ");
+                                StringBuilder resultBuilder = new StringBuilder();
+                                for (String part : p) {
+                                   resultBuilder.append(part).append("\n");
+                                }
+                                List<String> list = new ArrayList<>();
+                                list.add(resultBuilder+"");
+                                txtNghia.setText(resultBuilder + "");
                                 List<String> listRecent = new ArrayList<>();
                                 listRecent.add(word+"");
                                 dictRecent.addWord(word.getEng(), listRecent);
@@ -715,7 +712,14 @@ public final class MainView extends javax.swing.JFrame {
                             if (JOptionPane.YES_OPTION == yes) {
                                 wordVN = dictV.translateWord(suggestion);
                                 txtWord.setText(wordVN.getViet());
-                                txtNghia.setText(wordVN + "");
+                                String[] p = wordVN.toString().split(", ");
+                                StringBuilder resultBuilder = new StringBuilder();
+                                    for (String part : p) {
+                                        resultBuilder.append(part).append("\n");
+                                    }
+                                List<String> list = new ArrayList<>();
+                                list.add(resultBuilder+"");
+                                txtNghia.setText(resultBuilder.toString());
                                 List<String> listRecent = new ArrayList<>();
                                 listRecent.add(wordVN+"");
                                 dictRecent.addWord(wordVN.getViet(), listRecent);

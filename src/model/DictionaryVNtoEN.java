@@ -40,10 +40,10 @@ public class DictionaryVNtoEN {
         }
         return null;
     }
-    public void loadData(String vi, List<String> eng, String gioiTu, String phienAm) {
-        word = new WordVN(vi, eng, gioiTu, phienAm);
-        dict.put(word.getViet(), word);
-    }
+//    public void loadData(String vi, List<String> eng, String gioiTu, String phienAm) {
+//        word = new WordVN(vi, eng, gioiTu, phienAm);
+//        dict.put(word.getViet(), word);
+//    }
 
     public void loadData(String eng, List<String> vi) {
          word = new WordVN(eng, vi);

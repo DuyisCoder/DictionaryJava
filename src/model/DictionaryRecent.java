@@ -67,10 +67,10 @@ public class DictionaryRecent {
         return "DictionaryRecent{" + "dict=" + dict;
     }
 
-    public void loadData(String eng, List<String> vi, String gioiTu, String phienAm) {
-        Word word = new Word(eng, vi, gioiTu, phienAm);
-        dict.put(word.getEng(), word);
-    }
+//    public void loadData(String eng, List<String> vi, String gioiTu, String phienAm) {
+//        Word word = new Word(eng, vi, gioiTu, phienAm);
+//        dict.put(word.getEng(), word);
+//    }
 
     public void loadData(String eng, List<String> vi) {
         Word word = new Word(eng, vi);

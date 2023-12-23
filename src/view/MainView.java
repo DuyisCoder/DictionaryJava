@@ -45,6 +45,7 @@ public final class MainView extends javax.swing.JFrame {
     DictionaryFavorite dictF;
     DictionaryVNtoEN dictV;
     DictionaryRecent dictRecent;
+    Helper helper;
     private int pos = 0;
     private int posDislike = 0;
     private int posRecent = 0;
@@ -67,6 +68,7 @@ public final class MainView extends javax.swing.JFrame {
         dictF = new DictionaryFavorite();
         dictV = new DictionaryVNtoEN();
         dictRecent = new DictionaryRecent();
+        helper=new Helper();
         file.readFile(fileENtoVN, dictionary);
         file.readFile(fileFavorite, dictF);
         file.readFile(fileVNtoEN, dictV);
@@ -141,7 +143,6 @@ public final class MainView extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
         jMenuOpen = new javax.swing.JMenuItem();
         jMenuSave = new javax.swing.JMenu();
         jMenuFileFavorite = new javax.swing.JMenuItem();
@@ -389,9 +390,6 @@ public final class MainView extends javax.swing.JFrame {
 
         jMenu1.setText("File");
 
-        jMenu2.setText("New");
-        jMenu1.add(jMenu2);
-
         jMenuOpen.setText("Open");
         jMenuOpen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -511,15 +509,15 @@ public final class MainView extends javax.swing.JFrame {
         if (indexCombo == 0) {
             if (word != null) {
                 if (dictionary.translateWord(word) == null) {
-                    JOptionPane.showMessageDialog(this, "Them that bai vi tu ban nhap khong co trong tu dien Tieng Anh!!");
+                    JOptionPane.showMessageDialog(this, "Thêm thất bại vì từ bạn thích không có trong từ điển Anh-Việt!");
                 } else {
                     if (dictF.timTheoKey(word) == true) {
-                        JOptionPane.showMessageDialog(this, "Tu khoa da ton tai");
+                        JOptionPane.showMessageDialog(this, "Từ khoá đã tồn tại trong danh sách yêu thích");
                     } else {
                        
                         dictF.addWord(word, list);
                         viewTableFavorite();
-                        JOptionPane.showMessageDialog(this, "Them thanh cong");
+                        JOptionPane.showMessageDialog(this, "Thêm từ khóa yêu thích thành công");
                         txtWord.setText("");
                         txtNghia.setText("");
                     }
@@ -528,14 +526,14 @@ public final class MainView extends javax.swing.JFrame {
         } else {
             if (word != null) {
                 if (dictV.translateWord(word) == null) {
-                    JOptionPane.showMessageDialog(this, "Them that bai vi tu ban nhap khong co trong tu dien Tieng Viet!!");
+                    JOptionPane.showMessageDialog(this, "Thêm thất bại vì từ bạn thích không có trong từ điển Việt-Anh!");
                 } else {
                     if (dictF.timTheoKey(word) == true) {
-                        JOptionPane.showMessageDialog(this, "Tu khoa da ton tai");
+                        JOptionPane.showMessageDialog(this, "Từ khoá đã tồn tại trong danh sách yêu thích");
                     } else {
                         dictF.addWord(word, list);
                         viewTableFavorite();
-                        JOptionPane.showMessageDialog(this, "Thêm thành công !");
+                        JOptionPane.showMessageDialog(this, "Thêm từ khóa yêu thích thành công");
                         txtWord.setText("");
                         txtNghia.setText("");
                     }
@@ -556,7 +554,7 @@ public final class MainView extends javax.swing.JFrame {
                 txtWord.setText("");
                 txtNghia.setText("");
             } else {
-                JOptionPane.showMessageDialog(this, "Từ bạn xóa không có trong từ điển chương trình !");
+                JOptionPane.showMessageDialog(this, "Từ bạn xóa không có trong danh sách yêu thích!");
             }
         } else {
             JOptionPane.showMessageDialog(this, "Xóa thất bại !");
@@ -650,14 +648,19 @@ public final class MainView extends javax.swing.JFrame {
                     list.add(resultBuilder+"");
                     txtNghia.setText(resultBuilder.toString());
                     if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-                        dictRecent.addWord(searchText, list);
-                        file.readFile(fileRecent, dictRecent);
+                          String wordSearch=txtWord.getText().trim();
+                                String meaning = txtNghia.getText().trim();
+                                List<String> listRecent=new ArrayList<>();
+                                listRecent.add(meaning);
+                                dictRecent.addWord(wordSearch, listRecent);
                         viewTableRecent();
                     }
                 } else{
                     txtNghia.setText("Từ bạn tìm không có trong từ điển chương trình!");
                     if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-                        String suggestion = findSimilarWord(searchText);
+//                        String suggestion = findSimilarWord(searchText);                        
+                        String suggestion = helper.findSimilarWord(searchText, dictionary);
+
                         if (suggestion != null) {
                             int yes = JOptionPane.showConfirmDialog(this, "Ý bạn là từ : " + "\"" + suggestion + "\"", "Gợi ý từ điển", JOptionPane.YES_NO_OPTION);
                             if (JOptionPane.YES_OPTION == yes) {
@@ -671,10 +674,17 @@ public final class MainView extends javax.swing.JFrame {
                                 List<String> list = new ArrayList<>();
                                 list.add(resultBuilder+"");
                                 txtNghia.setText(resultBuilder + "");
-                                List<String> listRecent = new ArrayList<>();
-                                listRecent.add(word+"");
-                                dictRecent.addWord(word.getEng(), listRecent);
-                                file.readFile(fileRecent, dictRecent);
+//                                List<String> listRecent = new ArrayList<>();
+//                                listRecent.add(word+"");
+//                                
+//                                dictRecent.addWord(word.getEng(), listRecent);
+//                                file.readFile(fileRecent, dictRecent);
+                                String wordSearch=txtWord.getText().trim();
+                                String meaning = txtNghia.getText().trim();
+                                List<String> listRecent=new ArrayList<>();
+                                listRecent.add(meaning);
+                                dictRecent.addWord(wordSearch, listRecent);
+
                                 viewTableRecent();
                             } else {
                                 txtWord.setText("");
@@ -697,15 +707,19 @@ public final class MainView extends javax.swing.JFrame {
                     list.add(kq+"");
                     txtNghia.setText(kq.toString());
                     if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-                        dictRecent.addWord(searchText, list);
-                        file.readFile(fileRecent, dictRecent);
+                          String wordSearch=txtWord.getText().trim();
+                                String meaning = txtNghia.getText().trim();
+                                List<String> listRecent=new ArrayList<>();
+                                listRecent.add(meaning);
+                                dictRecent.addWord(wordSearch, listRecent);
                         viewTableRecent();
                     }
                 } else{
                     txtNghia.setText("Từ bạn tìm không có trong từ điển chương trình!");
-
                     if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-                        String suggestion = findSimilarWordVN(searchText);
+//                        String suggestion = findSimilarWordVN(searchText);                        
+                        String suggestion = helper.findSimilarWordVN(searchText,dictV);
+
                         if (suggestion != null) {
                             int yes = JOptionPane.showConfirmDialog(this, "Ý bạn là từ : " + "\"" + suggestion + "\"", "Gợi ý từ điển", JOptionPane.YES_NO_OPTION);
 
@@ -720,10 +734,12 @@ public final class MainView extends javax.swing.JFrame {
                                 List<String> list = new ArrayList<>();
                                 list.add(resultBuilder+"");
                                 txtNghia.setText(resultBuilder.toString());
-                                List<String> listRecent = new ArrayList<>();
-                                listRecent.add(wordVN+"");
-                                dictRecent.addWord(wordVN.getViet(), listRecent);
-                                file.readFile(fileRecent, dictRecent);
+                               
+                                String wordSearch=txtWord.getText().trim();
+                                String meaning = txtNghia.getText().trim();
+                                List<String> listRecent=new ArrayList<>();
+                                listRecent.add(meaning);
+                                dictRecent.addWord(wordSearch, listRecent);
                                 viewTableRecent();
                             } else {
                                 txtWord.setText("");
@@ -852,10 +868,10 @@ public final class MainView extends javax.swing.JFrame {
         String txt = txtWord.getText();
         if (voice != null) {
             voice.allocate();
-            System.out.println("Voice Rate :" + voice.getRate());
-            System.out.println("Voice Pitch :" + voice.getPitch());
-
-            System.out.println("Voice Volumn :" + voice.getVolume());
+//            System.out.println("Voice Rate :" + voice.getRate());
+//            System.out.println("Voice Pitch :" + voice.getPitch());
+//
+//            System.out.println("Voice Volumn :" + voice.getVolume());
             boolean status = voice.speak(txt);
             voice.deallocate();
 
@@ -975,7 +991,6 @@ public final class MainView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;

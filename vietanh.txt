@@ -1,19 +1,3 @@
-@nguồn cơn
-- [Ins and outs, head and tail, Kể hết nguồn cơn+To tell the ins and outs (of a story)]
-@buộc
-- [To bind, to tie, * verb, buộc vết thương+to bind a wound, * verb, To force, to compel, * verb, chiến thắng của ta buộc địch phải từ bỏ âm mưu xâm lược+our victory forced the enemy to give up their aggressive design, * verb, bị buộc phải thôi việc+to be forced to resign, * verb, chúng ta buộc phải cầm vũ khí để tự vệ+we were forced to take up arms in self defence, * verb, To lay, * verb, đừng buộc cho anh ta cái tội ấy+don't lay that offence on him, * verb, chỉ buộc một điều kiện+to lay down only one condition, * verb, buộc chỉ chân voi, * verb]
-@cựu chiến binh
-- [veteran,, * noun]
-@dễ ợt
-- [(địa phương; khẩu ngữ) Very easy]
-@khiêm nhường
-- [humble; modest, * adj]
-@nghèo túng
-- [needy, * adj]
-@khấp khểnh
-- [Uneven, bumpy, Đường đi rất khấp khểnh+To road is very bumpy, Hàm răng khấp khểnh+To have unven teeth, Địa hình khấp khểnh+An unven terrain., (Khấp kha khấp khểnh) (láy, ý tăng)]
-@ranh vặt
-- [Cunning]
 @bay lượn
 - [hover (of a bird); glide (of an aeroplane)]
 @kiếng
@@ -92,6 +76,8 @@
 - [life and death, * noun]
 @tì vết
 - [defect, flaw, * noun]
+@a
+- [O; oh (exclamation of surprise, regret, ect.), * excl, a, đồ chơi đẹp quá!+ Oh! What a nice toy!, * excl, a, tội nghiệp quá+Oh!What a pity!, * excl, By the way, * excl, a, còn một vấn đề này nữa +By the way, there's this one other question, * excl, Acre (100 square meters), * noun]
 @nể lòng
 - [Spare (somebody's feelings)]
 @bù trừ
@@ -166,6 +152,8 @@
 - [elected, * adj]
 @biên tập
 - [như biên soạn, * verb, To edit, * verb]
+@@khiêm nhường
+- [humble; modest, * adj]
 @bị vong lục
 - [Memorandum (ngoại giao), * noun]
 @đảo ngói
@@ -1917,7 +1905,7 @@
 @sóng sánh
 - [to shake, * verb]
 @duy
-- [dep trai, nau an gioi]
+- [duy dep trai]
 @nước tiểu
 - [như nước giải]
 @sao lãng
@@ -2852,6 +2840,8 @@
 - [Place somebody's remains in a small terra-cotta coffin (for definitive burial)]
 @sư phụ
 - [(cũ) master, * noun]
+@@nghèo túng
+- [needy, * adj]
 @hiền mẫu
 - [Kind mother, good mother]
 @hương ước
@@ -4168,8 +4158,6 @@
 - [Calf, * noun, thịt bê+Veal, * noun, To carry, * verb, bê tảng đá+to carry a slab of stone, * verb, To interlard, * verb, bê khẩu hiệu vào thơ ca+to interlard poetry with slogans, * verb]
 @tàn tệ
 - [withless and ungrateful, * adj]
-@h1
-- [1111111]
 @bì
 - [Skin, * noun, gọt bì phật thủ to peel the skin of a Buddha's hand, * noun, tước bì xoan+to peel the skin of a China tree, * noun, Packing, bag, * noun, đóng gạo vào bì+to pack rice in bags, * noun, Tare, * noun, (dùng có kèm ý phủ định)+Matchable, comparable, * verb, khỏe không ai bì kịp+of unmatchable strength, * verb, bì sao được với nó+no one can bear comparison with him, * verb]
 @bí
@@ -4577,7 +4565,7 @@
 @đá đít
 - [(thông tục) Kick out]
 @me
-- [cay me]
+- [A child's word for mother (like mom) tamarind, cây me+tamarind-tree]
 @nhóm họp
 - [Gather, convene, meet]
 @thôn quê
@@ -21880,6 +21868,8 @@
 - [March past]
 @giáo học
 - [(từ cũ; nghĩa cũ) Primary school teacher]
+@@cựu chiến binh
+- [veteran,, * noun]
 @ngải
 - [Sagebrush, Philtre]
 @đẹt
@@ -22776,6 +22766,8 @@
 - [Turn bad in character (nói về trẻ em)]
 @sau
 - [behind, at the back of, hind, rear, * conj, hereinafter, below, following, as follows, * conj]
+@@dễ ợt
+- [(địa phương; khẩu ngữ) Very easy]
 @chướng
 - [Offending the sight, unaesthetic, unseemly, unsound, unpalatablẹ., * adj, cái giừơng kê ngay giữa phòng, chướng lắm!+how unaesthetic to put a bed right in the middle of the room!, * adj, câu nói nghe rất chướng+how unpalatable that statement!, * adj, ăn mặc lố lăng chướng cả mắt+such excentric clothing is a real eyesore, * adj]
 @triện
@@ -23762,6 +23754,8 @@
 - [Remote relation (of parentage), Hai người có hơi hướng họ hàng với nhau+Both are remotely related, Smell (of dirt, of uncleanlinessm, of disease), Hơi hướng quần áo người ốm khó chịu quá+The uncleanly smell of the patient's clothes is unbearable]
 @đẹp lão
 - [Hale and hearty, Trông ông cụ tám mươi mà còn đẹp lão+At eighty, he still looks hale and hearty]
+@123
+- [123]
 @hành chính
 - [Aministration]
 @cầu cống
@@ -25746,6 +25740,8 @@
 - [xem khập khiễng (láy)]
 @tạng
 - [innards, inner parts, viscera. constitution, * noun]
+@chim đại bàng
+- [bird đại bàng]
 @chiến khu
 - [Strategic war theatre, * noun, Base, * noun, chiến khu Việt Bắc+The Northernmost Vietnam base, * noun]
 @có điều
@@ -27965,7 +27961,7 @@
 @nói thầm
 - [Whisper, speak under one's breath]
 @vua
-- [king, * noun]
+- [king]
 @giả da
 - [Imitation leather]
 @tranh cãi
@@ -35446,6 +35442,8 @@
 - [to absorb, * verb]
 @thím
 - [aunt, * noun]
+@duydeptrai
+- [duydeptrai]
 @sinh
 - [to give birth to to produce, yield to turn, * verb, life; living; alive, * noun, adj]
 @si tình
@@ -37222,6 +37220,8 @@
 - [Take up a job]
 @nhá nhem
 - [at dusk, lúc nhá nhem tối+at nightfall]
+@@buộc
+- [To bind, to tie, * verb, buộc vết thương+to bind a wound, * verb, To force, to compel, * verb, chiến thắng của ta buộc địch phải từ bỏ âm mưu xâm lược+our victory forced the enemy to give up their aggressive design, * verb, bị buộc phải thôi việc+to be forced to resign, * verb, chúng ta buộc phải cầm vũ khí để tự vệ+we were forced to take up arms in self defence, * verb, To lay, * verb, đừng buộc cho anh ta cái tội ấy+don't lay that offence on him, * verb, chỉ buộc một điều kiện+to lay down only one condition, * verb, buộc chỉ chân voi, * verb]
 @rằn
 - [(địa phương) Striped, Vải rằn+Striped cloth]
 @rằm
@@ -41256,6 +41256,8 @@
 - [to be born; to come into being, * verb]
 @son sẻ
 - [Still childless (nói về người vợ), Vóc người son sẻ+Svelte of stature, như thon thả]
+@@ranh vặt
+- [Cunning]
 @quân thân
 - [Duty towards the king and one's parents]
 @đội sổ
@@ -42733,8 +42735,7 @@
 @nặng tình
 - [to be deeply in love with]
 @bay màu
-- [Fade
-11]
+- [Fade]
 @binh công xưởng
 - [Arms workshop, * noun]
 @tập tục
@@ -42893,6 +42894,8 @@
 - [thing, * noun]
 @háo hức
 - [enthusiatic, * adj]
+@duy stu
+- [duy stu]
 @ăn lương
 - [to receive one's salary, * verb, những ngày nghỉ ăn lương+holidays with pay, * verb]
 @kẻ gian
@@ -43311,6 +43314,8 @@
 - [literature style, * noun]
 @đào mỏ
 - [Mine, exploit, (cũ) Be a fortune-hunter, be a gold- digger]
+@@nguồn cơn
+- [Ins and outs, head and tail, Kể hết nguồn cơn+To tell the ins and outs (of a story)]
 @ghi công
 - [Cite, Ghi công ai vì dũng cảm+To cite somebody foe bbravery]
 @lập chí
@@ -43789,6 +43794,8 @@
 - [taste, sense, * noun]
 @đứng yên
 - [to keep still, * verb]
+@@khấp khểnh
+- [Uneven, bumpy, Đường đi rất khấp khểnh+To road is very bumpy, Hàm răng khấp khểnh+To have unven teeth, Địa hình khấp khểnh+An unven terrain., (Khấp kha khấp khểnh) (láy, ý tăng)]
 @bảo toàn
 - [To keep intact, to keep whole, * verb, bảo toàn lực lượng+to keep one's strength intact, * verb, bảo toàn danh dự+to keep one's honour whole, * verb, định luật bảo toàn và chuyển hoá năng lượng+the law of conservation and transformation of energy, * verb]
 @cấp cứu
@@ -45583,6 +45590,8 @@
 - [First]
 @bỡn cợt
 - [to trifle, * verb]
+@bay
+- [To fly, * verb, quan sát những con chim tập bay+to watch the birds learn to fly, * verb, vệ tinh nhân tạo bay qua bầu trời+the satellite flew past in the sky, * verb, đạn bay rào rào+bullets flew past, * verb, tin chiến thắng bay đi khắp nơi+the news of victory flew to every place, * verb, To fade, to go, * verb, áo sơ mi bay màu+The shirt has faded, * verb, nốt đậu đang bay+the smallpox pustules are going, * verb, To fail (in an examination), * verb, không cánh mà bay, * verb]
 @mưu lược
 - [Plan and strategy, Viên tướng nhiều mưu lược+A general versed in planing his operations and strategy]
 @ôn đới

@@ -279,7 +279,7 @@ public class RandomQuestionView extends javax.swing.JFrame {
                 lblGiay.setText(countdownTime+"");
                  if(countdownTime >= 60){
                     timer.stop();
-                    int luaChon = JOptionPane.showConfirmDialog(jMenuOpen, "You Win you co muon choi lai khong ?", "Thong bao",JOptionPane.YES_OPTION);
+                    int luaChon = JOptionPane.showConfirmDialog(jMenuOpen, "Bạn đã thắng.Bạn có muốn tiếp tục không ?", "Thông báo",JOptionPane.YES_OPTION);
                     if(luaChon==JOptionPane.YES_OPTION){
                         resetForm();
                         randomQuestion();
@@ -288,14 +288,14 @@ public class RandomQuestionView extends javax.swing.JFrame {
                 }
                 if(countdownTime <= 0){
                     timer.stop();
-                    int luaChon = JOptionPane.showConfirmDialog(jMenuOpen, "Ban da thua cuoc co muon tiep tuc khong ?", "Thong bao",JOptionPane.YES_OPTION);
+                    int luaChon = JOptionPane.showConfirmDialog(jMenuOpen, "Bạn đã thua cuộc bạn có muốn tiếp tục không ?", "Thông báo",JOptionPane.YES_OPTION);
                     if(luaChon==JOptionPane.YES_OPTION){
                         resetForm();
                         randomQuestion();
                         randomTime();
                     }else{
                         setVisible(false);
-                       JOptionPane.showMessageDialog(rootPane, "Ban la thang that bai");
+                       JOptionPane.showMessageDialog(rootPane, "Bạn đã thua cuộc!");
                         timer.stop();
                     }
                 }
@@ -321,7 +321,7 @@ public class RandomQuestionView extends javax.swing.JFrame {
             randomQuestion();
         } else  {
               
-              JOptionPane.showMessageDialog(this, "Sai roi . Ket qua la :"+randomKey);
+              JOptionPane.showMessageDialog(this, "Sai rồi .Kết quả chính xác là:"+randomKey);
               countdownTime-=5;
               lblDiem.setText("-5s");
               randomQuestion();

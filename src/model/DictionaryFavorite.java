@@ -58,6 +58,8 @@ public class DictionaryFavorite {
         if (!dict.containsKey(eng)) {
         } else {
             dict.remove(eng);
+            file.ghiFile("favorite.txt", this);
+
         }
     }
     public Map<String, Word> getDict() {

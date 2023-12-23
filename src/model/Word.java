@@ -24,7 +24,7 @@ public class Word implements Comparable<Word> {
         viet = new ArrayList<>();
     }
 
-    public Word(String eng, List<String> viet, String gioiTu, String phienAm) {
+       public Word(String eng, List<String> viet, String gioiTu, String phienAm) {
         this.eng = eng;
         this.viet = viet;
         this.gioiTu = gioiTu;
@@ -79,14 +79,6 @@ public class Word implements Comparable<Word> {
         if (vietStringBuilder.length() > 0) {
             vietStringBuilder.setLength(vietStringBuilder.length() - 2);
         }
-//        String vietString = vietStringBuilder.toString();
-//
-//        String[] vietArray = vietStringBuilder.toString().split(", ");
-//
-//// Duyệt qua từng từ và xuất mỗi từ ra một dòng
-//        for (String word : vietArray) {
-//            System.out.println(word);
-//        }
         return vietStringBuilder.toString()
                 + (gioiTu != null && !gioiTu.isEmpty() ? "\n- Giới từ: " + gioiTu : "")
                 + (phienAm != null && !phienAm.isEmpty() ? "\n- Phiên Âm: " + phienAm : "");

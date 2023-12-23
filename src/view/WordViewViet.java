@@ -40,7 +40,6 @@ public class WordViewViet extends javax.swing.JFrame {
         model = (DefaultTableModel) tableWord.getModel();
         file.readFile(fileVNtoEN, dict);
         viewTable();
-
     }
 
     /**
@@ -100,6 +99,11 @@ public class WordViewViet extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(153, 0, 51));
         jLabel2.setText("Find Word");
 
+        txtFind.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFindActionPerformed(evt);
+            }
+        });
         txtFind.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtFindKeyPressed(evt);
@@ -301,17 +305,8 @@ public class WordViewViet extends javax.swing.JFrame {
         model.setRowCount(0);
         tableWord.setShowVerticalLines(true);
         tableWord.setGridColor(Color.gray);
-        List<Map.Entry<String, WordVN>> list = new ArrayList<>(dict.getDict().entrySet());
-
-        Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>() {
-
-            public int compare(Map.Entry<String, WordVN> o1, Map.Entry<String, WordVN> o2) {
-
-                return o1.getKey().compareTo(o2.getKey());
-            }
-
-        });
-        for (Map.Entry<String, WordVN> entry : list) {
+        List<Map.Entry<String, WordVN>> ketQua=dict.sortDictionary();
+        for (Map.Entry<String, WordVN> entry : ketQua) {
             model.addRow(new Object[]{entry.getKey(), entry.getValue()});
         }
 
@@ -319,30 +314,29 @@ public class WordViewViet extends javax.swing.JFrame {
 
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        String eng = txtWord.getText();
-        String vi = txtMeaning.getText();
+        String vi = txtWord.getText();
+        String eng = txtMeaning.getText();
         List<String> list = new ArrayList<>();
         list.add(vi);
-        if (eng != null) {
-            if (eng.isEmpty() && vi.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Vui long nhap tu can them", "Thong bao", JOptionPane.ERROR_MESSAGE);
-
-            } else if (dict.timTheoKey(eng) == true) {
-                JOptionPane.showMessageDialog(this, "Tu ban them da ton tai! Vui long update!", "Thong bao", JOptionPane.ERROR_MESSAGE);
+        if (vi != null) {
+            if (vi.isEmpty() && eng.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Vui lòng nhập từ cần thêm", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            } else if (dict.timTheoKey(vi) == true) {
+                JOptionPane.showMessageDialog(this, "Từ bạn cần thêm đã tồn tại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
             } else {
-                dict.addWord(eng, list);
-                JOptionPane.showMessageDialog(this, "Them thanh cong!!", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
+                dict.addWord(vi, list);
+
+                 file.ghiFile(fileVNtoEN, dict);
+                  viewTable();
+                   JOptionPane.showMessageDialog(this, "Thêm thành công!", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+                 
                 txtWord.setText("");
                 txtMeaning.setText("");
                 txtFind.setText("");
-                viewTable();
-//                dict.setDict((Map<String, WordVN>) dict);
-                 file.ghiFile(fileVNtoEN, dict);
-
+    
             }
-
         } else {
-            JOptionPane.showConfirmDialog(this, "Them that bai", "Thong bao", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showConfirmDialog(this, "Thêm thất bại", "Thông báo", JOptionPane.ERROR_MESSAGE);
         }
 
     }//GEN-LAST:event_btnAddActionPerformed
@@ -365,37 +359,33 @@ public class WordViewViet extends javax.swing.JFrame {
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         txtFind.setText("");
         txtMeaning.setText("");
-        txtWord.setText("");
-
-
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
         String word = txtWord.getText();
         if (word != null) {
             if (word.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Vui long chon tu can xoa", "Thong bao", JOptionPane.ERROR_MESSAGE);
-            } else if (dict.timTheoKey(word) == true) {
+                JOptionPane.showMessageDialog(this, "Vui lòng chọn từ cần xóa", "Thông báo", JOptionPane.ERROR_MESSAGE);
+            }
+            if (dict.timTheoKey(word) == true) {
                 int choose = JOptionPane.showConfirmDialog(this, "Bạn có muốn xóa từ \" " + word + " \"không ?", word, WIDTH);
                 if (choose == JOptionPane.YES_OPTION) {
                     dict.deleteWord(word);
-                    JOptionPane.showMessageDialog(this, "Xoa thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Xóa thành công ", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
                     txtFind.setText("");
                     txtMeaning.setText("");
                     txtWord.setText("");
                     viewTable();
 //                    dict.setDict((Map<String, WordVN>) dict);
                  file.ghiFile(fileVNtoEN, dict);
-
-
                 }
 
             } else {
-                JOptionPane.showMessageDialog(this, "Tu ban xoa khong co trong tu dien", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Từ bạn cần xóa không có trong từ điển ", "Thông báo", JOptionPane.ERROR_MESSAGE);
             }
 
         } else {
-            JOptionPane.showMessageDialog(this, "Xoa that bai", "Thong bao", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Xóa thất bại", "Thông báo", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnRemoveActionPerformed
 
@@ -407,11 +397,10 @@ public class WordViewViet extends javax.swing.JFrame {
         list1.add(meaning);
         if (eng != null) {
             if (eng.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Vui long chon tu can update", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Vui lòng chọn từ cần cập nhật", "Thông báo", JOptionPane.ERROR_MESSAGE);
             } else if (dict.timTheoKey(eng) == true) {
                 dict.update(eng, list1);
-//                file.ghiFile(fileVNtoEN, dict);
-                JOptionPane.showMessageDialog(this, "Update thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Cập nhật thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
                 txtFind.setText("");
                 txtMeaning.setText("");
                 txtWord.setText("");
@@ -421,11 +410,11 @@ public class WordViewViet extends javax.swing.JFrame {
 
 
             } else {
-                JOptionPane.showMessageDialog(this, "Tu ban can update khong co trong tu dien", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Từ bạn cần cập nhật không có trong từ điển", "Thông báo", JOptionPane.ERROR_MESSAGE);
             }
 
         } else {
-            JOptionPane.showMessageDialog(this, "Update that bai", "Thong bao", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Cập nhật thất bại", "Thông báo", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnUpdateActionPerformed
 
@@ -472,6 +461,10 @@ public class WordViewViet extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void txtFindActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFindActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFindActionPerformed
 
     /**
      * @param args the command line arguments

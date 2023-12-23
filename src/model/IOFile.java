@@ -18,10 +18,10 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  */
 public class IOFile {
     
-    private boolean fileRead = false;
+ 
     
     public void readFile(String tenFile, Dictionary dict) {
-        if (!fileRead) {
+
             try {
                 File f = new File(tenFile);
                 FileReader fr = new FileReader(f);
@@ -64,10 +64,10 @@ public class IOFile {
                 }
                 
                 br.close();
-                fileRead = true;
+       
             } catch (IOException e) {
             }
-        }
+        
     }
     
     public void ghiFile(String tenFile, Dictionary dict) {
@@ -76,7 +76,6 @@ public class IOFile {
             File f = new File(fileName);
             FileWriter fw = new FileWriter(f); // Mở tệp trong chế độ ghi, không phải ghi thêm
             BufferedWriter bw = new BufferedWriter(fw);
-            dict.sortDictionary();
             for (Map.Entry<String, Word> entry : dict.getDict().entrySet()) {
                 bw.write("@" + entry.getKey());
                 bw.newLine();
@@ -98,7 +97,7 @@ public class IOFile {
     }
     
     public void readFile(String tenFile, DictionaryFavorite dict) {
-        if (!fileRead) {
+
             try {
                 File f = new File(tenFile);
                 FileReader fr = new FileReader(f);
@@ -141,10 +140,10 @@ public class IOFile {
                 }
                 
                 br.close();
-                fileRead = true;
+
             } catch (IOException e) {
             }
-        }
+        
     }
     
     public void ghiFile(String tenFile, DictionaryFavorite dict) {
@@ -170,21 +169,25 @@ public class IOFile {
     }
     
     public void readFile(String tenFile, DictionaryVNtoEN dict) {
-        if (!fileRead) {
+
             try {
                 File f = new File(tenFile);
                 FileReader fr = new FileReader(f);
                 BufferedReader br = new BufferedReader(fr);
-             
                 WordVN word = new WordVN();
-                word.setViet(br.readLine().trim());
-       
+                String l=br.readLine();
+
+                word.setViet(l);
+
+
                 while (true) {
                        String line = br.readLine();
+//                       System.out.println(line);
                     if (line == null) {
                         break;
                     } else if (line.startsWith("@")) {
                         word = new WordVN();
+
 //                        System.out.println("word"+line.substring(1));
                         word.setViet(line.substring(1).trim());
 //                        String[] parts = line.split("/");
@@ -222,10 +225,10 @@ public class IOFile {
                 }
                 
                 br.close();
-                fileRead = true;
+            
             } catch (IOException e) {
             }
-        }
+        
     }
     
     public void ghiFile(String tenFile, DictionaryVNtoEN dict) {
@@ -252,7 +255,7 @@ public class IOFile {
     }
     
     public void readFile(String tenFile, DictionaryRecent dict) {
-        if (!fileRead) {
+   
             try {
                 File f = new File(tenFile);
                 FileReader fr = new FileReader(f);
@@ -301,28 +304,24 @@ public class IOFile {
                 }
                 
                 br.close();
-                fileRead = true;
+      
             } catch (IOException e) {
             }
-        }
+
     }
     
     public void ghiFile(String tenFile, DictionaryRecent dict) {
         try {
-            String fileName = tenFile;
-            File f = new File(fileName);
-            FileWriter fw = new FileWriter(f); // Mở tệp trong chế độ ghi, không phải ghi thêm
+            FileWriter fw = new FileWriter(tenFile); // Mở tệp trong chế độ ghi, không phải ghi thêm
             BufferedWriter bw = new BufferedWriter(fw);
             
             for (Map.Entry<String, Word> entry : dict.getDict().entrySet()) {
                 bw.write("@" + entry.getKey());
                 bw.newLine();
-                
                 bw.write("- " + entry.getValue().getViet());
                 bw.newLine();
                 
             }
-            
             bw.close();
             fw.close();
         } catch (Exception e) {
@@ -348,7 +347,7 @@ public class IOFile {
     }
     
     public void readFile(File tenFile, DictionaryRecent dict) {
-        if (!fileRead) {
+      
             try {
                 FileReader fr = new FileReader(tenFile);
                 BufferedReader br = new BufferedReader(fr);
@@ -396,10 +395,10 @@ public class IOFile {
                 }
                 
                 br.close();
-                fileRead = true;
+     
             } catch (IOException e) {
             }
-        }
+        
     }
     
     public void ghiFile(File tenFile, DictionaryRecent dict) {
@@ -444,6 +443,12 @@ public class IOFile {
     }
     
     public static void main(String[] args) {
-
+        Helper helper = new Helper();
+        String s ="duy";
+        String s1="my";
+        int kq =helper.calculateLevenshteinDistance(s,s1);
+        System.out.println("kq"+kq);
+        int min =helper.min(1,2,3);
+        System.out.println(min);
     }
 }

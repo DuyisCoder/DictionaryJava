@@ -34,11 +34,6 @@
             <Property name="text" type="java.lang.String" value="File"/>
           </Properties>
           <SubComponents>
-            <Menu class="javax.swing.JMenu" name="jMenu2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="New"/>
-              </Properties>
-            </Menu>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuOpen">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Open"/>

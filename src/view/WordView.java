@@ -99,6 +99,11 @@ public class WordView extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(153, 0, 51));
         jLabel2.setText("Find Word");
 
+        txtFind.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFindActionPerformed(evt);
+            }
+        });
         txtFind.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtFindKeyPressed(evt);
@@ -162,18 +167,16 @@ public class WordView extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
-                            .addComponent(txtWord, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtFind, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addContainerGap())
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
+                    .addComponent(txtWord, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtFind, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3)
                             .addComponent(jLabel4))
-                        .addContainerGap(268, Short.MAX_VALUE))))
+                        .addGap(0, 262, Short.MAX_VALUE)))
+                .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -299,20 +302,27 @@ public class WordView extends javax.swing.JFrame {
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_btnExitActionPerformed
-    public void viewTable() {
+//    public void viewTable() {
+//        model.setRowCount(0);
+//        tableWord.setShowVerticalLines(true);
+//        tableWord.setGridColor(Color.gray);
+//        
+//        List<Map.Entry<String, Word>> list = new ArrayList<>(dictionary.getDict().entrySet());
+//        Collections.sort(list, new Comparator<Map.Entry<String, Word>>() {
+//            public int compare(Map.Entry<String, Word> entry1, Map.Entry<String, Word> entry2) {
+//                return entry1.getKey().compareTo(entry2.getKey());
+//            }
+//        });
+//        // In danh sách đã sắp xếp
+//        for (Map.Entry<String, Word> entry : list) {
+//            model.addRow(new Object[]{entry.getKey(), entry.getValue()});
+//        }
+//    }
+    public void viewTable(){
         model.setRowCount(0);
-        tableWord.setShowVerticalLines(true);
-        tableWord.setGridColor(Color.gray);
-        
-        List<Map.Entry<String, Word>> list = new ArrayList<>(dictionary.getDict().entrySet());
-        Collections.sort(list, new Comparator<Map.Entry<String, Word>>() {
-            public int compare(Map.Entry<String, Word> entry1, Map.Entry<String, Word> entry2) {
-                return entry1.getKey().compareTo(entry2.getKey());
-            }
-        });
-        // In danh sách đã sắp xếp
-        for (Map.Entry<String, Word> entry : list) {
-            model.addRow(new Object[]{entry.getKey(), entry.getValue()});
+        List<Map.Entry<String,Word>> KQ = dictionary.sortDictionary();
+        for (Map.Entry<String, Word> entry : KQ) {
+         model.addRow(new Object[]{entry.getKey(), entry.getValue()});
         }
     }
 
@@ -324,23 +334,23 @@ public class WordView extends javax.swing.JFrame {
         list.add(vi);
         if (eng != null) {
             if (eng.isEmpty() && vi.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Vui long nhap tu can them", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Vui lòng nhập từ cần thêm!", "Thông báo", JOptionPane.ERROR_MESSAGE);
 
             } else if (dictionary.timTheoKey(eng) == true) {
-                JOptionPane.showMessageDialog(this, "Tu ban them da ton tai! Vui long update!", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Từ bạn cần thêm đã tồn tại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
             } else {
                 dictionary.addWord(eng, list);
                 txtWord.setText("");
                 txtMeaning.setText("");
                 txtFind.setText("");
                 viewTable();
-                JOptionPane.showMessageDialog(this, "Them thanh cong!!", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Thêm thành công ", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
 //                dictionary.setDict((Map<String, Word>) dictionary);
                    file.ghiFile(fileENtoVN, dictionary);
             }
 
         } else {
-            JOptionPane.showConfirmDialog(this, "Them that bai", "Thong bao", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showConfirmDialog(this, "Thêm thất bại ", "Thông báo", JOptionPane.ERROR_MESSAGE);
         }
 
     }//GEN-LAST:event_btnAddActionPerformed
@@ -372,7 +382,7 @@ public class WordView extends javax.swing.JFrame {
         String word = txtWord.getText();
         if (word != null) {
             if (word.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Vui long chon tu can xoa", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Vui lòng chọn từ cần xóa", "Thông báo", JOptionPane.ERROR_MESSAGE);
             } else if (dictionary.timTheoKey(word) == true) {
                 int choose = JOptionPane.showConfirmDialog(this, "Bạn có muốn xóa từ \" " + word + " \"không ?", word, WIDTH);
                 if (choose == JOptionPane.YES_OPTION) {
@@ -389,11 +399,11 @@ public class WordView extends javax.swing.JFrame {
                 }
 
             } else {
-                JOptionPane.showMessageDialog(this, "Tu ban xoa khong co trong tu dien", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Từ bạn cần xóa không có trong từ điển Anh - Việt", "Thông báo", JOptionPane.ERROR_MESSAGE);
             }
 
         } else {
-            JOptionPane.showMessageDialog(this, "Xoa that bai", "Thong bao", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Xóa thất bại", "Thông báo", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnRemoveActionPerformed
 
@@ -405,10 +415,10 @@ public class WordView extends javax.swing.JFrame {
         list.add(meaning);
         if (eng != null) {
             if (eng.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Vui long chon tu can update", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Vui lòng chọn từ cần cập nhật", "Thông báo", JOptionPane.ERROR_MESSAGE);
             } else if (dictionary.timTheoKey(eng) == true) {
                 dictionary.updatee(eng, list);
-                JOptionPane.showMessageDialog(this, "Update thanh cong", "Thong bao", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Cập nhật thành công ", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
                 txtFind.setText("");
                 txtMeaning.setText("");
                 txtWord.setText("");
@@ -418,11 +428,11 @@ public class WordView extends javax.swing.JFrame {
 
 
             } else {
-                JOptionPane.showMessageDialog(this, "Tu ban can update khong co trong tu dien", "Thong bao", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Từ bạn cần cập nhật không có trong từ điển Anh-Việt", "Thông báo", JOptionPane.ERROR_MESSAGE);
             }
 
         } else {
-            JOptionPane.showMessageDialog(this, "Update that bai", "Thong bao", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Cập nhật thất bại ", "Thông báo", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnUpdateActionPerformed
 
@@ -486,6 +496,10 @@ public class WordView extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void txtFindActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFindActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFindActionPerformed
 
     /**
      * @param args the command line arguments

@@ -44,6 +44,8 @@ public class DictionaryRecent {
             Word w = new Word();
             w.setEng(eng);
             w.setViet(vi);
+            w.setGioiTu(null);
+            w.setPhienAm(null);
             dict.put(eng, w);
             file.ghiFile("recent.txt", this);
 

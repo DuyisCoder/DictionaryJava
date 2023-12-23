@@ -60,19 +60,19 @@ public class Dictionary{
             
         }
     }
-    public void addWord(String eng, List<String> vi, String gioiTu, String phienAm) {
-        if (dict.containsKey(eng)) {
-            System.out.println("Tu nay da ton tai");
-        } else {
-            Word w = new Word();
-            w.setEng(eng);
-            w.setViet(vi);
-            w.setGioiTu(gioiTu);
-            w.setPhienAm(phienAm);
-            dict.put(eng, w);
-            file.ghiFile("anhviet2.txt", this);
-        }
-    }
+//    public void addWord(String eng, List<String> vi, String gioiTu, String phienAm) {
+//        if (dict.containsKey(eng)) {
+//            System.out.println("Tu nay da ton tai");
+//        } else {
+//            Word w = new Word();
+//            w.setEng(eng);
+//            w.setViet(vi);
+//            w.setGioiTu(gioiTu);
+//            w.setPhienAm(phienAm);
+//            dict.put(eng, w);
+//            file.ghiFile("anhviet2.txt", this);
+//        }
+//    }
 
     public void addWord(String eng, List<String> vi) {
         if (dict.containsKey(eng)) {
@@ -92,17 +92,17 @@ public class Dictionary{
         }
         return false;
     }
-    public Word themTu(String eng, List<String> vi) {
-        Word w = new Word();
-        if (dict.containsKey(eng)) {
-            w = new Word(eng, vi);
-            dict.put(eng, w);
-            file.ghiFile("anhviet2.txt", this);
-        } else {
-            return null;
-        }
-        return w;
-    }
+//    public Word themTu(String eng, List<String> vi) {
+//        Word w = new Word();
+//        if (dict.containsKey(eng)) {
+//            w = new Word(eng, vi);
+//            dict.put(eng, w);
+//            file.ghiFile("anhviet2.txt", this);
+//        } else {
+//            return null;
+//        }
+//        return w;
+//    }
 
     public String toString() {
     return dict + "";
@@ -115,19 +115,15 @@ public class Dictionary{
     public void setDict(Map<String, Word> dict) {
         this.dict = dict;
     }
-    public void sortDictionary(){
+    public List<Map.Entry<String, Word>>  sortDictionary(){
         List<Map.Entry<String,Word>> list = new ArrayList<>(dict.entrySet());
         Collections.sort(list, new Comparator<Map.Entry<String, Word>>(){
-
             public int compare(Map.Entry<String, Word> entry1, Map.Entry<String, Word> entry2) {
               
                 return entry1.getKey().compareTo(entry2.getKey());
+                
             }
         });
-        // In danh sách đã sắp xếp
-        for (Map.Entry<String, Word> entry : list) {
-//            System.out.println(entry.getKey());
-        }
-
+        return list;
     }
 }

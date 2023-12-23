@@ -4,6 +4,9 @@
  */
 package model;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -67,8 +70,10 @@ public class DictionaryVNtoEN {
             WordVN w = new WordVN();
             w.setViet(vi);
             w.setEng(eng);
+            w.setGioiTu(null);
+            w.setPhienAm(null);
             dict.put(vi, w);
-            file.ghiFile("favorite.txt", this);
+            file.ghiFile("vietanh.txt", this);
 
         }
 
@@ -90,12 +95,21 @@ public class DictionaryVNtoEN {
             word=new WordVN(eng,vi);
             dict.put(eng, word);
             file.ghiFile("vietanh.txt", this);
-            file.readFile("vietanh1.txt", this);
+//            file.readFile("vietanh1.txt", this);
             
         }
     }
   
-    
-    
+    public List<Map.Entry<String, WordVN>>  sortDictionary(){
+        List<Map.Entry<String,WordVN>> list = new ArrayList<>(dict.entrySet());
+        Collections.sort(list, new Comparator<Map.Entry<String, WordVN>>(){
+            @Override
+            public int compare(Map.Entry<String, WordVN> o1, Map.Entry<String, WordVN> o2) {
+                return o1.getKey().compareTo(o2.getKey());
+            }
+           
+        });
+        return list;
+    }
     
 }

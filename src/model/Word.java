@@ -84,6 +84,10 @@ public class Word implements Comparable<Word> {
                 + (phienAm != null && !phienAm.isEmpty() ? "\n- Phiên Âm: " + phienAm : "");
     }
 
+    public String toString2() {
+        return eng + "+" + viet;
+    }
+
     @Override
     public int compareTo(Word o) {
         return this.getEng().compareTo(o.getEng());

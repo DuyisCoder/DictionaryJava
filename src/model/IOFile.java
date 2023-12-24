@@ -443,12 +443,6 @@ public class IOFile {
     }
     
     public static void main(String[] args) {
-        Helper helper = new Helper();
-        String s ="duy";
-        String s1="my";
-        int kq =helper.calculateLevenshteinDistance(s,s1);
-        System.out.println("kq"+kq);
-        int min =helper.min(1,2,3);
-        System.out.println(min);
+
     }
 }

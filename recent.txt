@@ -1,38 +1,65 @@
-@hi
-- [(từ Mỹ,nghĩa Mỹ) này!123]
-@duydeptrai
-- [duy]
-@vua
-- [king]
-@sure
-- [chắc chắn]
-@duy1
-- [123]
-@duy123
-- [duy123]
-@buy
-- [(toán kinh tế) mua]
+@nt
+- [biểu hiệu vùng danh lam thắng cảnh cần bảo tồn (National Trust)]
+@yểm
+- [to hide]
 @show
 - [chứng tỏ]
 @duy
 - [duy dep trai]
-@delicious
-- [ngon]
-@good
-- [tốt]
-@nice
-- [(thông tục) thú vị]
+@meaning
+- [ý nghĩa; ỹ nghĩa]
 @banh
 - [Prison cell]
-@bỏng rạ
-- [Varicella]
-@ok
-- [đồng ý
-được
-tán thành
-sự đồng ý
-sự tán thành]
+@now
+- [bây giờ]
+@gốc
+- [foot; origin]
 @cha
 - [Father]
-@day
-- [to turn]
+@cá
+- [Click]
+@like
+- [giống như; bằng; cùng tên // giống]
+@ý nghĩa
+- [mean]
+@tiếng
+- [sound]
+@hạnh phúc
+- [happiness]
+@tiêu đề
+- [heading]
+@zymotic
+- [(y học) (thuộc) sự lên men
+*  tính từ
+zai'mɔtik]
+@nice
+- [(thông tục) thú vị]
+@gone
+- [đã đi]
+@chó
+- [Dog]
+@expensive
+- [đắt tiền]
+@tầng lớp
+- [section]
+@con mẹ
+- [Woman]
+@zymurgy
+- [khoa nghiên cứu sự lên men
+* danh từ]
+@mèo
+- [cat]
+@know
+- [hiểu biết]
+@position
+- [vị trí; tình hình; lập trường]
+@cây
+- [Tree]
+@pay phone
+- [(từ Mỹ,nghĩa Mỹ) điện thoại tự động]
+@word
+- [từ]
+@dog
+- [chó]
+@buồn
+- [Sad]

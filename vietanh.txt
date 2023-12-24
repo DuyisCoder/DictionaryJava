@@ -1,5 +1,3 @@
-@bay lượn
-- [hover (of a bird); glide (of an aeroplane)]
 @kiếng
 - [(địa phương) như kính]
 @hội sinh
@@ -23754,8 +23752,6 @@
 - [Remote relation (of parentage), Hai người có hơi hướng họ hàng với nhau+Both are remotely related, Smell (of dirt, of uncleanlinessm, of disease), Hơi hướng quần áo người ốm khó chịu quá+The uncleanly smell of the patient's clothes is unbearable]
 @đẹp lão
 - [Hale and hearty, Trông ông cụ tám mươi mà còn đẹp lão+At eighty, he still looks hale and hearty]
-@123
-- [123]
 @hành chính
 - [Aministration]
 @cầu cống
@@ -30792,6 +30788,8 @@
 - [human skin, * noun]
 @đường sá
 - [Roads (nói khái quát)]
+@@bay lượn
+- [hover (of a bird); glide (of an aeroplane)]
 @nam vô
 - [như na mô]
 @dẫn đô

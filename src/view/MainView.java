@@ -680,7 +680,7 @@ public final class MainView extends javax.swing.JFrame {
 //                                dictRecent.addWord(word.getEng(), listRecent);
 //                                file.readFile(fileRecent, dictRecent);
                                 String wordSearch=txtWord.getText().trim();
-                                String meaning = txtNghia.getText().trim();
+                                String meaning = txtNghia.getText();
                                 List<String> listRecent=new ArrayList<>();
                                 listRecent.add(meaning);
                                 dictRecent.addWord(wordSearch, listRecent);

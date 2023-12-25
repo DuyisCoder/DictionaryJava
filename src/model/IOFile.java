@@ -148,8 +148,7 @@ public class IOFile {
     
     public void ghiFile(String tenFile, DictionaryFavorite dict) {
         try {
-            String fileName = tenFile;
-            File f = new File(fileName);
+            File f = new File(tenFile);
             FileWriter fw = new FileWriter(f); // Mở tệp trong chế độ ghi, không phải ghi thêm
             BufferedWriter bw = new BufferedWriter(fw);
             
@@ -176,10 +175,7 @@ public class IOFile {
                 BufferedReader br = new BufferedReader(fr);
                 WordVN word = new WordVN();
                 String l=br.readLine();
-
                 word.setViet(l);
-
-
                 while (true) {
                        String line = br.readLine();
 //                       System.out.println(line);
@@ -218,8 +214,6 @@ public class IOFile {
                         if (word.getPhienAm() != null && !word.getPhienAm().isEmpty()) {
                             word.getEng().add(word.getPhienAm());
                         }
-//                       System.out.println("eng :"+word.getEng());
-
                     }
                     dict.loadData(word.getViet(), word.getEng());
                 }
@@ -260,27 +254,33 @@ public class IOFile {
                 File f = new File(tenFile);
                 FileReader fr = new FileReader(f);
                 BufferedReader br = new BufferedReader(fr);
-                br.readLine();
+//                br.readLine();
                 
                 Word word = new Word();
-                word.setEng(br.readLine());
+                word.setEng(br.readLine().substring(1));
                 while (true) {
                     String line = br.readLine();
                     if (line == null) {
                         break;
                     } else if (line.startsWith("@")) {
                         word = new Word();
-                        String[] parts = line.split("/");
-                        if (parts.length == 2) {
-                            word.setEng(parts[0].substring(1).trim());
-                            word.setPhienAm(parts[1].trim());
+//                        String[] parts = line.split("/");
+//                        if (parts.length == 2) {
+//                            word.setEng(parts[0].substring(1).trim());
+//                            word.setPhienAm(parts[1].trim());
 //                            System.out.println("VIET :"+word.getEng());
-                        } else {
-                            word.setEng(line.trim().substring(1));
-//                            System.out.println("VIET :"+word.getEng());
+//                        } else {
+                            word.setEng(line.substring(1).trim());
+                            System.out.println("VIET :"+word.getEng());
 
-                        }
-                    } else if (line.startsWith("*")) {
+//                        }
+                    }else if(word.getEng().startsWith("@@")){
+                                word.setEng(line.substring(2).trim());
+
+                            }
+//                            
+                    
+                    else if (line.startsWith("*")) {
                         word.setGioiTu(line.trim());
 //                                                    System.out.println("GIOI TU :"+word.getGioiTu());
 
@@ -329,23 +329,7 @@ public class IOFile {
         }
     }
     
-    public void openFileExplorer(JFrame v) {
-        try {
-            JFileChooser fileChooser = new JFileChooser();
-            FileNameExtensionFilter filter = new FileNameExtensionFilter("file ", "txt");
-            fileChooser.setFileFilter(filter);
-            fileChooser.setMultiSelectionEnabled(false);
-            
-            int x = fileChooser.showDialog(v, "Chon file");
-            if (x == JFileChooser.APPROVE_OPTION) {
-                File fileSelect = fileChooser.getSelectedFile();
-                
-            }
-            
-        } catch (Exception e) {
-        }
-    }
-    
+
     public void readFile(File tenFile, DictionaryRecent dict) {
       
             try {

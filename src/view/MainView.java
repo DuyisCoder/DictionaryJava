@@ -632,7 +632,7 @@ public final class MainView extends javax.swing.JFrame {
     }
     private void txtWordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtWordKeyPressed
 
-        String searchText = txtWord.getText();
+        String searchText = txtWord.getText().trim();
         int index = comboLanguages.getSelectedIndex();
         int index2 = ComboLangueges2.getSelectedIndex();
         if (index == 0 && index2 == 0) {
@@ -648,7 +648,7 @@ public final class MainView extends javax.swing.JFrame {
                     list.add(resultBuilder+"");
                     txtNghia.setText(resultBuilder.toString());
                     if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-                          String wordSearch=txtWord.getText().trim();
+                                String wordSearch=txtWord.getText().trim();
                                 String meaning = txtNghia.getText().trim();
                                 List<String> listRecent=new ArrayList<>();
                                 listRecent.add(meaning);
@@ -680,7 +680,7 @@ public final class MainView extends javax.swing.JFrame {
 //                                dictRecent.addWord(word.getEng(), listRecent);
 //                                file.readFile(fileRecent, dictRecent);
                                 String wordSearch=txtWord.getText().trim();
-                                String meaning = txtNghia.getText();
+                                String meaning = txtNghia.getText().trim();
                                 List<String> listRecent=new ArrayList<>();
                                 listRecent.add(meaning);
                                 dictRecent.addWord(wordSearch, listRecent);
@@ -716,13 +716,11 @@ public final class MainView extends javax.swing.JFrame {
                     }
                 } else{
                     txtNghia.setText("Từ bạn tìm không có trong từ điển chương trình!");
-                    if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-//                        String suggestion = findSimilarWordVN(searchText);                        
+                    if (evt.getKeyCode() == KeyEvent.VK_ENTER) {                      
                         String suggestion = helper.findSimilarWordVN(searchText,dictV);
 
                         if (suggestion != null) {
                             int yes = JOptionPane.showConfirmDialog(this, "Ý bạn là từ : " + "\"" + suggestion + "\"", "Gợi ý từ điển", JOptionPane.YES_NO_OPTION);
-
                             if (JOptionPane.YES_OPTION == yes) {
                                 wordVN = dictV.translateWord(suggestion);
                                 txtWord.setText(wordVN.getViet());
@@ -755,12 +753,6 @@ public final class MainView extends javax.swing.JFrame {
     private void btnLoadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoadActionPerformed
         txtWord.setText("");
         txtNghia.setText("");
-        file.readFile(fileENtoVN, dictionary);
-        file.ghiFile(fileENtoVN, dictionary);
-        file.readFile(fileENtoVN, dictF);
-        file.readFile(fileENtoVN, dictRecent);
-        file.readFile(fileENtoVN, dictV);
-
     }//GEN-LAST:event_btnLoadActionPerformed
 
     private void tableRecentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableRecentMouseClicked

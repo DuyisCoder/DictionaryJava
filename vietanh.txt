@@ -1,33 +1,3 @@
-@kiếng
-- [(địa phương) như kính]
-@hội sinh
-- [(sinh học) Commensalism]
-@bặt tăm
-- [Without sending back any news]
-@chia ly
-- [to disunite; to dissociate, * verb]
-@vu oan
-- [to accuse falsely, * verb]
-@muỗm
-- [(thực vật) Bachang mango., (động vật) Long-horned grasshopper]
-@vừa tầm
-- [within reach of]
-@nữ trang
-- [jewel, * noun]
-@hào phóng
-- [open-handed, * adj]
-@đao kiếm
-- [Knife-shaped lance and sword; weapons]
-@muỗi
-- [mosquito, * noun, con muỗi, * noun]
-@kiểm điểm
-- [Review (of experience drawing), sum up the experience draw from, Kiểm điểm công tác hằng tuần+To review weekly one's work (to draw experience)]
-@giá biểu
-- [Tariff]
-@thức
-- [to wake (up); to sit (stay up), * verb, mood, * noun]
-@chia li
-- [như chia ly]
 @khản cổ
 - [Hoarse]
 @cổ võ
@@ -1903,7 +1873,7 @@
 @sóng sánh
 - [to shake, * verb]
 @duy
-- [duy dep trai]
+- [123]
 @nước tiểu
 - [như nước giải]
 @sao lãng
@@ -4282,6 +4252,8 @@
 - [Demarcation line]
 @đau
 - [sore; tender; aching, * adj, mắt đau+Sore eyes, * adj, ill; sick; diseased, * adj]
+@hi
+- [hi]
 @bím
 - [Pigtail, plait of hair, * noun, tóc tết bím+plaited hair, * noun]
 @trườn
@@ -10272,6 +10244,8 @@
 - [Clean out of, Hết sạch chè rồi, lấy đâu mà pha+We are clean out of tea, where can we find some to draw]
 @nông hộ
 - [Farmer household]
+@hello
+- [xin chào viet]
 @em chồng
 - [brother-in-law; sister-in-law, * noun]
 @phiền muộn
@@ -14904,6 +14878,8 @@
 - [Betel quid's juice]
 @tò vò
 - [mason bee, wall bee arch, * noun]
+@@vu oan
+- [to accuse falsely, * verb]
 @dây cót
 - [như cót]
 @hoài cổ
@@ -18370,6 +18346,8 @@
 - [Mineral matter]
 @quây
 - [to enclose, * verb]
+@@nữ trang
+- [jewel, * noun]
 @bệnh chứng
 - [Symptom, * noun]
 @nhẹ nợ
@@ -18474,6 +18452,8 @@
 - [to feed up, to fatten, * verb]
 @dấu ngoặc kép
 - [xem ngoặc kép]
+@@hội sinh
+- [(sinh học) Commensalism]
 @phân lân
 - [(nông nghiệp) Phosphat fertilizer]
 @lác
@@ -24748,6 +24728,8 @@
 - [Flabby, flaccid, Em be mập nhưng thịt nhẽo+the baby is plump but flabby]
 @sanh
 - [(như) sinh]
+@@chia li
+- [như chia ly]
 @gục
 - [to bend down, * verb, ngủ gục+to nod, * verb]
 @trở nên
@@ -24774,6 +24756,8 @@
 - [Race, * noun, phân biệt chủng tộc+racial discrimination, * noun, chủ nghĩa chủng tộc+racism, * noun]
 @nằm kềnh
 - [Sprawl, Ăn no nằm kềnh ra phản+To sprawl on the plank-bed after eating one's fill]
+@@chia ly
+- [to disunite; to dissociate, * verb]
 @bao bọc
 - [To enclose, * verb, một lớp không khí dầy bao bọc quả đất+a thick layer of air encloses the earth, * verb, ngôi biệt thự có tường cao bao bọc+a villa enclosed by high walls, * verb]
 @mùng
@@ -25794,6 +25778,8 @@
 - [(trang trọng) In security and good health, safe and sound]
 @ngây dại
 - [naive]
+@@vừa tầm
+- [within reach of]
 @giong ruổi
 - [to travel far away, * verb]
 @phụ thân
@@ -28328,6 +28314,8 @@
 - [sociology, * noun]
 @nhà khó
 - [(địa phương) như nhà đám]
+@@hào phóng
+- [open-handed, * adj]
 @đau mắt
 - [Sore eyes]
 @kẻo
@@ -30036,6 +30024,8 @@
 - [to deflower, to deprive of virginity, * verb]
 @sạch tội
 - [Be cleaned of all faults]
+@@bặt tăm
+- [Without sending back any news]
 @hợp thức
 - [như hợp cách]
 @bái phục
@@ -30734,6 +30724,8 @@
 - [incite, * verb, be unlucky, * adj]
 @tạc đạn
 - [hand-granade]
+@@giá biểu
+- [Tariff]
 @bạc bẽo
 - [Ungrateful, thankless, unrewarding, * adj, con người bạc bẽo+an ungrateful person, * adj, không có nghề nào bạc bẽo cả+there is no thankless job, * adj]
 @rỗi việc
@@ -35176,6 +35168,8 @@
 - [Sapodila, Quả hồng xiêm+Sapodilla plum]
 @ca xướng
 - [Singing]
+@@kiếng
+- [(địa phương) như kính]
 @lấm lét
 - [to look slyly, * verb]
 @quẳng
@@ -37254,12 +37248,16 @@
 - [brain, * noun]
 @linh tinh
 - [trivial, trifling, * adj]
+@@muỗm
+- [(thực vật) Bachang mango., (động vật) Long-horned grasshopper]
 @bụng phệ
 - [xem phệ]
 @co rút
 - [Contractive, * adjective, có thể co rút lại được+contractable, * adjective]
 @hỏi vợ
 - [Ask for a girl's hand (from her parents...), Đi hỏi vợ cho con+To go and ask for a girl's hand for one's son]
+@@muỗi
+- [mosquito, * noun, con muỗi, * noun]
 @dân tộc chủ nghĩa
 - [Nationalist, nationalistic]
 @kém vế
@@ -37280,6 +37278,8 @@
 - [to wash out an insult, * verb]
 @vô sự
 - [unharmed, unhurt, * adj]
+@@thức
+- [to wake (up); to sit (stay up), * verb, mood, * noun]
 @động vật
 - [Animal, * noun]
 @lao xao
@@ -41694,6 +41694,8 @@
 - [Backyard]
 @hài hòa
 - [harmonious, * adj]
+@@đao kiếm
+- [Knife-shaped lance and sword; weapons]
 @thoả thích
 - [satisfactorily, * adv]
 @phương hại
@@ -43670,6 +43672,8 @@
 - [Unsteady, unstable, cranky, * adj, giừơng kê chật chưỡng+the bed is cranky, * adj, như chất chưởng, * adj]
 @cà tưng
 - [nhảy cà tưng To jump of joy]
+@@kiểm điểm
+- [Review (of experience drawing), sum up the experience draw from, Kiểm điểm công tác hằng tuần+To review weekly one's work (to draw experience)]
 @khinh hạm
 - [Vedette-boat]
 @lý do

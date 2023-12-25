@@ -317,15 +317,14 @@ public class WordViewViet extends javax.swing.JFrame {
         String vi = txtWord.getText();
         String eng = txtMeaning.getText();
         List<String> list = new ArrayList<>();
-        list.add(vi);
+        list.add(eng);
         if (vi != null) {
             if (vi.isEmpty() && eng.isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Vui lòng nhập từ cần thêm", "Thông báo", JOptionPane.ERROR_MESSAGE);
             } else if (dict.timTheoKey(vi) == true) {
                 JOptionPane.showMessageDialog(this, "Từ bạn cần thêm đã tồn tại!", "Thông báo", JOptionPane.ERROR_MESSAGE);
             } else {
-                dict.addWord(vi, list);
-
+                    dict.addWord(vi, list);
                  file.ghiFile(fileVNtoEN, dict);
                   viewTable();
                    JOptionPane.showMessageDialog(this, "Thêm thành công!", "Thông báo", JOptionPane.INFORMATION_MESSAGE);

@@ -1,65 +1,30 @@
-@nt
-- [biểu hiệu vùng danh lam thắng cảnh cần bảo tồn (National Trust)]
-@yểm
-- [to hide]
-@show
-- [chứng tỏ]
+@country
+- [nước]
+@pretty
+- [xinh]
+@ninety
+- [chín mươi]
+@sở thú
+- [the zoo
+ * noun]
 @duy
-- [duy dep trai]
-@meaning
-- [ý nghĩa; ỹ nghĩa]
-@banh
-- [Prison cell]
+- [123]
+@dim
+- [(ít dùng) Half-close (one's eyes)]
+@mẹ
+- [mother]
+@beautiful
+- [đẹp; hay]
 @now
 - [bây giờ]
-@gốc
-- [foot; origin]
-@cha
-- [Father]
-@cá
-- [Click]
-@like
-- [giống như; bằng; cùng tên // giống]
-@ý nghĩa
-- [mean]
-@tiếng
-- [sound]
-@hạnh phúc
-- [happiness]
-@tiêu đề
-- [heading]
-@zymotic
-- [(y học) (thuộc) sự lên men
-*  tính từ
-zai'mɔtik]
-@nice
-- [(thông tục) thú vị]
-@gone
-- [đã đi]
-@chó
-- [Dog]
-@expensive
-- [đắt tiền]
-@tầng lớp
-- [section]
-@con mẹ
-- [Woman]
-@zymurgy
-- [khoa nghiên cứu sự lên men
-* danh từ]
-@mèo
-- [cat]
-@know
-- [hiểu biết]
-@position
-- [vị trí; tình hình; lập trường]
-@cây
-- [Tree]
+@vịt
+- [duck]
+@zoo
+- [(thông tục) ((viết tắt) của zoological garden) vườn bách thú
+vườn thú
+*  danh từ
+zu:]
 @pay phone
 - [(từ Mỹ,nghĩa Mỹ) điện thoại tự động]
-@word
-- [từ]
-@dog
-- [chó]
-@buồn
-- [Sad]
+@cha
+- [Father]

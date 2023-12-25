@@ -1,28 +1,14 @@
-@select
-- [chọn]
-@like
-- [giống như; bằng; cùng tên // giống]
-@hạnh phúc
-- [happiness]
-@tiêu đề
-- [heading]
-@duy
-- [duy dep trai]
-@gone
-- [đã đi]
-@chó
-- [Cur]
-@tầng lớp
-- [section]
-@con mẹ
-- [Woman]
+@hi
+- [(từ Mỹ,nghĩa Mỹ) này!123]
+@see
+- [thấy]
 @now
 - [bây giờ]
 @know
 - [hiểu biết]
-@position
-- [vị trí; tình hình; lập trường]
-@pay phone
-- [(từ Mỹ,nghĩa Mỹ) điện thoại tự động]
-@buồn
-- [Sad]
+@zymotic
+- [(y học) (thuộc) sự lên men]
+@sông
+- [river]
+@look
+- [nhìn]

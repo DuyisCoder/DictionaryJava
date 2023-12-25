@@ -56,7 +56,6 @@ public class Dictionary{
             w=new Word(eng,vi);
             dict.put(eng, w);
             file.ghiFile("anhviet2.txt", this);
-            file.readFile("anhviet2.txt", this);
             
         }
     }
